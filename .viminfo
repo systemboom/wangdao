@@ -1,0 +1,1645 @@
+# 这个 viminfo 文件是由 Vim 8.1 所产生。
+# 如果想要自行修改请特别小心！
+
+# Viminfo version
+|1,4
+
+# 文件被写的时候 ‘encoding’ 的值
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# 上个 Search 图案：
+~MSle0~/\V\<int\>
+
+# 命令行 历史记录 (从新到旧)：
+:q
+|2,0,1620810741,,"q"
+:wq
+|2,0,1620718239,,"wq"
+:b1
+|2,0,1620547457,,"b1"
+:b2
+|2,0,1620545503,,"b2"
+:e thread_pool.c
+|2,0,1620545402,,"e thread_pool.c"
+:w
+|2,0,1620159146,,"w"
+:Wq
+|2,0,1619592469,,"Wq"
+:,n
+|2,0,1619264280,,",n"
+:e child.c
+|2,0,1619259640,,"e child.c"
+:e main.c
+|2,0,1619259235,,"e main.c"
+:e pthread_create_two.ci
+|2,0,1619102065,,"e pthread_create_two.ci"
+:90
+|2,0,1619099279,,"90"
+:q!
+|2,0,1618397700,,"q!"
+:W
+|2,0,1618298047,,"W"
+:s
+|2,0,1618141671,,"s"
+:e pthread_create_two.c
+|2,0,1618141157,,"e pthread_create_two.c"
+:e pthread_create_malloc.c
+|2,0,1618140744,,"e pthread_create_malloc.c"
+:,+2
+|2,0,1618133016,,",+2"
+:e makefile
+|2,0,1618123672,,"e makefile"
+:vnew mmap_shared_w.c
+|2,0,1617521886,,"vnew mmap_shared_w.c"
+:B1
+|2,0,1617349881,,"B1"
+:b<F1>
+|2,0,1617349879,,"b<F1>"
+:vs shmat_w.c
+|2,0,1617349707,,"vs shmat_w.c"
+:e shmat_w.c
+|2,0,1617349672,,"e shmat_w.c"
+:new shmat_w.c
+|2,0,1617349648,,"new shmat_w.c"
+:we
+|2,0,1617342879,,"we"
+:w\
+|2,0,1617080928,,"w\\"
+:qall
+|2,0,1616539267,,"qall"
+:wall
+|2,0,1616539265,,"wall"
+:vnew chat2.c
+|2,0,1616539195,,"vnew chat2.c"
+:new chat2.c
+|2,0,1616538566,,"new chat2.c"
+:vnew write.c
+|2,0,1616535617,,"vnew write.c"
+:%!xxd
+|2,0,1616482209,,"%!xxd"
+:!q
+|2,0,1616399542,,"!q"
+:!w
+|2,0,1616399534,,"!w"
+:fw clean
+|2,0,1616000769,,"fw clean"
+:%!xxd -r
+|2,0,1616030489,,"%!xxd -r"
+:2
+|2,0,1615998772,,"2"
+:[2]
+|2,0,1615998769,,"[2]"
+:tabnew head.h
+|2,0,1615963751,,"tabnew head.h"
+:b3
+|2,0,1615793372,,"b3"
+
+# 查找字符串 历史记录 (从新到旧)：
+? :
+|2,1,1619264219,,":"
+? (s((slash-trailer)include <func.h>
+|2,1,1618763104,,"(s((slash-trailer)include <func.h>"
+? _fileno
+|2,1,1616483059,,"_fileno"
+? ;
+|2,1,1615791302,,";"
+
+# 表达式 历史记录 (从新到旧)：
+
+# 输入行 历史记录 (从新到旧)：
+
+# Debug Line 历史记录 (从新到旧)：
+
+# 寄存器:
+"0	LINE	0
+	    printf("port=%x\n",port);
+|3,0,0,1,1,0,1618897063,"    printf(\"port=%x\\n\",port);"
+""1	LINE	0
+	            for(int i=0;i<threadPool.threadNum;i++)
+	            {
+	                //循环等待子线程
+	                pthread_join(threadPool.pthid[i],NULL);
+	            }
+|3,1,1,1,5,0,1620547514,"            for(int i=0;i<threadPool.threadNum;i++)","            {","                //循环等待子线程","                pthread_join(threadPool.pthid[i],NULL);","            }"
+"2	LINE	0
+	            for(int i=0;i<threadPool.threadNum;i++)
+	            {
+	                //循环等待子线程
+	                pthread_join(threadPool.pthid[i],NULL);
+	            }
+|3,0,2,1,5,0,1620547502,"            for(int i=0;i<threadPool.threadNum;i++)","            {","                //循环等待子线程","                pthread_join(threadPool.pthid[i],NULL);","            }"
+"3	LINE	0
+	/*************************************************************************
+		> File Name: main.c
+		> Author: Name
+		> Mail: Name@163.com 
+		> Created Time: 2020-05-06 10:00:55
+	 ************************************************************************/
+	
+	#include "process_pool.h"
+	
+	int exitPipe[2];
+	
+	void sigExitFunc(int signum)
+	{
+	    printf("%d is comming\n",signum);
+	    char exitFlag=1;
+	    write(exitPipe[1],&exitFlag,1);
+	}
+	
+	int main(int argc, char* argv[])
+	{
+	    ARGS_CHECK(argc,4);
+	
+	    pipe(exitPipe);
+	    
+	    //1. 创建子进程并初始化结构体数组
+	    int processNum = atoi(argv[3]);
+	    process_data_t *pData = (process_data_t*)calloc(processNum,sizeof(process_data_t));
+	
+	    makeChild(pData,processNum);
+	
+	    signal(SIGUSR1,sigExitFunc);
+	    //tcp初始化
+	    int socketFd;
+	    tcpInit(&socketFd,argv[1],argv[2]);
+	 
+	    int epfd = epoll_create(1);
+	    ERROR_CHECK(epfd,-1,"epoll_create");
+	
+	    //把socketfd和管道的对端添加到epoll
+	    epollInAdd(epfd,socketFd); 
+	    //监听退出的管道的读端
+	    //一旦管道可读，就表示要退出，执行有序退出
+	    epollInAdd(epfd,exitPipe[0]); 
+	    int i=0,j=0;
+	    for(i=0;i<processNum;i++)
+	    {
+	        epollInAdd(epfd,pData[i].pipefd);
+	    }
+	
+	    int readyNum=0;
+|3,0,3,1,50,0,1620286703,"/*************************************************************************","	> File Name: main.c","	> Author: Name","	> Mail: Name@163.com ","	> Created Time: 2020-05-06 10:00:55"," ************************************************************************/","","#include \"process_pool.h\"","","int exitPipe[2];","","void sigExitFunc(int signum)","{","    printf(\"%d is comming\\n\",signum);","    char exitFlag=1;",>37
+|<"    write(exitPipe[1],&exitFlag,1);","}","","int main(int argc, char* argv[])","{","    ARGS_CHECK(argc,4);","","    pipe(exitPipe);","    ","    //1. 创建子进程并初始化结构体数组","    int processNum = atoi(argv[3]);","    process_data_t *pData = (process_data_t*)calloc(processNum,sizeof(process_data_t));","","    makeChild(pData,processNum);","","    signal(SIGUSR1,sigExitFunc);","    //tcp初始化","    int socketFd;","    tcpInit(&socketFd,argv[1],argv[2]);"," ",>33
+|<"    int epfd = epoll_create(1);","    ERROR_CHECK(epfd,-1,\"epoll_create\");","","    //把socketfd和管道的对端添加到epoll","    epollInAdd(epfd,socketFd); ","    //监听退出的管道的读端","    //一旦管道可读，就表示要退出，执行有序退出","    epollInAdd(epfd,exitPipe[0]); ","    int i=0,j=0;","    for(i=0;i<processNum;i++)","    {","        epollInAdd(epfd,pData[i].pipefd);","    }","","    int readyNum=0;"
+"4	LINE	0
+	/*************************************************************************
+		> File Name: child.c
+		> Author: Name
+		> Mail: Name@163.com 
+		> Created Time: 2020-05-06 10:04:36
+	 ************************************************************************/
+	
+	#include "process_pool.h"
+	
+	int makeChild(process_data_t* p,int processNum)
+	{
+	    int fds[2];
+	    int ret =0;
+	    pid_t pid;
+	    for(int i=0;i<processNum;i++)
+	    {
+	        //全双工管道
+	        ret = socketpair(AF_LOCAL,SOCK_STREAM,0,fds);
+	        ERROR_CHECK(ret,-1,"socketpair");
+	        pid = fork();
+	        if(0 == pid)
+	        {
+	            close(fds[1]);
+	            childHandle(fds[0]);
+	        }
+	        close(fds[0]);
+	        p[i].busy = 0;
+	        p[i].pid = pid;
+	        p[i].pipefd = fds[1];
+	        printf("child pid=%d,pipe=%d\n",pid,fds[1]);
+	    }
+	    return 0;
+	}
+	
+	int childHandle(int pipefd)
+	{
+	    int newFd = 0;
+	    char flag=0;
+	    char exitFlag;
+	    while(1)
+	    {
+	        recvFd(pipefd,&newFd,&exitFlag);
+	        //如果exitFlag拿到的是1，子进程退出
+	        //如果是0，代表发来的客户端newFd，传输文件
+	        if(1 == exitFlag)
+	        {
+	            printf("child exit\n");
+	            exit(0);
+	        }
+	        printf("newFd=%d\n",newFd);
+|3,0,4,1,50,0,1620286666,"/*************************************************************************","	> File Name: child.c","	> Author: Name","	> Mail: Name@163.com ","	> Created Time: 2020-05-06 10:04:36"," ************************************************************************/","","#include \"process_pool.h\"","","int makeChild(process_data_t* p,int processNum)","{","    int fds[2];","    int ret =0;","    pid_t pid;","    for(int i=0;i<processNum;i++)",>7
+|<"    {","        //全双工管道","        ret = socketpair(AF_LOCAL,SOCK_STREAM,0,fds);","        ERROR_CHECK(ret,-1,\"socketpair\");","        pid = fork();","        if(0 == pid)","        {","            close(fds[1]);","            childHandle(fds[0]);","        }","        close(fds[0]);","        p[i].busy = 0;","        p[i].pid = pid;","        p[i].pipefd = fds[1];","        printf(\"child pid=%d,pipe=%d\\n\",pid,fds[1]);","    }","    return 0;","}","",>29
+|<"int childHandle(int pipefd)","{","    int newFd = 0;","    char flag=0;","    char exitFlag;","    while(1)","    {","        recvFd(pipefd,&newFd,&exitFlag);","        //如果exitFlag拿到的是1，子进程退出","        //如果是0，代表发来的客户端newFd，传输文件","        if(1 == exitFlag)","        {","            printf(\"child exit\\n\");","            exit(0);","        }","        printf(\"newFd=%d\\n\",newFd);"
+"5	LINE	0
+	/*************************************************************************
+		> File Name: fork.c
+		> Author: Name
+		> Mail: Name@163.com 
+		> Created Time: 2020-05-05 16:08:12
+	 ************************************************************************/
+	
+	#include "process_pool.h"
+	
+	int sendFd(int pipefd,int fd,char exitFlag)
+	{
+	    struct msghdr msg;
+	    bzero(&msg,sizeof(msg));
+	    struct iovec iov;
+	    iov.iov_base = &exitFlag;
+	    iov.iov_len = 1;
+	    msg.msg_iov = &iov;
+	    msg.msg_iovlen = 1;
+	
+	    struct cmsghdr *cmsg;
+	    size_t msglen = CMSG_LEN(sizeof(int));
+	    cmsg = (struct cmsghdr*)malloc(msglen);
+	
+	    cmsg->cmsg_len = msglen;
+	    cmsg->cmsg_level = SOL_SOCKET;
+	    cmsg->cmsg_type = SCM_RIGHTS;
+	
+	    *(int*)CMSG_DATA(cmsg)=fd;
+	
+	    msg.msg_control = cmsg;
+	    msg.msg_controllen =  msglen;
+	
+	    int ret = sendmsg(pipefd,&msg,0);
+	    ERROR_CHECK(ret,-1,"sendmsg");
+	
+	    return 0;
+	}
+	
+	int recvFd(int pipefd,int* fd,char* exitFlag)
+	{
+	    struct msghdr msg;
+	    bzero(&msg,sizeof(msg));
+	    struct iovec iov;
+	    /* char buf[10]={0}; */
+	    iov.iov_base = exitFlag;
+	    iov.iov_len = 1;
+	    msg.msg_iov = &iov;
+	    msg.msg_iovlen = 1;
+	
+	    struct cmsghdr *cmsg;
+|3,0,5,1,50,0,1620286639,"/*************************************************************************","	> File Name: fork.c","	> Author: Name","	> Mail: Name@163.com ","	> Created Time: 2020-05-05 16:08:12"," ************************************************************************/","","#include \"process_pool.h\"","","int sendFd(int pipefd,int fd,char exitFlag)","{","    struct msghdr msg;","    bzero(&msg,sizeof(msg));","    struct iovec iov;",>31
+|<"    iov.iov_base = &exitFlag;","    iov.iov_len = 1;","    msg.msg_iov = &iov;","    msg.msg_iovlen = 1;","","    struct cmsghdr *cmsg;","    size_t msglen = CMSG_LEN(sizeof(int));","    cmsg = (struct cmsghdr*)malloc(msglen);","","    cmsg->cmsg_len = msglen;","    cmsg->cmsg_level = SOL_SOCKET;","    cmsg->cmsg_type = SCM_RIGHTS;","","    *(int*)CMSG_DATA(cmsg)=fd;","","    msg.msg_control = cmsg;","    msg.msg_controllen =  msglen;","","    int ret = sendmsg(pipefd,&msg,0);",>38
+|<"    ERROR_CHECK(ret,-1,\"sendmsg\");","","    return 0;","}","","int recvFd(int pipefd,int* fd,char* exitFlag)","{","    struct msghdr msg;","    bzero(&msg,sizeof(msg));","    struct iovec iov;","    /* char buf[10]={0}; */","    iov.iov_base = exitFlag;","    iov.iov_len = 1;","    msg.msg_iov = &iov;","    msg.msg_iovlen = 1;","","    struct cmsghdr *cmsg;"
+"6	LINE	0
+	#include "process_pool.h"
+	
+	int exitPipe[2];
+	
+	void sigExitFunc(int signum)
+	{//signum为信号，在sigExitFunc内给子进程发送退出信号
+	
+	    printf("%d is comming\n",signum);
+	    char exitFlag=1;
+	    write(exitPipe[1],&exitFlag,1);
+	    //其实往管道里写什么不重要，只要让epoll知道管道可读就行了
+	}
+	
+	int main(int argc, char* argv[])
+	{
+	    ARGS_CHECK(argc,4);
+	
+	    pipe(exitPipe);//定义一个专门用于退出进程的管道
+	    
+	    //1. 创建子进程并初始化结构体数组
+	    int processNum = atoi(argv[3]);
+	    process_data_t *pData = (process_data_t*)calloc(processNum,sizeof(process_data_t));
+	
+	    makeChild(pData,processNum);
+	
+	    signal(SIGUSR1,sigExitFunc);
+	    //SIGUSR1 用户自定义信号 默认处理：进程终止
+	    
+	    //tcp初始化
+	    int socketFd;
+	    tcpInit(&socketFd,argv[1],argv[2]);
+	 
+	    int epfd = epoll_create(1);
+	    ERROR_CHECK(epfd,-1,"epoll_create");
+	
+	    
+	    epollInAdd(epfd,socketFd); 
+	    //把socketfd和管道的对端添加到epoll
+	    
+	    epollInAdd(epfd,exitPipe[0]); 
+	    //监听退出的管道的读端
+	    //一旦管道可读，就表示要退出，执行有序退出
+	
+	    int i=0,j=0;
+	    for(i=0;i<processNum;i++)
+	    {
+	        epollInAdd(epfd,pData[i].pipefd);
+	    }
+	
+	    int readyNum=0;
+|3,0,6,1,50,0,1620285217,"#include \"process_pool.h\"","","int exitPipe[2];","","void sigExitFunc(int signum)","{//signum为信号，在sigExitFunc内给子进程发送退出信号","","    printf(\"%d is comming\\n\",signum);","    char exitFlag=1;","    write(exitPipe[1],&exitFlag,1);","    //其实往管道里写什么不重要，只要让epoll知道管道可读就行了","}","","int main(int argc, char* argv[])","{","    ARGS_CHECK(argc,4);","",>68
+|<"    pipe(exitPipe);//定义一个专门用于退出进程的管道","    ","    //1. 创建子进程并初始化结构体数组","    int processNum = atoi(argv[3]);","    process_data_t *pData = (process_data_t*)calloc(processNum,sizeof(process_data_t));","","    makeChild(pData,processNum);","","    signal(SIGUSR1,sigExitFunc);","    //SIGUSR1 用户自定义信号 默认处理：进程终止","    ","    //tcp初始化","    int socketFd;","    tcpInit(&socketFd,argv[1],argv[2]);",>3
+|<" ","    int epfd = epoll_create(1);","    ERROR_CHECK(epfd,-1,\"epoll_create\");","","    ","    epollInAdd(epfd,socketFd); ","    //把socketfd和管道的对端添加到epoll","    ","    epollInAdd(epfd,exitPipe[0]); ","    //监听退出的管道的读端","    //一旦管道可读，就表示要退出，执行有序退出","","    int i=0,j=0;","    for(i=0;i<processNum;i++)","    {","        epollInAdd(epfd,pData[i].pipefd);","    }","","    int readyNum=0;"
+"7	LINE	0
+	/*************************************************************************
+		> File Name: main.c
+		> Author: Name
+		> Mail: Name@163.com 
+		> Created Time: 2020-05-06 10:00:55
+	 ************************************************************************/
+	
+	#include "process_pool.h"
+	
+	int exitPipe[2];
+	
+	void sigExitFunc(int signum)
+	{
+	    printf("%d is comming\n",signum);
+	    char exitFlag=1;
+	    write(exitPipe[1],&exitFlag,1);
+	}
+	
+	int main(int argc, char* argv[])
+	{
+	    ARGS_CHECK(argc,4);
+	
+	    pipe(exitPipe);
+	    
+	    //1. 创建子进程并初始化结构体数组
+	    int processNum = atoi(argv[3]);
+	    process_data_t *pData = (process_data_t*)calloc(processNum,sizeof(process_data_t));
+	
+	    makeChild(pData,processNum);
+	
+	    signal(SIGUSR1,sigExitFunc);
+	    //tcp初始化
+	    int socketFd;
+	    tcpInit(&socketFd,argv[1],argv[2]);
+	 
+	    int epfd = epoll_create(1);
+	    ERROR_CHECK(epfd,-1,"epoll_create");
+	
+	    //把socketfd和管道的对端添加到epoll
+	    epollInAdd(epfd,socketFd); 
+	    //监听退出的管道的读端
+	    //一旦管道可读，就表示要退出，执行有序退出
+	    epollInAdd(epfd,exitPipe[0]); 
+	    int i=0,j=0;
+	    for(i=0;i<processNum;i++)
+	    {
+	        epollInAdd(epfd,pData[i].pipefd);
+	    }
+	
+	    int readyNum=0;
+|3,0,7,1,50,0,1620284191,"/*************************************************************************","	> File Name: main.c","	> Author: Name","	> Mail: Name@163.com ","	> Created Time: 2020-05-06 10:00:55"," ************************************************************************/","","#include \"process_pool.h\"","","int exitPipe[2];","","void sigExitFunc(int signum)","{","    printf(\"%d is comming\\n\",signum);","    char exitFlag=1;",>37
+|<"    write(exitPipe[1],&exitFlag,1);","}","","int main(int argc, char* argv[])","{","    ARGS_CHECK(argc,4);","","    pipe(exitPipe);","    ","    //1. 创建子进程并初始化结构体数组","    int processNum = atoi(argv[3]);","    process_data_t *pData = (process_data_t*)calloc(processNum,sizeof(process_data_t));","","    makeChild(pData,processNum);","","    signal(SIGUSR1,sigExitFunc);","    //tcp初始化","    int socketFd;","    tcpInit(&socketFd,argv[1],argv[2]);"," ",>33
+|<"    int epfd = epoll_create(1);","    ERROR_CHECK(epfd,-1,\"epoll_create\");","","    //把socketfd和管道的对端添加到epoll","    epollInAdd(epfd,socketFd); ","    //监听退出的管道的读端","    //一旦管道可读，就表示要退出，执行有序退出","    epollInAdd(epfd,exitPipe[0]); ","    int i=0,j=0;","    for(i=0;i<processNum;i++)","    {","        epollInAdd(epfd,pData[i].pipefd);","    }","","    int readyNum=0;"
+"8	LINE	0
+	/*************************************************************************
+	  > File Name: tcp_server.c
+	  > Author: Name
+	  > Mail: Name@163.com 
+	  > Created Time: 2020-04-30 16:15:36
+	 ************************************************************************/
+	
+	#include <func.h>
+	
+	#define MAXFDNUM 10
+	
+	int main(int argc, char* argv[])
+	{
+	    ARGS_CHECK(argc,3);
+	
+	
+	    int sfd = socket(AF_INET,SOCK_STREAM,0);
+	    ERROR_CHECK(sfd,-1,"socket");
+	    //sfd的值是未使用的最小的文件描述符的值
+	    printf("sfd=%d\n",sfd);
+	
+	    struct sockaddr_in addr;
+	    bzero(&addr,sizeof(addr));
+	    addr.sin_family = AF_INET;
+	    addr.sin_addr.s_addr = inet_addr(argv[1]);
+	    addr.sin_port = htons(atoi(argv[2]));
+	
+	    //设置地址可重用
+	    int reuse=1;
+	    setsockopt(sfd,SOL_SOCKET,SO_REUSEADDR,&reuse,sizeof(reuse));
+	
+	    int ret;
+	    //绑定ip地址和端口
+	    ret = bind(sfd,(struct sockaddr*)&addr,sizeof(addr));
+	    ERROR_CHECK(ret,-1,"bind");
+	
+	    //监听对应的端口
+	    //listen的第二个参数表示已经完成三次握手的队列的大小
+	    listen(sfd,10);
+	
+	
+	    //创建epoll句柄
+	    int epfd = epoll_create(1);
+	    ERROR_CHECK(epfd,-1,"epoll_create");
+	
+	    //向epoll里注册需要监听的文件描述符以及对应的事件
+	
+	    struct epoll_event event,evts[3];
+	    //先注册标准输入的读事件
+	    event.events = EPOLLIN;//注册对应的事件
+|3,0,8,1,50,0,1620199388,"/*************************************************************************","  > File Name: tcp_server.c","  > Author: Name","  > Mail: Name@163.com ","  > Created Time: 2020-04-30 16:15:36"," ************************************************************************/","","#include <func.h>","","#define MAXFDNUM 10","","int main(int argc, char* argv[])","{","    ARGS_CHECK(argc,3);","","","    int sfd = socket(AF_INET,SOCK_STREAM,0);",>37
+|<"    ERROR_CHECK(sfd,-1,\"socket\");","    //sfd的值是未使用的最小的文件描述符的值","    printf(\"sfd=%d\\n\",sfd);","","    struct sockaddr_in addr;","    bzero(&addr,sizeof(addr));","    addr.sin_family = AF_INET;","    addr.sin_addr.s_addr = inet_addr(argv[1]);","    addr.sin_port = htons(atoi(argv[2]));","","    //设置地址可重用","    int reuse=1;","    setsockopt(sfd,SOL_SOCKET,SO_REUSEADDR,&reuse,sizeof(reuse));","","    int ret;",>31
+|<"    //绑定ip地址和端口","    ret = bind(sfd,(struct sockaddr*)&addr,sizeof(addr));","    ERROR_CHECK(ret,-1,\"bind\");","","    //监听对应的端口","    //listen的第二个参数表示已经完成三次握手的队列的大小","    listen(sfd,10);","","","    //创建epoll句柄","    int epfd = epoll_create(1);","    ERROR_CHECK(epfd,-1,\"epoll_create\");","","    //向epoll里注册需要监听的文件描述符以及对应的事件","",>39
+|<"    struct epoll_event event,evts[3];","    //先注册标准输入的读事件","    event.events = EPOLLIN;//注册对应的事件"
+"9	LINE	0
+	#include <func.h>
+	
+	#define MAXFDNUM 10
+	
+	int recvCycle(int,void*,int);
+	int main(int argc, char* argv[])
+	{
+	
+	    ARGS_CHECK(argc,3);
+	    int fds[2]={0};
+	    pipe(fds);//创建管道
+	
+	    int sfd = socket(AF_INET,SOCK_STREAM,0);
+	    ERROR_CHECK(sfd,-1,"socket");
+	
+	    struct sockaddr_in addr;
+	    bzero(&addr,sizeof(addr));
+	    addr.sin_family = AF_INET;
+	    addr.sin_addr.s_addr = inet_addr(argv[1]);
+	    addr.sin_port = htons(atoi(argv[2]));
+	 
+	    int ret ;
+	    ret = connect(sfd,(struct sockaddr*)&addr,sizeof(addr));
+	    ERROR_CHECK(ret,-1,"connect");
+	
+	    int dataLen = 0;
+	    char buf[1000]={0};
+	
+	    //先接文件名
+	    recvCycle(sfd,&dataLen,4);
+	    recvCycle(sfd,buf,dataLen);
+	
+	    //打开文件
+	    int fd = open(buf,O_RDWR|O_CREAT,0666);
+	    ERROR_CHECK(fd,-1,"open");
+	
+	    //接收文件大小
+	    //相当于接到了火车头
+	    size_t fileSize=0;
+	    recvCycle(sfd,&dataLen,4);
+	    recvCycle(sfd,&fileSize,dataLen);
+	    printf("fileSize=%ld\n",fileSize);
+	
+	    struct timeval start,end;
+	    gettimeofday(&start,NULL);
+	    size_t recvSize = 0;
+	
+	    while(recvSize<fileSize)
+	    {
+	        ret = splice(sfd,NULL,fds[1],NULL,65535,SPLICE_F_MORE);
+|3,0,9,1,50,0,1620159508,"#include <func.h>","","#define MAXFDNUM 10","","int recvCycle(int,void*,int);","int main(int argc, char* argv[])","{","","    ARGS_CHECK(argc,3);","    int fds[2]={0};","    pipe(fds);//创建管道","","    int sfd = socket(AF_INET,SOCK_STREAM,0);","    ERROR_CHECK(sfd,-1,\"socket\");","","    struct sockaddr_in addr;","    bzero(&addr,sizeof(addr));","    addr.sin_family = AF_INET;","    addr.sin_addr.s_addr = inet_addr(argv[1]);",>43
+|<"    addr.sin_port = htons(atoi(argv[2]));"," ","    int ret ;","    ret = connect(sfd,(struct sockaddr*)&addr,sizeof(addr));","    ERROR_CHECK(ret,-1,\"connect\");","","    int dataLen = 0;","    char buf[1000]={0};","","    //先接文件名","    recvCycle(sfd,&dataLen,4);","    recvCycle(sfd,buf,dataLen);","","    //打开文件","    int fd = open(buf,O_RDWR|O_CREAT,0666);","    ERROR_CHECK(fd,-1,\"open\");","","    //接收文件大小","    //相当于接到了火车头",>24
+|<"    size_t fileSize=0;","    recvCycle(sfd,&dataLen,4);","    recvCycle(sfd,&fileSize,dataLen);","    printf(\"fileSize=%ld\\n\",fileSize);","","    struct timeval start,end;","    gettimeofday(&start,NULL);","    size_t recvSize = 0;","","    while(recvSize<fileSize)","    {","        ret = splice(sfd,NULL,fds[1],NULL,65535,SPLICE_F_MORE);"
+"-	CHAR	0
+	)
+|3,0,36,0,1,0,1620543280,")"
+
+# 文件标记:
+'0  1  0  ~/.mysql_history
+|4,48,1,0,1620810741,"~/.mysql_history"
+'1  35  10  /etc/mysql/my.cnf
+|4,49,35,10,1620718244,"/etc/mysql/my.cnf"
+'2  33  0  /etc/mysql/my.cnf
+|4,50,33,0,1620718178,"/etc/mysql/my.cnf"
+'3  33  0  /etc/mysql/my.cnf
+|4,51,33,0,1620718178,"/etc/mysql/my.cnf"
+'4  1  0  mysql/etc/my.cnf
+|4,52,1,0,1620718116,"mysql/etc/my.cnf"
+'5  100  0  ~/wangdao/c/linuxDay31/threadpool2.0/src/main.c
+|4,53,100,0,1620630995,"~/wangdao/c/linuxDay31/threadpool2.0/src/main.c"
+'6  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,54,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+'7  100  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/main.c
+|4,55,100,1,1620547746,"~/wangdao/c/linuxDay31/threadpool2.0/src/main.c"
+'8  91  15  ~/wangdao/c/linuxDay31/threadpool2.0/src/main.c
+|4,56,91,15,1620547632,"~/wangdao/c/linuxDay31/threadpool2.0/src/main.c"
+'9  91  15  ~/wangdao/c/linuxDay31/threadpool2.0/src/main.c
+|4,57,91,15,1620547632,"~/wangdao/c/linuxDay31/threadpool2.0/src/main.c"
+
+# 跳转列表 (从新到旧):
+-'  1  0  ~/.mysql_history
+|4,39,1,0,1620810741,"~/.mysql_history"
+-'  35  10  /etc/mysql/my.cnf
+|4,39,35,10,1620718244,"/etc/mysql/my.cnf"
+-'  35  10  /etc/mysql/my.cnf
+|4,39,35,10,1620718244,"/etc/mysql/my.cnf"
+-'  33  0  /etc/mysql/my.cnf
+|4,39,33,0,1620718219,"/etc/mysql/my.cnf"
+-'  33  0  /etc/mysql/my.cnf
+|4,39,33,0,1620718219,"/etc/mysql/my.cnf"
+-'  33  0  /etc/mysql/my.cnf
+|4,39,33,0,1620718178,"/etc/mysql/my.cnf"
+-'  33  0  /etc/mysql/my.cnf
+|4,39,33,0,1620718178,"/etc/mysql/my.cnf"
+-'  1  0  /etc/mysql/my.cnf
+|4,39,1,0,1620718141,"/etc/mysql/my.cnf"
+-'  1  0  /etc/mysql/my.cnf
+|4,39,1,0,1620718141,"/etc/mysql/my.cnf"
+-'  1  0  /etc/mysql/my.cnf
+|4,39,1,0,1620718141,"/etc/mysql/my.cnf"
+-'  1  0  /etc/mysql/my.cnf
+|4,39,1,0,1620718141,"/etc/mysql/my.cnf"
+-'  1  0  mysql/etc/my.cnf
+|4,39,1,0,1620718116,"mysql/etc/my.cnf"
+-'  1  0  mysql/etc/my.cnf
+|4,39,1,0,1620718116,"mysql/etc/my.cnf"
+-'  1  0  mysql/etc/my.cnf
+|4,39,1,0,1620718116,"mysql/etc/my.cnf"
+-'  1  0  mysql/etc/my.cnf
+|4,39,1,0,1620718116,"mysql/etc/my.cnf"
+-'  1  0  mysql/etc/my.cnf
+|4,39,1,0,1620718116,"mysql/etc/my.cnf"
+-'  1  0  mysql/etc/my.cnf
+|4,39,1,0,1620718116,"mysql/etc/my.cnf"
+-'  1  0  mysql/etc/my.cnf
+|4,39,1,0,1620718116,"mysql/etc/my.cnf"
+-'  1  0  mysql/etc/my.cnf
+|4,39,1,0,1620718116,"mysql/etc/my.cnf"
+-'  100  0  ~/wangdao/c/linuxDay31/threadpool2.0/src/main.c
+|4,39,100,0,1620630995,"~/wangdao/c/linuxDay31/threadpool2.0/src/main.c"
+-'  100  0  ~/wangdao/c/linuxDay31/threadpool2.0/src/main.c
+|4,39,100,0,1620630995,"~/wangdao/c/linuxDay31/threadpool2.0/src/main.c"
+-'  100  0  ~/wangdao/c/linuxDay31/threadpool2.0/src/main.c
+|4,39,100,0,1620630995,"~/wangdao/c/linuxDay31/threadpool2.0/src/main.c"
+-'  100  0  ~/wangdao/c/linuxDay31/threadpool2.0/src/main.c
+|4,39,100,0,1620630995,"~/wangdao/c/linuxDay31/threadpool2.0/src/main.c"
+-'  100  0  ~/wangdao/c/linuxDay31/threadpool2.0/src/main.c
+|4,39,100,0,1620630995,"~/wangdao/c/linuxDay31/threadpool2.0/src/main.c"
+-'  100  0  ~/wangdao/c/linuxDay31/threadpool2.0/src/main.c
+|4,39,100,0,1620630995,"~/wangdao/c/linuxDay31/threadpool2.0/src/main.c"
+-'  100  0  ~/wangdao/c/linuxDay31/threadpool2.0/src/main.c
+|4,39,100,0,1620630995,"~/wangdao/c/linuxDay31/threadpool2.0/src/main.c"
+-'  100  0  ~/wangdao/c/linuxDay31/threadpool2.0/src/main.c
+|4,39,100,0,1620630995,"~/wangdao/c/linuxDay31/threadpool2.0/src/main.c"
+-'  100  0  ~/wangdao/c/linuxDay31/threadpool2.0/src/main.c
+|4,39,100,0,1620630995,"~/wangdao/c/linuxDay31/threadpool2.0/src/main.c"
+-'  100  0  ~/wangdao/c/linuxDay31/threadpool2.0/src/main.c
+|4,39,100,0,1620630995,"~/wangdao/c/linuxDay31/threadpool2.0/src/main.c"
+-'  100  0  ~/wangdao/c/linuxDay31/threadpool2.0/src/main.c
+|4,39,100,0,1620630995,"~/wangdao/c/linuxDay31/threadpool2.0/src/main.c"
+-'  100  0  ~/wangdao/c/linuxDay31/threadpool2.0/src/main.c
+|4,39,100,0,1620630995,"~/wangdao/c/linuxDay31/threadpool2.0/src/main.c"
+-'  100  0  ~/wangdao/c/linuxDay31/threadpool2.0/src/main.c
+|4,39,100,0,1620630995,"~/wangdao/c/linuxDay31/threadpool2.0/src/main.c"
+-'  100  0  ~/wangdao/c/linuxDay31/threadpool2.0/src/main.c
+|4,39,100,0,1620630995,"~/wangdao/c/linuxDay31/threadpool2.0/src/main.c"
+-'  100  0  ~/wangdao/c/linuxDay31/threadpool2.0/src/main.c
+|4,39,100,0,1620630995,"~/wangdao/c/linuxDay31/threadpool2.0/src/main.c"
+-'  100  0  ~/wangdao/c/linuxDay31/threadpool2.0/src/main.c
+|4,39,100,0,1620630995,"~/wangdao/c/linuxDay31/threadpool2.0/src/main.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  70  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,70,1,1620618919,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  24  12  ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+|4,39,24,12,1620547752,"~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c"
+-'  100  1  ~/wangdao/c/linuxDay31/threadpool2.0/src/main.c
+|4,39,100,1,1620547746,"~/wangdao/c/linuxDay31/threadpool2.0/src/main.c"
+
+# 文件内的标记历史记录 (从新到旧):
+
+> ~/.mysql_history
+	*	1620810706	0
+	"	1	0
+
+> /etc/mysql/my.cnf
+	*	1620718241	0
+	"	35	10
+	^	35	11
+	.	35	10
+	+	35	10
+
+> mysql/etc/my.cnf
+	*	1620718114	0
+	"	1	0
+
+> ~/wangdao/c/linuxDay31/threadpool2.0/src/main.c
+	*	1620630991	0
+	"	100	0
+	^	91	16
+	.	91	16
+	+	29	0
+	+	23	14
+	+	25	33
+	+	22	4
+	+	6	25
+	+	8	0
+	+	6	24
+	+	10	0
+	+	9	34
+	+	5	15
+	+	25	30
+	+	49	0
+	+	26	19
+	+	27	15
+	+	26	54
+	+	27	51
+	+	80	35
+	+	80	43
+	+	83	63
+	+	84	16
+	+	87	24
+	+	97	0
+	+	87	45
+	+	98	49
+	+	89	16
+	+	98	51
+	+	98	52
+	+	98	0
+	+	92	0
+	+	89	57
+	+	90	0
+	+	88	16
+	+	91	16
+
+> ~/wangdao/c/linuxDay31/threadpool2.0/src/thread_pool.c
+	*	1620547760	0
+	"	70	1
+
+> ~/wangdao/c/linuxDay30/process_pool_exit2.0/process_pool_size/src/main.c
+	*	1620286708	0
+	"	111	0
+	^	111	0
+	.	110	1
+	+	1	74
+	+	110	1
+
+> ~/wangdao/c/linuxDay30/process_pool_exit2.0/process_pool_size/src/child.c
+	*	1620286667	0
+	"	50	0
+	^	50	0
+	.	49	1
+	+	1	25
+	+	49	1
+
+> ~/wangdao/c/linuxDay30/process_pool_exit2.0/process_pool_size/src/send_fd.c
+	*	1620286647	0
+	"	69	0
+	^	69	0
+	.	68	1
+	+	1	74
+	+	68	1
+
+> ~/wangdao/c/linuxDay30/process_pool_exit/process_pool_size/src/main.c
+	*	1620285222	0
+	"	116	0
+	^	116	0
+	.	115	1
+	+	1	25
+	+	115	1
+
+> ~/wangdao/c/linuxDay29/epoll_timeout/tcp_server/tcp_server.c
+	*	1620199389	0
+	"	140	0
+	^	140	0
+	.	139	1
+	+	1	17
+	+	139	1
+
+> ~/wangdao/c/linuxDay29/sendfile/tcp_client_size/tcp_client.c
+	*	1620159659	0
+	"	73	0
+	^	73	0
+	.	72	1
+	+	1	19
+	+	1	1
+	+	1	19
+	+	72	1
+
+> ~/wangdao/c/linuxDay29/sendfile/sendfile/src/trans_file.c
+	*	1620158232	0
+	"	50	0
+	^	50	0
+	.	49	1
+	+	1	25
+	+	49	1
+
+> ~/wangdao/c/linuxDay29/mmap2.0/tcp_client_size/tcp_client.c
+	*	1620029231	0
+	"	65	0
+	^	65	0
+	.	64	1
+	+	1	19
+	+	1	17
+	+	64	1
+
+> ~/wangdao/c/linuxDay29/mmap2.0/mmap/src/trans_file.c
+	*	1620029057	0
+	"	44	0
+	^	44	0
+	.	43	1
+	+	1	25
+	+	43	1
+
+> ~/wangdao/c/linuxDay29/mmap/trans_file.c
+	*	1620021327	0
+	"	71	0
+	^	71	0
+	.	70	1
+	+	1	25
+	+	1	1
+	+	1	0
+	+	1	49
+	+	1	30
+	+	1	4
+	+	1	25
+	+	70	1
+
+> ~/wangdao/c/linuxDay29/tcp_client_time/tcp_client.c
+	*	1619729840	0
+	"	76	27
+	^	76	28
+	.	76	27
+	+	76	27
+
+> ~/wangdao/c/linuxDay28/trans_file/tcp_client_time/tcp_client.c
+	*	1619595517	0
+	"	83	0
+	^	83	0
+	.	82	1
+	+	1	74
+	+	82	1
+
+> ~/wangdao/c/linuxDay28/trans_file/tcp_client_size/tcp_client.c
+	*	1619595049	0
+	"	67	28
+	^	67	29
+	.	67	28
+	+	1	74
+	+	78	1
+	+	70	0
+	+	67	28
+	+	70	0
+	+	68	0
+	+	67	0
+	+	69	0
+	+	67	28
+
+> ~/wangdao/c/linuxDay28/trans_file/process_pool_size/trans_file.c
+	*	1619593686	0
+	"	44	0
+	^	44	0
+	.	43	1
+	+	1	25
+	+	43	1
+
+> ~/wangdao/c/linuxDay28/trans_file/tcp_client/tcp_client.c
+	*	1619592469	0
+	"	76	0
+	^	76	1
+	.	61	41
+	+	1	17
+	+	49	1
+	+	54	0
+	+	56	0
+	+	55	22
+	+	60	0
+	+	61	41
+
+> ~/wangdao/c/linuxDay28/trans_file/tcp_client/recvCycle.c
+	*	1619550058	0
+	"	22	0
+	^	22	0
+	.	21	1
+	+	1	17
+	+	21	1
+
+> ~/wangdao/c/linuxDay28/trans_file/process_pool/child.c
+	*	1619348046	0
+	"	44	8
+	^	43	51
+	.	43	48
+	+	43	48
+
+> ~/wangdao/c/linuxDay28/trans_file/process_pool/trans_file.c
+	*	1619347785	0
+	"	24	0
+
+> ~/wangdao/c/linuxDay28/trans_file/child.c
+	*	1619346617	0
+	"	42	8
+	^	42	40
+	.	42	0
+	+	42	0
+
+> ~/wangdao/c/linuxDay28/trans_file/tcp_client.c
+	*	1619346270	0
+	"	50	0
+	^	50	0
+	.	49	1
+	+	1	17
+	+	49	1
+
+> ~/wangdao/c/linuxDay28/trans_file/client.c
+	*	1619345931	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/wangdao/c/linuxDay28/trans_file/trans_file.c
+	*	1619345921	0
+	"	1	0
+	^	45	0
+	.	44	1
+	+	1	25
+	+	44	1
+
+> ~/.ssh/id_rsa.pub
+	*	1619331039	0
+	"	1	0
+	^	1	100
+
+> ~/wangdao/c/linuxDay27/epoll.c
+	*	1619328041	0
+	"	14	0
+	^	14	0
+	.	13	1
+	+	1	25
+	+	13	1
+
+> ~/wangdao/c/linuxDay27/send_fd.c
+	*	1619328029	0
+	"	63	0
+	^	63	0
+	.	62	1
+	+	1	25
+	+	62	1
+
+> ~/wangdao/c/linuxDay27/child.c
+	*	1619328012	0
+	"	47	0
+	^	47	0
+	.	46	1
+	+	1	25
+	+	46	1
+
+> ~/wangdao/c/linuxDay27/tcp_init.c
+	*	1619327997	0
+	"	34	0
+	^	34	0
+	.	33	1
+	+	1	25
+	+	33	1
+
+> ~/wangdao/c/linuxDay27/process_pool.h
+	*	1619327980	0
+	"	51	0
+	^	51	0
+	.	50	24
+	+	1	19
+	+	50	24
+
+> ~/wangdao/c/linuxDay27/main.c
+	*	1619327953	0
+	"	79	0
+	^	79	0
+	.	78	1
+	+	1	25
+	+	78	1
+
+> ~/wangdao/c/linuxDay26/sendfd/NERD_tree_1
+	*	1619264325	0
+	"	10	0
+	.	1	0
+	+	1	0
+
+> ~/wangdao/c/linuxDay26/sendfd/process_pool.h
+	*	1619264298	0
+	"	51	0
+	^	51	0
+	.	50	24
+	+	1	19
+	+	50	24
+
+> ~/wangdao/c/linuxDay26/sendfd/child.c
+	*	1619264290	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/wangdao/c/linuxDay26/sendfd/main.c
+	*	1619259331	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/wangdao/c/linuxDay26/sendfd/fork.c
+	*	1619247896	0
+	"	34	8
+	^	104	23
+	.	35	0
+	+	1	74
+	+	108	1
+	+	90	0
+	+	104	22
+	+	35	0
+	i	104	19
+
+> ~/wangdao/c/linuxDay26/sendfd/writev.c
+	*	1619243899	0
+	"	23	0
+	^	23	1
+	.	23	0
+	+	1	17
+	+	23	0
+
+> ~/wangdao/c/linuxDay25/epoll_et/setNonblock.c
+	*	1619157703	0
+	"	1	0
+	^	23	0
+	.	22	1
+	+	1	17
+	+	22	1
+
+> ~/wangdao/c/linuxDay25/epoll_et/tcp_server.c
+	*	1619156255	0
+	"	1	16
+	^	90	46
+	.	90	45
+	+	1	0
+	+	91	0
+	+	90	45
+
+> ~/wangdao/c/linuxDay25/tcp_client.c
+	*	1619084187	0
+	"	61	0
+	^	61	0
+	.	60	1
+	+	1	17
+	+	60	1
+
+> ~/wangdao/c/linuxDay25/tcp_server.c
+	*	1619084157	0
+	"	113	0
+	^	113	0
+	.	112	1
+	+	1	17
+	+	112	1
+
+> ~/wangdao/c/linuxDay23/udp/udpchat/client.c
+	*	1619013523	0
+	"	54	0
+	^	54	0
+	.	53	1
+	+	1	17
+	+	53	1
+
+> ~/wangdao/c/linuxDay23/udp/udpchat/udp_server.c
+	*	1619013463	0
+	"	58	1
+	^	58	1
+	.	58	0
+	+	1	17
+	+	58	0
+
+> ~/wangdao/c/linuxDay23/udp/udp_client.c
+	*	1619012478	0
+	"	29	0
+	^	29	1
+	.	29	0
+	+	1	17
+	+	29	0
+
+> ~/wangdao/c/linuxDay23/udp/udp_server.c
+	*	1619012404	0
+	"	35	0
+	^	35	0
+	.	34	1
+	+	1	17
+	+	34	1
+
+> ~/wangdao/c/linuxDay23/chatroom/tcp_client.c
+	*	1618998831	0
+	"	61	0
+	^	61	0
+	.	60	1
+	+	1	0
+	+	1	17
+	+	60	1
+
+> ~/wangdao/c/linuxDay23/chatroom/tcp_server.c
+	*	1618998812	0
+	"	122	0
+	^	122	0
+	.	121	1
+	+	1	17
+	+	121	1
+
+> ~/wangdao/c/linuxDay23/chat_again/tcp_client.c
+	*	1618994040	0
+	"	61	0
+	^	61	0
+	.	60	1
+	+	1	17
+	+	60	1
+
+> ~/wangdao/c/linuxDay23/chat_again/tcp_server.c
+	*	1618994024	0
+	"	1	0
+	^	106	1
+	.	106	0
+	+	1	17
+	+	106	0
+
+> ~/wangdao/c/linuxDay23/chat/tcp_server.c
+	*	1618989168	0
+	"	87	0
+	^	87	0
+	.	86	1
+	+	1	17
+	+	86	1
+
+> ~/wangdao/c/linuxDay23/chat/tcp_client.c
+	*	1618989137	0
+	"	2	0
+	^	2	0
+	.	1	17
+	+	1	19
+	+	60	1
+	+	1	17
+
+> ~/wangdao/c/linuxDay23/tcp_server.c
+	*	1618989070	0
+	"	40	4
+	^	44	39
+	.	49	0
+	+	1	17
+	+	57	1
+	+	43	80
+	+	45	0
+	+	44	36
+	+	48	0
+	+	49	0
+
+> ~/wangdao/c/linuxDay23/tcp_server
+	*	1618986933	0
+	"	1	0
+
+> ~/wangdao/c/linuxDay23/littleendian.c
+	*	1618981698	0
+	"	11	23
+	^	11	24
+	.	11	23
+	+	19	1
+	+	5	22
+	+	6	25
+	+	8	16
+	+	10	31
+	+	11	19
+	+	13	21
+	+	15	34
+	+	16	23
+	+	11	23
+
+> ~/wangdao/c/linuxDay22/tcp_client.c
+	*	1618906706	0
+	"	37	0
+	^	37	1
+	.	37	0
+	+	1	17
+	+	37	0
+
+> ~/wangdao/c/linuxDay22/tcp_server.c
+	*	1618905514	0
+	"	57	0
+	^	57	0
+	.	56	1
+	+	1	17
+	+	56	1
+
+> ~/wangdao/c/linuxDay22/gethostbyname.c
+	*	1618902174	0
+	"	5	4
+	^	16	0
+	.	33	1
+	+	1	17
+	+	33	1
+
+> ~/wangdao/c/linuxDay22/inet_aton.c
+	*	1618899323	0
+	"	22	0
+	^	22	0
+	.	21	1
+	+	1	17
+	+	21	1
+
+> ~/wangdao/c/linuxDay22/htons.c
+	*	1618898529	0
+	"	13	0
+	^	11	29
+	.	7	0
+	+	1	0
+	+	12	1
+	+	2	0
+	+	10	0
+	+	9	23
+	+	10	0
+	+	8	29
+	+	9	0
+	+	11	0
+	+	7	0
+
+> ~/wangdao/c/linuxDay21/test.c
+	*	1618810370	0
+	"	10	3
+	^	13	1
+	.	13	0
+	+	1	17
+	+	13	0
+
+> ~/wangdao/c/linuxDay21/sale_tickets2.c
+	*	1618810350	0
+	"	114	0
+	^	114	0
+	.	113	1
+	+	1	17
+	+	113	1
+
+> ~/wangdao/c/linuxDay21/sale_tickets.c
+	*	1618763216	0
+	"	104	0
+	^	104	0
+	.	103	1
+	+	103	1
+
+> ~/pthread_time_safe.c
+	*	1618763128	0
+	"	104	0
+	^	104	0
+	.	103	1
+	+	1	17
+	+	103	1
+
+> ~/sale_tickets.c
+	*	1618763108	0
+	"	1	0
+	.	1	0
+	+	1	1
+	+	1	0
+
+> ~/wangdao/c/linuxDay19/cond/pthread_time_safe.c
+	*	1618716876	0
+	"	1	2
+	^	1	10
+	.	1	0
+	+	1	17
+	+	48	1
+	+	1	0
+	a	49	0
+	n	1	1
+
+> ~/wangdao/c/linuxDay19/cond/pthread_global.c
+	*	1618716144	0
+	"	48	0
+	^	48	0
+	.	47	1
+	+	1	17
+	+	47	1
+
+> ~/wangdao/c/linuxDay19/cond/pthread_wait.c
+	*	1618715208	0
+	"	25	3
+	^	25	4
+	.	25	3
+	+	1	17
+	+	49	1
+	+	25	3
+
+> ~/wangdao/c/linuxDay19/cond/pthread_timewait.c
+	*	1618714676	0
+	"	41	0
+	^	41	0
+	.	40	1
+	+	1	17
+	+	40	1
+
+> ~/wangdao/c/linuxDay19/cond/pthread_setdetach.c
+	*	1618580467	0
+	"	46	0
+	^	46	1
+	.	46	0
+	+	1	17
+	+	46	0
+
+> ~/wangdao/c/linuxDay19/cond/sale_tickets.c
+	*	1618495425	0
+	"	42	0
+	^	106	0
+	.	61	0
+	+	1	17
+	+	105	1
+	+	31	0
+	+	62	0
+	+	61	0
+
+> ~/wangdao/c/linuxDay19/cond/pthread_cond_signal.c
+	*	1618493313	0
+	"	35	0
+	^	35	1
+	.	35	0
+	+	1	1
+	+	1	17
+	+	35	0
+
+> ~/wangdao/c/linuxDay19/cond/pthread_broadcast.c
+	*	1618491105	0
+	"	47	4
+	^	17	13
+	.	47	0
+	+	1	17
+	+	55	1
+	+	49	0
+	+	50	0
+	+	51	0
+	+	44	11
+	+	19	0
+	+	28	0
+	+	47	0
+	+	26	0
+	+	25	37
+	+	47	0
+	+	19	0
+	+	28	0
+	+	25	0
+	+	44	0
+	+	28	0
+	+	19	0
+	+	17	12
+	+	46	0
+	+	47	0
+
+> ~/wangdao/c/网盘第五期/transferc.c
+	*	1618424354	0
+	"	16	37
+	^	16	40
+	.	16	37
+	+	16	37
+
+> ~/wangdao/c/linuxDay19/cond/pthread_cond.c
+	*	1618398682	0
+	"	36	0
+	^	44	0
+	.	36	0
+	+	1	17
+	+	43	1
+	+	36	0
+
+> ~/wangdao/c/linuxDay19/cond/vim
+	*	1618397696	0
+	"	1	0
+
+> ~/wangdao/c/linuxDay19/sale_tickets.c
+	*	1618397287	0
+	"	34	1
+	.	72	0
+	+	1	17
+	+	72	18
+	+	72	0
+
+> ~/wangdao/c/linuxDay19/pthread_lock.c
+	*	1618388087	0
+	"	1	0
+	.	36	0
+	+	1	17
+	+	35	1
+	+	36	0
+
+> ~/wangdao/c/linuxDay19/pthread_cancel_lock.c
+	*	1618388066	0
+	"	1	9
+	^	51	0
+	.	26	0
+	+	1	1
+	+	1	17
+	+	50	1
+	+	26	0
+	+	20	0
+	+	49	0
+	+	45	0
+	+	20	0
+	+	26	0
+
+> ~/wangdao/c/linuxDay18/pthread_errorcheck.c
+	*	1618308438	0
+	"	25	0
+	^	25	0
+	.	24	1
+	+	1	17
+	+	24	1
+
+> ~/wangdao/c/linuxDay18/pthread_recursive.c
+	*	1618308336	0
+	"	1	0
+	^	30	0
+	.	29	1
+	+	1	0
+	+	1	17
+	+	29	1
+
+> ~/wangdao/c/linuxDay18/pthread_add1000.c
+	*	1618306902	0
+	"	51	0
+	^	51	0
+	.	50	1
+	+	1	17
+	+	50	1
+
+> ~/wangdao/c/linuxDay18/pthread_other_unlock.c
+	*	1618301925	0
+	"	18	0
+	^	29	0
+	.	28	1
+	+	1	17
+	+	28	1
+
+> ~/wangdao/c/linuxDay18/pthread_lock.c
+	*	1618301574	0
+	"	1	0
+	^	36	1
+	.	36	0
+	+	1	17
+	+	36	0
+
+> ~/wangdao/c/linuxDay18/mutex_locktwice.c
+	*	1618300968	0
+	"	11	4
+	.	11	0
+	+	11	3
+	+	12	4
+	+	11	0
+
+> ~/wangdao/c/linuxDay18/mutex_trylock.c
+	*	1618298054	0
+	"	21	0
+	^	21	0
+	.	20	1
+	+	1	17
+	+	20	1
+
+> ~/wangdao/c/linuxDay18/mutex_lockwice.c
+	*	1618295600	0
+	"	17	0
+	^	17	0
+	.	16	1
+	+	1	17
+	+	16	1
+
+> ~/wangdao/c/linuxDay18/pthread_cleanup.c
+	*	1618293488	0
+	"	1	0
+	^	50	0
+	.	49	1
+	+	1	17
+	+	49	1
+
+> ~/wangdao/c/linuxDay17/pthread_cleanup.c
+	*	1618221505	0
+	"	1	4
+	^	23	11
+	.	23	0
+	+	1	17
+	+	47	1
+	+	22	0
+	+	21	11
+	+	23	0
+	+	24	0
+	+	39	0
+	+	40	0
+	+	24	0
+	+	26	0
+	+	23	0
+
+> ~/wangdao/c/linuxDay17/pthread_cancel_malloc.c
+	*	1618219599	0
+	"	18	0
+	^	33	0
+	.	32	1
+	+	1	17
+	+	1	1
+	+	1	17
+	+	32	1
+
+> ~/wangdao/c/linuxDay17/pthread_cancel.c
+	*	1618217523	0
+	"	29	0
+	^	29	1
+	.	5	48
+	+	1	17
+	+	29	0
+	+	6	0
+	+	5	48
+
+> ~/wangdao/c/linuxDay17/pthread_whil1.c
+	*	1618204741	0
+	"	22	0
+	^	22	0
+	.	21	1
+	+	1	17
+	+	21	1
+
+> ~/wangdao/c/linuxDay17/pthread_join_point.c
+	*	1618202746	0
+	"	31	0
+	^	31	1
+	.	31	0
+	+	1	17
+	+	31	0
+
+> ~/wangdao/c/linuxDay17/pthread_join.c
+	*	1618200526	0
+	"	32	0
+	^	32	1
+	.	32	0
+	+	1	0
+	+	1	1
+	+	1	23
+	+	1	0
+	+	1	4
+	+	1	0
+	+	1	17
+	+	32	0
+
+> ~/wangdao/c/linuxDay17/pthread_exit.c
+	*	1618144935	0
+	"	32	1
+	^	8	36
+	.	8	35
+	+	1	17
+	+	30	28
+	+	31	0
+	+	31	36
+	+	8	35
+
+> ~/wangdao/c/linuxDay17/pthread_create_two.c
+	*	1618142228	0
+	"	28	0
+	^	28	0
+	.	27	1
+	+	1	17
+	+	1	0
+	+	1	49
+	+	1	47
+	+	1	48
+	+	1	0
+	+	1	17
+	+	1	1
+	+	1	17
+	+	27	1
+
+> ~/wangdao/c/linuxDay17/pthread_create_malloc.c
+	*	1618141140	0
+	"	24	0
+	^	24	0
+	.	23	1
+	+	1	17
+	+	23	1
+
+> ~/wangdao/c/linuxDay17/pthread_create_stack.c
+	*	1618140630	0
+	"	25	0
+	^	25	0
+	.	24	1
+	+	1	17
+	+	24	1

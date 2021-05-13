@@ -1,0 +1,3543 @@
+vmware-tools-distrib:
+total 260
+-rw-r--r--  1 mts mts   2538 Mar 24 17:11 INSTALL
+drwxr-xr-x  2 mts mts   4096 Mar 24 17:11 bin
+drwxr-xr-x  5 mts mts   4096 Mar 24 17:10 caf
+drwxr-xr-x  2 mts mts   4096 Mar 24 17:11 doc
+drwxr-xr-x  5 mts mts   4096 Mar 24 17:11 etc
+drwxr-xr-x  2 mts mts   4096 Mar 24 17:11 installer
+drwxr-xr-x 14 mts mts   4096 Mar 24 17:10 lib
+drwxr-xr-x  3 mts mts   4096 Mar 24 17:10 vgauth
+-rwxr-xr-x  1 mts mts 227024 Mar 24 17:11 vmware-install.pl
+
+vmware-tools-distrib/bin:
+total 652
+-rwxr-xr-x 1 mts mts   9202 Mar 24 17:11 vm-support
+-rwxr-xr-x 1 mts mts 417476 Mar 24 17:11 vmware-config-tools.pl
+-rwxr-xr-x 1 mts mts 227024 Mar 24 17:11 vmware-uninstall-tools.pl
+
+vmware-tools-distrib/caf:
+total 12
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 etc
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 usr
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 var
+
+vmware-tools-distrib/caf/etc:
+total 4
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 vmware-caf
+
+vmware-tools-distrib/caf/etc/vmware-caf:
+total 4
+drwxr-xr-x 5 mts mts 4096 Mar 24 17:10 pme
+
+vmware-tools-distrib/caf/etc/vmware-caf/pme:
+total 12
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:11 config
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:11 install
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:11 scripts
+
+vmware-tools-distrib/caf/etc/vmware-caf/pme/config:
+total 68
+-r--r--r-- 1 mts mts  3161 Mar 24 17:11 CommAmqpListener-appconfig
+-r--r--r-- 1 mts mts  2137 Mar 24 17:10 CommAmqpListener-context-amqp.xml
+-r--r--r-- 1 mts mts  6225 Mar 24 17:10 CommAmqpListener-context-common.xml
+-r--r--r-- 1 mts mts  1575 Mar 24 17:10 CommAmqpListener-context-tunnel.xml
+-r--r--r-- 1 mts mts   858 Mar 24 17:10 CommAmqpListener-log4cpp_config
+-r--r--r-- 1 mts mts   603 Mar 24 17:10 IntBeanConfigFile.xml
+-r--r--r-- 1 mts mts  1591 Mar 24 17:11 cafenv-appconfig
+-r--r--r-- 1 mts mts  4663 Mar 24 17:11 ma-appconfig
+-r--r--r-- 1 mts mts 12157 Mar 24 17:10 ma-context.xml
+-r--r--r-- 1 mts mts   830 Mar 24 17:10 ma-log4cpp_config
+-r--r--r-- 1 mts mts   710 Mar 24 17:11 providerFx-appconfig
+-r--r--r-- 1 mts mts   846 Mar 24 17:10 providerFx-log4cpp_config
+-r--r--r-- 1 mts mts   171 Mar 24 17:10 vgauth.conf
+
+vmware-tools-distrib/caf/etc/vmware-caf/pme/install:
+total 88
+-r-xr-xr-x 1 mts mts  1588 Mar 24 17:10 caf-c-communication-service
+-r-xr-xr-x 1 mts mts  1554 Mar 24 17:10 caf-c-management-agent
+-r-xr-xr-x 1 mts mts 20506 Mar 24 17:11 caf-dbg.sh
+-r-xr-xr-x 1 mts mts  1536 Mar 24 17:10 caf-vgauth
+-r--r--r-- 1 mts mts    65 Mar 24 17:10 commonenv.sh
+-r-xr-xr-x 1 mts mts  6035 Mar 24 17:11 install.sh
+-r-xr-xr-x 1 mts mts   166 Mar 24 17:10 postinstallInstall.sh
+-r-xr-xr-x 1 mts mts   130 Mar 24 17:10 postinstallUpgrade.sh
+-r-xr-xr-x 1 mts mts  2596 Mar 24 17:10 preconfigure-listener.sh
+-r-xr-xr-x 1 mts mts   192 Mar 24 17:10 preinstallUpgrade.sh
+-r-xr-xr-x 1 mts mts   132 Mar 24 17:10 preremoveUninstall.sh
+-r-xr-xr-x 1 mts mts  1204 Mar 24 17:10 preuninstall.sh
+-r-xr-xr-x 1 mts mts   558 Mar 24 17:11 preupgrade.sh
+-r-xr-xr-x 1 mts mts   256 Mar 24 17:10 restartServices.sh
+-r-xr-xr-x 1 mts mts   289 Mar 24 17:10 stopAndRemoveServices.sh
+-r-xr-xr-x 1 mts mts  3117 Mar 24 17:11 upgrade.sh
+
+vmware-tools-distrib/caf/etc/vmware-caf/pme/scripts:
+total 64
+-r-xr-xr-x 1 mts mts 5407 Mar 24 17:11 caf-common
+-r-xr-xr-x 1 mts mts 5447 Mar 24 17:10 caf-processes.sh
+-r-xr-xr-x 1 mts mts  191 Mar 24 17:10 is-listener-running
+-r-xr-xr-x 1 mts mts  194 Mar 24 17:10 is-ma-running
+-r-xr-xr-x 1 mts mts  923 Mar 24 17:10 setUpVgAuth
+-r-xr-xr-x 1 mts mts  680 Mar 24 17:10 start-VGAuthService
+-r-xr-xr-x 1 mts mts  643 Mar 24 17:10 start-listener
+-r-xr-xr-x 1 mts mts  655 Mar 24 17:10 start-ma
+-r--r--r-- 1 mts mts   53 Mar 24 17:10 startTestProc
+-r-xr-xr-x 1 mts mts  132 Mar 24 17:10 stop-VGAuthService
+-r-xr-xr-x 1 mts mts  208 Mar 24 17:10 stop-listener
+-r-xr-xr-x 1 mts mts  212 Mar 24 17:10 stop-ma
+-r-xr-xr-x 1 mts mts  934 Mar 24 17:10 tearDownVgAuth
+-r-xr-xr-x 1 mts mts 1940 Mar 24 17:10 vgAuth
+
+vmware-tools-distrib/caf/usr:
+total 4
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 lib
+
+vmware-tools-distrib/caf/usr/lib:
+total 4
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 vmware-caf
+
+vmware-tools-distrib/caf/usr/lib/vmware-caf:
+total 4
+drwxr-xr-x 4 mts mts 4096 Mar 24 17:10 pme
+
+vmware-tools-distrib/caf/usr/lib/vmware-caf/pme:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 bin
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 lib
+
+vmware-tools-distrib/caf/usr/lib/vmware-caf/pme/bin:
+total 504
+-rwxr-xr-x 1 mts mts  41440 Mar 24 17:10 CommAmqpListener
+-rwxr-xr-x 1 mts mts 139848 Mar 24 17:10 ConfigProvider
+-rwxr-xr-x 1 mts mts 169760 Mar 24 17:10 InstallProvider
+-rwxr-xr-x 1 mts mts  33072 Mar 24 17:10 ManagementAgentHost
+-rwxr-xr-x 1 mts mts  45576 Mar 24 17:10 RemoteCommandProvider
+-rwxr-xr-x 1 mts mts  54632 Mar 24 17:10 TestInfraProvider
+
+vmware-tools-distrib/caf/usr/lib/vmware-caf/pme/lib:
+total 7808
+-rwxr-xr-x 1 mts mts  150392 Mar 24 17:10 libCafIntegrationSubsys.so
+-rwxr-xr-x 1 mts mts 1300576 Mar 24 17:10 libCommAmqpIntegration.so
+-rwxr-xr-x 1 mts mts  356872 Mar 24 17:10 libCommAmqpIntegrationSubsys.so
+-rwxr-xr-x 1 mts mts   45392 Mar 24 17:10 libCommAmqpListener.so
+-rwxr-xr-x 1 mts mts  487368 Mar 24 17:10 libCommIntegrationSubsys.so
+-rwxr-xr-x 1 mts mts 2912704 Mar 24 17:10 libFramework.so
+-rwxr-xr-x 1 mts mts  580744 Mar 24 17:10 libIntegrationSubsys.so
+-rwxr-xr-x 1 mts mts  937576 Mar 24 17:10 libMaIntegrationSubsys.so
+-rwxr-xr-x 1 mts mts   36992 Mar 24 17:10 libManagementAgentHost.so
+-rwxr-xr-x 1 mts mts  171608 Mar 24 17:10 libProviderFx.so
+-rwxr-xr-x 1 mts mts  132312 Mar 24 17:10 libVgAuthIntegrationSubsys.so
+-r-xr-xr-x 1 mts mts  722650 Mar 24 17:10 liblog4cpp.so.5.0.6
+-rwxr-xr-x 1 mts mts   87752 Mar 24 17:10 librabbitmq.so.4.2.1
+
+vmware-tools-distrib/caf/var:
+total 4
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 lib
+
+vmware-tools-distrib/caf/var/lib:
+total 4
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 vmware-caf
+
+vmware-tools-distrib/caf/var/lib/vmware-caf:
+total 4
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 pme
+
+vmware-tools-distrib/caf/var/lib/vmware-caf/pme:
+total 4
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 data
+
+vmware-tools-distrib/caf/var/lib/vmware-caf/pme/data:
+total 4
+drwxr-xr-x 4 mts mts 4096 Mar 24 17:10 input
+
+vmware-tools-distrib/caf/var/lib/vmware-caf/pme/data/input:
+total 12
+-r-xr-xr-x 1 mts mts  340 Mar 24 17:10 installProviderHeader.sh
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 invokers
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 providerReg
+
+vmware-tools-distrib/caf/var/lib/vmware-caf/pme/data/input/invokers:
+total 16
+-r-xr-xr-x 1 mts mts  98 Mar 24 17:10 cafTestInfra_CafTestInfraProvider_1_0_0.sh
+-r-xr-xr-x 1 mts mts  95 Mar 24 17:10 caf_ConfigProvider_1_0_0.sh
+-r-xr-xr-x 1 mts mts  96 Mar 24 17:10 caf_InstallProvider_1_0_0.sh
+-r-xr-xr-x 1 mts mts 102 Mar 24 17:10 caf_RemoteCommandProvider_1_0_0.sh
+
+vmware-tools-distrib/caf/var/lib/vmware-caf/pme/data/input/providerReg:
+total 16
+-r--r--r-- 1 mts mts 509 Mar 24 17:10 cafTestInfra_CafTestInfraProvider_1_0_0.xml
+-r--r--r-- 1 mts mts 498 Mar 24 17:10 caf_ConfigProvider_1_0_0.xml
+-r--r--r-- 1 mts mts 500 Mar 24 17:10 caf_InstallProvider_1_0_0.xml
+-r--r--r-- 1 mts mts 512 Mar 24 17:10 caf_RemoteCommandProvider_1_0_0.xml
+
+vmware-tools-distrib/doc:
+total 256
+-rw-r--r-- 1 mts mts   2538 Mar 24 17:11 INSTALL
+-rw-r--r-- 1 mts mts    123 Mar 24 17:10 README
+-rw-r--r-- 1 mts mts 245861 Mar 24 17:11 open_source_licenses.txt
+
+vmware-tools-distrib/etc:
+total 104
+-rwxr-xr-x  1 mts mts 33229 Mar 24 17:11 installer.sh
+-rw-r--r--  1 mts mts  1976 Mar 24 17:10 manifest.txt.shipped
+drwxr-xr-x 11 mts mts  4096 Mar 24 17:10 messages
+-rw-r--r--  1 mts mts     0 Mar 24 17:10 not_configured
+-rwxr-xr-x  1 mts mts  3712 Mar 24 17:11 poweroff-vm-default
+-rwxr-xr-x  1 mts mts  3712 Mar 24 17:11 poweron-vm-default
+-rwxr-xr-x  1 mts mts  3712 Mar 24 17:11 resume-vm-default
+drwxr-xr-x  3 mts mts  4096 Mar 24 17:10 scripts
+-rw-r--r--  1 mts mts   826 Mar 24 17:11 statechange.subr
+-rwxr-xr-x  1 mts mts  3712 Mar 24 17:11 suspend-vm-default
+drwxr-xr-x  2 mts mts  4096 Mar 24 17:10 vmware-tools
+-rw-r--r--  1 mts mts   210 Mar 24 17:10 vmware-tools-libraries.conf
+-rw-r--r--  1 mts mts   107 Mar 24 17:10 vmware-tools-prelink.conf
+-rw-r--r--  1 mts mts  1107 Mar 24 17:10 vmware-user.Xresources
+-rw-r--r--  1 mts mts   220 Mar 24 17:10 vmware-user.desktop
+-rwxr-xr-x  1 mts mts   510 Mar 24 17:11 xsession-gdm.sh
+-rw-r--r--  1 mts mts  1711 Mar 24 17:11 xsession-xdm.pl
+-rwxr-xr-x  1 mts mts  6442 Mar 24 17:11 xsession-xdm.sh
+
+vmware-tools-distrib/etc/messages:
+total 36
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:11 de
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:11 en
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:11 es
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:11 fr
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:11 it
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:11 ja
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:11 ko
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:11 zh_CN
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:11 zh_TW
+
+vmware-tools-distrib/etc/messages/de:
+total 36
+-rwxr-xr-x 1 mts mts  2253 Mar 24 17:11 VGAuthCli.vmsg
+-rwxr-xr-x 1 mts mts   780 Mar 24 17:11 VGAuthLib.vmsg
+-rwxr-xr-x 1 mts mts  2522 Mar 24 17:11 VGAuthService.vmsg
+-rwxr-xr-x 1 mts mts  1496 Mar 24 17:11 desktopEvents.vmsg
+-rwxr-xr-x 1 mts mts   895 Mar 24 17:11 hgfsUsability.vmsg
+-rwxr-xr-x 1 mts mts 10928 Mar 24 17:11 toolboxcmd.vmsg
+-rwxr-xr-x 1 mts mts  2039 Mar 24 17:11 vmtoolsd.vmsg
+
+vmware-tools-distrib/etc/messages/en:
+total 36
+-rwxr-xr-x 1 mts mts 1968 Mar 24 17:11 VGAuthCli.vmsg
+-rwxr-xr-x 1 mts mts  729 Mar 24 17:11 VGAuthLib.vmsg
+-rwxr-xr-x 1 mts mts 2036 Mar 24 17:11 VGAuthService.vmsg
+-rwxr-xr-x 1 mts mts 1280 Mar 24 17:11 desktopEvents.vmsg
+-rwxr-xr-x 1 mts mts  783 Mar 24 17:11 hgfsUsability.vmsg
+-rwxr-xr-x 1 mts mts 9069 Mar 24 17:11 toolboxcmd.vmsg
+-rwxr-xr-x 1 mts mts 1860 Mar 24 17:11 vmtoolsd.vmsg
+
+vmware-tools-distrib/etc/messages/es:
+total 36
+-rwxr-xr-x 1 mts mts  2179 Mar 24 17:11 VGAuthCli.vmsg
+-rwxr-xr-x 1 mts mts   780 Mar 24 17:11 VGAuthLib.vmsg
+-rwxr-xr-x 1 mts mts  2398 Mar 24 17:11 VGAuthService.vmsg
+-rwxr-xr-x 1 mts mts  1429 Mar 24 17:11 desktopEvents.vmsg
+-rwxr-xr-x 1 mts mts   859 Mar 24 17:11 hgfsUsability.vmsg
+-rwxr-xr-x 1 mts mts 10820 Mar 24 17:11 toolboxcmd.vmsg
+-rwxr-xr-x 1 mts mts  2112 Mar 24 17:11 vmtoolsd.vmsg
+
+vmware-tools-distrib/etc/messages/fr:
+total 36
+-rwxr-xr-x 1 mts mts  2259 Mar 24 17:11 VGAuthCli.vmsg
+-rwxr-xr-x 1 mts mts   787 Mar 24 17:11 VGAuthLib.vmsg
+-rwxr-xr-x 1 mts mts  2420 Mar 24 17:11 VGAuthService.vmsg
+-rwxr-xr-x 1 mts mts  1511 Mar 24 17:11 desktopEvents.vmsg
+-rwxr-xr-x 1 mts mts   878 Mar 24 17:11 hgfsUsability.vmsg
+-rwxr-xr-x 1 mts mts 11128 Mar 24 17:11 toolboxcmd.vmsg
+-rwxr-xr-x 1 mts mts  2102 Mar 24 17:11 vmtoolsd.vmsg
+
+vmware-tools-distrib/etc/messages/it:
+total 36
+-rwxr-xr-x 1 mts mts  2090 Mar 24 17:11 VGAuthCli.vmsg
+-rwxr-xr-x 1 mts mts   751 Mar 24 17:11 VGAuthLib.vmsg
+-rwxr-xr-x 1 mts mts  2348 Mar 24 17:11 VGAuthService.vmsg
+-rwxr-xr-x 1 mts mts  1436 Mar 24 17:11 desktopEvents.vmsg
+-rwxr-xr-x 1 mts mts   870 Mar 24 17:11 hgfsUsability.vmsg
+-rwxr-xr-x 1 mts mts 10671 Mar 24 17:11 toolboxcmd.vmsg
+-rwxr-xr-x 1 mts mts  2046 Mar 24 17:11 vmtoolsd.vmsg
+
+vmware-tools-distrib/etc/messages/ja:
+total 36
+-rwxr-xr-x 1 mts mts  2510 Mar 24 17:11 VGAuthCli.vmsg
+-rwxr-xr-x 1 mts mts   796 Mar 24 17:11 VGAuthLib.vmsg
+-rwxr-xr-x 1 mts mts  2762 Mar 24 17:11 VGAuthService.vmsg
+-rwxr-xr-x 1 mts mts  1771 Mar 24 17:11 desktopEvents.vmsg
+-rwxr-xr-x 1 mts mts   969 Mar 24 17:11 hgfsUsability.vmsg
+-rwxr-xr-x 1 mts mts 12161 Mar 24 17:11 toolboxcmd.vmsg
+-rwxr-xr-x 1 mts mts  2265 Mar 24 17:11 vmtoolsd.vmsg
+
+vmware-tools-distrib/etc/messages/ko:
+total 36
+-rwxr-xr-x 1 mts mts  2207 Mar 24 17:11 VGAuthCli.vmsg
+-rwxr-xr-x 1 mts mts   814 Mar 24 17:11 VGAuthLib.vmsg
+-rwxr-xr-x 1 mts mts  2483 Mar 24 17:11 VGAuthService.vmsg
+-rwxr-xr-x 1 mts mts  1461 Mar 24 17:11 desktopEvents.vmsg
+-rwxr-xr-x 1 mts mts   890 Mar 24 17:11 hgfsUsability.vmsg
+-rwxr-xr-x 1 mts mts 11076 Mar 24 17:11 toolboxcmd.vmsg
+-rwxr-xr-x 1 mts mts  2152 Mar 24 17:11 vmtoolsd.vmsg
+
+vmware-tools-distrib/etc/messages/zh_CN:
+total 36
+-rwxr-xr-x 1 mts mts 1961 Mar 24 17:11 VGAuthCli.vmsg
+-rwxr-xr-x 1 mts mts  725 Mar 24 17:11 VGAuthLib.vmsg
+-rwxr-xr-x 1 mts mts 2046 Mar 24 17:11 VGAuthService.vmsg
+-rwxr-xr-x 1 mts mts 1250 Mar 24 17:11 desktopEvents.vmsg
+-rwxr-xr-x 1 mts mts  803 Mar 24 17:11 hgfsUsability.vmsg
+-rwxr-xr-x 1 mts mts 8714 Mar 24 17:11 toolboxcmd.vmsg
+-rwxr-xr-x 1 mts mts 1839 Mar 24 17:11 vmtoolsd.vmsg
+
+vmware-tools-distrib/etc/messages/zh_TW:
+total 36
+-rwxr-xr-x 1 mts mts 2031 Mar 24 17:11 VGAuthCli.vmsg
+-rwxr-xr-x 1 mts mts  734 Mar 24 17:11 VGAuthLib.vmsg
+-rwxr-xr-x 1 mts mts 2039 Mar 24 17:11 VGAuthService.vmsg
+-rwxr-xr-x 1 mts mts 1268 Mar 24 17:11 desktopEvents.vmsg
+-rwxr-xr-x 1 mts mts  798 Mar 24 17:11 hgfsUsability.vmsg
+-rwxr-xr-x 1 mts mts 8882 Mar 24 17:11 toolboxcmd.vmsg
+-rwxr-xr-x 1 mts mts 1836 Mar 24 17:11 vmtoolsd.vmsg
+
+vmware-tools-distrib/etc/scripts:
+total 4
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:11 vmware
+
+vmware-tools-distrib/etc/scripts/vmware:
+total 16
+-rwxr-xr-x 1 mts mts 14496 Mar 24 17:11 network
+
+vmware-tools-distrib/etc/vmware-tools:
+total 0
+
+vmware-tools-distrib/installer:
+total 60
+-rwxr-xr-x 1 mts mts   453 Mar 24 17:10 guestproxy-ssl.conf
+-rwxr-xr-x 1 mts mts 45591 Mar 24 17:11 services.sh
+-r--r--r-- 1 mts mts   901 Mar 24 17:11 upstart-job.conf
+-rwxr-xr-x 1 mts mts    47 Mar 24 17:10 vgauth.conf
+
+vmware-tools-distrib/lib:
+total 48
+drwxr-xr-x  2 mts mts 4096 Mar 24 17:11 bin32
+drwxr-xr-x  2 mts mts 4096 Mar 24 17:11 bin64
+drwxr-xr-x  7 mts mts 4096 Mar 24 17:10 configurator
+drwxr-xr-x  2 mts mts 4096 Mar 24 17:10 icu
+drwxr-xr-x  3 mts mts 4096 Mar 24 17:10 include
+drwxr-xr-x 80 mts mts 4096 Mar 24 17:10 lib32
+drwxr-xr-x 80 mts mts 4096 Mar 24 17:10 lib64
+drwxr-xr-x  4 mts mts 4096 Mar 24 17:10 modules
+drwxr-xr-x  5 mts mts 4096 Mar 24 17:10 plugins32
+drwxr-xr-x  5 mts mts 4096 Mar 24 17:10 plugins64
+drwxr-xr-x  2 mts mts 4096 Mar 24 17:10 sbin32
+drwxr-xr-x  2 mts mts 4096 Mar 24 17:10 sbin64
+
+vmware-tools-distrib/lib/bin32:
+total 852
+-rwxr-xr-x 1 mts mts 770116 Mar 24 17:10 appLoader
+-rwxr-xr-x 1 mts mts  29876 Mar 24 17:10 appLoader-av0
+-rwxr-xr-x 1 mts mts   4146 Mar 24 17:11 configure-gtk.sh
+-rwsr-xr-x 1 mts mts  13628 Mar 24 17:10 vmware-user-suid-wrapper
+-rwxr-xr-x 1 mts mts  36100 Mar 24 17:10 vmware-xferlogs
+
+vmware-tools-distrib/lib/bin64:
+total 908
+-rwxr-xr-x 1 mts mts 830528 Mar 24 17:10 appLoader
+-rwxr-xr-x 1 mts mts  30488 Mar 24 17:10 appLoader-av0
+-rwxr-xr-x 1 mts mts   4146 Mar 24 17:11 configure-gtk.sh
+-rwsr-xr-x 1 mts mts  14320 Mar 24 17:10 vmware-user-suid-wrapper
+-rwxr-xr-x 1 mts mts  36728 Mar 24 17:10 vmware-xferlogs
+
+vmware-tools-distrib/lib/configurator:
+total 20
+drwxr-xr-x  6 mts mts 4096 Mar 24 17:10 XFree86-4
+drwxr-xr-x 20 mts mts 4096 Mar 24 17:10 XOrg
+drwxr-xr-x  2 mts mts 4096 Mar 24 17:10 pam.d
+drwxr-xr-x  2 mts mts 4096 Mar 24 17:10 udev
+drwxr-xr-x  2 mts mts 4096 Mar 24 17:10 xorg.conf.d
+
+vmware-tools-distrib/lib/configurator/XFree86-4:
+total 20
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 4.2.x
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 4.3.x
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 4.3.x_64
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 4.x
+-rw-r--r-- 1 mts mts 3625 Mar 24 17:10 XF86Config-4
+
+vmware-tools-distrib/lib/configurator/XFree86-4/4.2.x:
+total 384
+-rw-r--r-- 1 mts mts  20164 Mar 24 17:10 libshadowfb.a
+-rw-r--r-- 1 mts mts 320236 Mar 24 17:10 libxaa.a
+-rw-r--r-- 1 mts mts  11400 Mar 24 17:10 vmmouse_drv.o
+-rw-r--r-- 1 mts mts  30764 Mar 24 17:10 vmware_drv.o
+
+vmware-tools-distrib/lib/configurator/XFree86-4/4.3.x:
+total 56
+-rw-r--r-- 1 mts mts 11816 Mar 24 17:10 vmmouse_drv.o
+-rw-r--r-- 1 mts mts 43672 Mar 24 17:10 vmware_drv.o
+
+vmware-tools-distrib/lib/configurator/XFree86-4/4.3.x_64:
+total 88
+-rw-r--r-- 1 mts mts 18376 Mar 24 17:10 vmmouse_drv.o
+-rw-r--r-- 1 mts mts 63840 Mar 24 17:10 vmware_drv.o
+
+vmware-tools-distrib/lib/configurator/XFree86-4/4.x:
+total 80
+-rw-r--r-- 1 mts mts 75676 Mar 24 17:10 vmware_drv.o
+
+vmware-tools-distrib/lib/configurator/XOrg:
+total 72
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 6.7.x
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 6.7.x_64
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 6.8.x
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 6.8.x_64
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 7.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 7.0_64
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 7.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 7.1_64
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 7.3
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 7.3.99
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 7.3.99_64
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 7.3_64
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:11 7.4
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:11 7.4_64
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:11 7.5
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:11 7.5_64
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:11 7.6
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:11 7.6_64
+
+vmware-tools-distrib/lib/configurator/XOrg/6.7.x:
+total 56
+-rw-r--r-- 1 mts mts 11816 Mar 24 17:10 vmmouse_drv.o
+-rw-r--r-- 1 mts mts 43792 Mar 24 17:10 vmware_drv.o
+
+vmware-tools-distrib/lib/configurator/XOrg/6.7.x_64:
+total 88
+-rw-r--r-- 1 mts mts 18376 Mar 24 17:10 vmmouse_drv.o
+-rw-r--r-- 1 mts mts 63848 Mar 24 17:10 vmware_drv.o
+
+vmware-tools-distrib/lib/configurator/XOrg/6.8.x:
+total 56
+-rw-r--r-- 1 mts mts 11816 Mar 24 17:10 vmmouse_drv.o
+-rw-r--r-- 1 mts mts 43660 Mar 24 17:10 vmware_drv.o
+
+vmware-tools-distrib/lib/configurator/XOrg/6.8.x_64:
+total 88
+-rw-r--r-- 1 mts mts 18376 Mar 24 17:10 vmmouse_drv.o
+-rw-r--r-- 1 mts mts 63872 Mar 24 17:10 vmware_drv.o
+
+vmware-tools-distrib/lib/configurator/XOrg/7.0:
+total 72
+-rw-r--r-- 1 mts mts 12872 Mar 24 17:10 vmmouse_drv.so
+-rw-r--r-- 1 mts mts  4552 Mar 24 17:10 vmware_drv.so
+-rw-r--r-- 1 mts mts 48104 Mar 24 17:10 vmwlegacy_drv.so
+
+vmware-tools-distrib/lib/configurator/XOrg/7.0_64:
+total 88
+-rw-r--r-- 1 mts mts 19664 Mar 24 17:10 vmmouse_drv.so
+-rw-r--r-- 1 mts mts  6640 Mar 24 17:10 vmware_drv.so
+-rw-r--r-- 1 mts mts 54400 Mar 24 17:10 vmwlegacy_drv.so
+
+vmware-tools-distrib/lib/configurator/XOrg/7.1:
+total 72
+-rw-r--r-- 1 mts mts 12872 Mar 24 17:10 vmmouse_drv.so
+-rw-r--r-- 1 mts mts  4552 Mar 24 17:10 vmware_drv.so
+-rw-r--r-- 1 mts mts 48104 Mar 24 17:10 vmwlegacy_drv.so
+
+vmware-tools-distrib/lib/configurator/XOrg/7.1_64:
+total 88
+-rw-r--r-- 1 mts mts 19664 Mar 24 17:10 vmmouse_drv.so
+-rw-r--r-- 1 mts mts  6640 Mar 24 17:10 vmware_drv.so
+-rw-r--r-- 1 mts mts 54432 Mar 24 17:10 vmwlegacy_drv.so
+
+vmware-tools-distrib/lib/configurator/XOrg/7.3:
+total 72
+-rw-r--r-- 1 mts mts 12712 Mar 24 17:10 vmmouse_drv.so
+-rw-r--r-- 1 mts mts  4552 Mar 24 17:10 vmware_drv.so
+-rw-r--r-- 1 mts mts 48904 Mar 24 17:10 vmwlegacy_drv.so
+
+vmware-tools-distrib/lib/configurator/XOrg/7.3.99:
+total 72
+-rw-r--r-- 1 mts mts 12680 Mar 24 17:10 vmmouse_drv.so
+-rw-r--r-- 1 mts mts  4552 Mar 24 17:10 vmware_drv.so
+-rw-r--r-- 1 mts mts 48264 Mar 24 17:10 vmwlegacy_drv.so
+
+vmware-tools-distrib/lib/configurator/XOrg/7.3.99_64:
+total 88
+-rw-r--r-- 1 mts mts 19632 Mar 24 17:10 vmmouse_drv.so
+-rw-r--r-- 1 mts mts  6640 Mar 24 17:10 vmware_drv.so
+-rw-r--r-- 1 mts mts 54944 Mar 24 17:10 vmwlegacy_drv.so
+
+vmware-tools-distrib/lib/configurator/XOrg/7.3_64:
+total 92
+-rw-r--r-- 1 mts mts 19664 Mar 24 17:10 vmmouse_drv.so
+-rw-r--r-- 1 mts mts  6640 Mar 24 17:10 vmware_drv.so
+-rw-r--r-- 1 mts mts 58176 Mar 24 17:10 vmwlegacy_drv.so
+
+vmware-tools-distrib/lib/configurator/XOrg/7.4:
+total 84
+-rw-r--r-- 1 mts mts   340 Mar 24 17:10 11-x11-vmmouse.fdi
+-rwxr--r-- 1 mts mts  1479 Mar 24 17:11 hal-probe-vmmouse
+-rwxr--r-- 1 mts mts  3344 Mar 24 17:10 vmmouse_detect
+-rw-r--r-- 1 mts mts 12680 Mar 24 17:10 vmmouse_drv.so
+-rw-r--r-- 1 mts mts  4552 Mar 24 17:10 vmware_drv.so
+-rw-r--r-- 1 mts mts 48104 Mar 24 17:10 vmwlegacy_drv.so
+
+vmware-tools-distrib/lib/configurator/XOrg/7.4_64:
+total 104
+-rw-r--r-- 1 mts mts   340 Mar 24 17:10 11-x11-vmmouse.fdi
+-rwxr--r-- 1 mts mts  1479 Mar 24 17:11 hal-probe-vmmouse
+-rwxr--r-- 1 mts mts  5208 Mar 24 17:10 vmmouse_detect
+-rw-r--r-- 1 mts mts 19632 Mar 24 17:10 vmmouse_drv.so
+-rw-r--r-- 1 mts mts  6640 Mar 24 17:10 vmware_drv.so
+-rw-r--r-- 1 mts mts 54784 Mar 24 17:10 vmwlegacy_drv.so
+
+vmware-tools-distrib/lib/configurator/XOrg/7.5:
+total 80
+-rw-r--r-- 1 mts mts   340 Mar 24 17:10 11-x11-vmmouse.fdi
+-rwxr--r-- 1 mts mts  1479 Mar 24 17:11 hal-probe-vmmouse
+-rwxr--r-- 1 mts mts  3344 Mar 24 17:10 vmmouse_detect
+-rw-r--r-- 1 mts mts 12264 Mar 24 17:10 vmmouse_drv.so
+-rw-r--r-- 1 mts mts  4552 Mar 24 17:10 vmware_drv.so
+-rw-r--r-- 1 mts mts 48104 Mar 24 17:10 vmwlegacy_drv.so
+
+vmware-tools-distrib/lib/configurator/XOrg/7.5_64:
+total 104
+-rw-r--r-- 1 mts mts   340 Mar 24 17:10 11-x11-vmmouse.fdi
+-rwxr--r-- 1 mts mts  1479 Mar 24 17:11 hal-probe-vmmouse
+-rwxr--r-- 1 mts mts  5208 Mar 24 17:10 vmmouse_detect
+-rw-r--r-- 1 mts mts 17776 Mar 24 17:10 vmmouse_drv.so
+-rw-r--r-- 1 mts mts  6640 Mar 24 17:10 vmware_drv.so
+-rw-r--r-- 1 mts mts 54784 Mar 24 17:10 vmwlegacy_drv.so
+
+vmware-tools-distrib/lib/configurator/XOrg/7.6:
+total 80
+-rw-r--r-- 1 mts mts   340 Mar 24 17:10 11-x11-vmmouse.fdi
+-rwxr--r-- 1 mts mts  1479 Mar 24 17:11 hal-probe-vmmouse
+-rwxr-xr-x 1 mts mts  3344 Mar 24 17:10 vmmouse_detect
+-rw-r--r-- 1 mts mts 10952 Mar 24 17:10 vmmouse_drv.so
+-rw-r--r-- 1 mts mts  4520 Mar 24 17:10 vmware_drv.so
+-rw-r--r-- 1 mts mts 45416 Mar 24 17:10 vmwlegacy_drv.so
+
+vmware-tools-distrib/lib/configurator/XOrg/7.6_64:
+total 100
+-rw-r--r-- 1 mts mts   340 Mar 24 17:10 11-x11-vmmouse.fdi
+-rwxr--r-- 1 mts mts  1479 Mar 24 17:11 hal-probe-vmmouse
+-rwxr-xr-x 1 mts mts  5208 Mar 24 17:10 vmmouse_detect
+-rw-r--r-- 1 mts mts 15504 Mar 24 17:10 vmmouse_drv.so
+-rw-r--r-- 1 mts mts  6640 Mar 24 17:10 vmware_drv.so
+-rw-r--r-- 1 mts mts 53504 Mar 24 17:10 vmwlegacy_drv.so
+
+vmware-tools-distrib/lib/configurator/pam.d:
+total 4
+-rw-r--r-- 1 mts mts 278 Mar 24 17:10 vmtoolsd
+
+vmware-tools-distrib/lib/configurator/udev:
+total 8
+-rw-r--r-- 1 mts mts 151 Mar 24 17:10 69-vmware-vmmouse.rules
+-rw-r--r-- 1 mts mts 813 Mar 24 17:10 99-vmware-scsi-udev.rules
+
+vmware-tools-distrib/lib/configurator/xorg.conf.d:
+total 4
+-rw-r--r-- 1 mts mts 102 Mar 24 17:10 vmmouse.conf
+
+vmware-tools-distrib/lib/icu:
+total 9404
+-rw-r--r-- 1 mts mts 9609648 Mar 24 17:10 icudt44l.dat
+
+vmware-tools-distrib/lib/include:
+total 4
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:11 vmci
+
+vmware-tools-distrib/lib/include/vmci:
+total 28
+-rw-r--r-- 1 mts mts 25817 Mar 24 17:11 vmci_sockets.h
+
+vmware-tools-distrib/lib/lib32:
+total 312
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libDeployPkg.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libICE.so.6
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libORBit-2.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libORBitCosNaming-2.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libSM.so.6
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libVGAuthService.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libXau.so.6
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libXcomposite.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libXcursor.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libXdamage.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libXdmcp.so.6
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libXfixes.so.3
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libXinerama.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libXrandr.so.2
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libXrender.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libXss.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libatk-1.0.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libatkmm-1.6.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libatspi.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libbonobo-2.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libbonobo-activation.so.4
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libcairo.so.2
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libcairomm-1.0.so.1
+drwxr-xr-x 4 mts mts 4096 Mar 24 17:10 libconf
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libcrypto.so.1.0.2
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libdnet.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libffi.so.6
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libfontconfig.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libfreetype.so.6
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libgailutil.so.18
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libgcc_s.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libgdk-x11-2.0.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libgdk_pixbuf-2.0.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libgdk_pixbuf_xlib-2.0.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libgdkmm-2.4.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libgio-2.0.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libgiomm-2.4.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libglib-2.0.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libglibmm-2.4.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libglibmm_generate_extra_defs-2.4.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libgmodule-2.0.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libgobject-2.0.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libgthread-2.0.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libgtk-x11-2.0.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libgtkmm-2.4.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libharfbuzz.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libhgfs.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libiconv.so.2
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libmspack.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libpango-1.0.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libpangocairo-1.0.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libpangoft2-1.0.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libpangomm-1.4.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libpcre.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libpixman-1.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libpng12.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libsigc-2.0.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libssl.so.1.0.2
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libstdc++.so.6
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 liburiparser.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libvgauth.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libvmGuestLib.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libvmGuestLibJava.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libvmhgfs-fuse.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libvmtools.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libvmtoolsd.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libvmware-alias-import.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libvmware-guestproxycerttool.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libvmware-hgfsclient.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libvmware-modconfig-console.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libvmware-namespace-cmd.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libvmware-toolbox-cmd.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libvmware-vgauth-cmd.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libvmware-vmblock-fuse.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libxml2.so.2
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libxmlsec1-openssl.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libxmlsec1.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libz.so.1
+
+vmware-tools-distrib/lib/lib32/libDeployPkg.so:
+total 652
+-rw-r--r-- 1 mts mts 661356 Mar 24 17:10 libDeployPkg.so
+
+vmware-tools-distrib/lib/lib32/libICE.so.6:
+total 88
+-rw-r--r-- 1 mts mts 81964 Mar 24 17:10 libICE.so.6
+
+vmware-tools-distrib/lib/lib32/libORBit-2.so.0:
+total 328
+-rw-r--r-- 1 mts mts 330576 Mar 24 17:10 libORBit-2.so.0
+
+vmware-tools-distrib/lib/lib32/libORBitCosNaming-2.so.0:
+total 20
+-rw-r--r-- 1 mts mts 17100 Mar 24 17:10 libORBitCosNaming-2.so.0
+
+vmware-tools-distrib/lib/lib32/libSM.so.6:
+total 28
+-rw-r--r-- 1 mts mts 26504 Mar 24 17:10 libSM.so.6
+
+vmware-tools-distrib/lib/lib32/libVGAuthService.so:
+total 136
+-rw-r--r-- 1 mts mts 132300 Mar 24 17:10 libVGAuthService.so
+
+vmware-tools-distrib/lib/lib32/libXau.so.6:
+total 8
+-rw-r--r-- 1 mts mts 7360 Mar 24 17:10 libXau.so.6
+
+vmware-tools-distrib/lib/lib32/libXcomposite.so.1:
+total 8
+-rw-r--r-- 1 mts mts 6560 Mar 24 17:10 libXcomposite.so.1
+
+vmware-tools-distrib/lib/lib32/libXcursor.so.1:
+total 32
+-rw-r--r-- 1 mts mts 32536 Mar 24 17:10 libXcursor.so.1
+
+vmware-tools-distrib/lib/lib32/libXdamage.so.1:
+total 8
+-rw-r--r-- 1 mts mts 6276 Mar 24 17:10 libXdamage.so.1
+
+vmware-tools-distrib/lib/lib32/libXdmcp.so.6:
+total 16
+-rw-r--r-- 1 mts mts 16320 Mar 24 17:10 libXdmcp.so.6
+
+vmware-tools-distrib/lib/lib32/libXfixes.so.3:
+total 16
+-rw-r--r-- 1 mts mts 14572 Mar 24 17:10 libXfixes.so.3
+
+vmware-tools-distrib/lib/lib32/libXinerama.so.1:
+total 8
+-rw-r--r-- 1 mts mts 6500 Mar 24 17:10 libXinerama.so.1
+
+vmware-tools-distrib/lib/lib32/libXrandr.so.2:
+total 24
+-rw-r--r-- 1 mts mts 24396 Mar 24 17:10 libXrandr.so.2
+
+vmware-tools-distrib/lib/lib32/libXrender.so.1:
+total 32
+-rw-r--r-- 1 mts mts 29524 Mar 24 17:10 libXrender.so.1
+
+vmware-tools-distrib/lib/lib32/libXss.so.1:
+total 8
+-rw-r--r-- 1 mts mts 7780 Mar 24 17:10 libXss.so.1
+
+vmware-tools-distrib/lib/lib32/libatk-1.0.so.0:
+total 148
+-rw-r--r-- 1 mts mts 144668 Mar 24 17:10 libatk-1.0.so.0
+
+vmware-tools-distrib/lib/lib32/libatkmm-1.6.so.1:
+total 272
+-rw-r--r-- 1 mts mts 270696 Mar 24 17:10 libatkmm-1.6.so.1
+
+vmware-tools-distrib/lib/lib32/libatspi.so.0:
+total 128
+-rw-r--r-- 1 mts mts 123184 Mar 24 17:10 libatspi.so.0
+
+vmware-tools-distrib/lib/lib32/libbonobo-2.so.0:
+total 360
+-rw-r--r-- 1 mts mts 363788 Mar 24 17:10 libbonobo-2.so.0
+
+vmware-tools-distrib/lib/lib32/libbonobo-activation.so.4:
+total 88
+-rw-r--r-- 1 mts mts 82628 Mar 24 17:10 libbonobo-activation.so.4
+
+vmware-tools-distrib/lib/lib32/libcairo.so.2:
+total 1316
+-rw-r--r-- 1 mts mts 1341048 Mar 24 17:10 libcairo.so.2
+
+vmware-tools-distrib/lib/lib32/libcairomm-1.0.so.1:
+total 268
+-rw-r--r-- 1 mts mts 267368 Mar 24 17:10 libcairomm-1.0.so.1
+
+vmware-tools-distrib/lib/lib32/libconf:
+total 8
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 etc
+drwxr-xr-x 4 mts mts 4096 Mar 24 17:10 gtk-2.0
+
+vmware-tools-distrib/lib/lib32/libconf/etc:
+total 4
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 fonts
+
+vmware-tools-distrib/lib/lib32/libconf/etc/fonts:
+total 12
+-rw-r--r-- 1 mts mts 2532 Mar 24 17:10 fonts.conf
+-rw-r--r-- 1 mts mts 7250 Mar 24 17:10 fonts.dtd
+
+vmware-tools-distrib/lib/lib32/libconf/gtk-2.0:
+total 12
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 2.10.0
+-rw-r--r-- 1 mts mts  890 Mar 24 17:10 im-multipress.conf
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 modules
+
+vmware-tools-distrib/lib/lib32/libconf/gtk-2.0/2.10.0:
+total 4
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 engines
+
+vmware-tools-distrib/lib/lib32/libconf/gtk-2.0/2.10.0/engines:
+total 228
+-rw-r--r-- 1 mts mts 166368 Mar 24 17:10 libclearlooks.so
+-rw-r--r-- 1 mts mts  54536 Mar 24 17:10 libpixmap.so
+
+vmware-tools-distrib/lib/lib32/libconf/gtk-2.0/modules:
+total 512
+-rw-r--r-- 1 mts mts 150664 Mar 24 17:10 libatk-bridge.so
+-rw-r--r-- 1 mts mts  52464 Mar 24 17:10 libferret.so
+-rw-r--r-- 1 mts mts 303992 Mar 24 17:10 libgail.so
+
+vmware-tools-distrib/lib/lib32/libcrypto.so.1.0.2:
+total 2352
+-rw-r--r-- 1 mts mts 2403076 Mar 24 17:10 libcrypto.so.1.0.2
+
+vmware-tools-distrib/lib/lib32/libdnet.so.1:
+total 52
+-rw-r--r-- 1 mts mts  1498 Mar 24 17:10 LICENSE
+-rw-r--r-- 1 mts mts 45320 Mar 24 17:10 libdnet.so.1
+
+vmware-tools-distrib/lib/lib32/libffi.so.6:
+total 28
+-rw-r--r-- 1 mts mts 27648 Mar 24 17:10 libffi.so.6
+
+vmware-tools-distrib/lib/lib32/libfontconfig.so.1:
+total 332
+-rw-r--r-- 1 mts mts 333084 Mar 24 17:10 libfontconfig.so.1
+
+vmware-tools-distrib/lib/lib32/libfreetype.so.6:
+total 736
+-rw-r--r-- 1 mts mts 746768 Mar 24 17:10 libfreetype.so.6
+
+vmware-tools-distrib/lib/lib32/libgailutil.so.18:
+total 28
+-rw-r--r-- 1 mts mts 25064 Mar 24 17:10 libgailutil.so.18
+
+vmware-tools-distrib/lib/lib32/libgcc_s.so.1:
+total 100
+-rw-r--r-- 1 mts mts 95956 Mar 24 17:10 libgcc_s.so.1
+
+vmware-tools-distrib/lib/lib32/libgdk-x11-2.0.so.0:
+total 804
+-rw-r--r-- 1 mts mts 816708 Mar 24 17:10 libgdk-x11-2.0.so.0
+
+vmware-tools-distrib/lib/lib32/libgdk_pixbuf-2.0.so.0:
+total 1528
+-rw-r--r-- 1 mts mts 1558628 Mar 24 17:10 libgdk_pixbuf-2.0.so.0
+
+vmware-tools-distrib/lib/lib32/libgdk_pixbuf_xlib-2.0.so.0:
+total 76
+-rw-r--r-- 1 mts mts 70972 Mar 24 17:10 libgdk_pixbuf_xlib-2.0.so.0
+
+vmware-tools-distrib/lib/lib32/libgdkmm-2.4.so.1:
+total 292
+-rw-r--r-- 1 mts mts 291220 Mar 24 17:10 libgdkmm-2.4.so.1
+
+vmware-tools-distrib/lib/lib32/libgio-2.0.so.0:
+total 1604
+-rw-r--r-- 1 mts mts 1634608 Mar 24 17:10 libgio-2.0.so.0
+
+vmware-tools-distrib/lib/lib32/libgiomm-2.4.so.1:
+total 1556
+-rw-r--r-- 1 mts mts 1589208 Mar 24 17:10 libgiomm-2.4.so.1
+
+vmware-tools-distrib/lib/lib32/libglib-2.0.so.0:
+total 1064
+-rw-r--r-- 1 mts mts 1083908 Mar 24 17:10 libglib-2.0.so.0
+
+vmware-tools-distrib/lib/lib32/libglibmm-2.4.so.1:
+total 644
+-rw-r--r-- 1 mts mts 651656 Mar 24 17:10 libglibmm-2.4.so.1
+
+vmware-tools-distrib/lib/lib32/libglibmm_generate_extra_defs-2.4.so.1:
+total 20
+-rw-r--r-- 1 mts mts 16640 Mar 24 17:10 libglibmm_generate_extra_defs-2.4.so.1
+
+vmware-tools-distrib/lib/lib32/libgmodule-2.0.so.0:
+total 12
+-rw-r--r-- 1 mts mts 10520 Mar 24 17:10 libgmodule-2.0.so.0
+
+vmware-tools-distrib/lib/lib32/libgobject-2.0.so.0:
+total 280
+-rw-r--r-- 1 mts mts 281820 Mar 24 17:10 libgobject-2.0.so.0
+
+vmware-tools-distrib/lib/lib32/libgthread-2.0.so.0:
+total 4
+-rw-r--r-- 1 mts mts 3344 Mar 24 17:10 libgthread-2.0.so.0
+
+vmware-tools-distrib/lib/lib32/libgtk-x11-2.0.so.0:
+total 5668
+-rw-r--r-- 1 mts mts 5791208 Mar 24 17:10 libgtk-x11-2.0.so.0
+
+vmware-tools-distrib/lib/lib32/libgtkmm-2.4.so.1:
+total 3464
+-rw-r--r-- 1 mts mts 3541012 Mar 24 17:10 libgtkmm-2.4.so.1
+
+vmware-tools-distrib/lib/lib32/libharfbuzz.so.0:
+total 396
+-rw-r--r-- 1 mts mts 398744 Mar 24 17:10 libharfbuzz.so.0
+
+vmware-tools-distrib/lib/lib32/libhgfs.so:
+total 148
+-rw-r--r-- 1 mts mts 145092 Mar 24 17:10 libhgfs.so
+
+vmware-tools-distrib/lib/lib32/libiconv.so.2:
+total 904
+-rw-r--r-- 1 mts mts 918700 Mar 24 17:10 libiconv.so.2
+
+vmware-tools-distrib/lib/lib32/libmspack.so.0:
+total 84
+-rw-r--r-- 1 mts mts 79724 Mar 24 17:10 libmspack.so.0
+
+vmware-tools-distrib/lib/lib32/libpango-1.0.so.0:
+total 336
+-rw-r--r-- 1 mts mts 337176 Mar 24 17:10 libpango-1.0.so.0
+
+vmware-tools-distrib/lib/lib32/libpangocairo-1.0.so.0:
+total 60
+-rw-r--r-- 1 mts mts 54520 Mar 24 17:10 libpangocairo-1.0.so.0
+
+vmware-tools-distrib/lib/lib32/libpangoft2-1.0.so.0:
+total 96
+-rw-r--r-- 1 mts mts 91364 Mar 24 17:10 libpangoft2-1.0.so.0
+
+vmware-tools-distrib/lib/lib32/libpangomm-1.4.so.1:
+total 180
+-rw-r--r-- 1 mts mts 178608 Mar 24 17:10 libpangomm-1.4.so.1
+
+vmware-tools-distrib/lib/lib32/libpcre.so.1:
+total 312
+-rw-r--r-- 1 mts mts 313080 Mar 24 17:10 libpcre.so.1
+
+vmware-tools-distrib/lib/lib32/libpixman-1.so.0:
+total 3544
+-rw-r--r-- 1 mts mts 3621080 Mar 24 17:10 libpixman-1.so.0
+
+vmware-tools-distrib/lib/lib32/libpng12.so.0:
+total 148
+-rw-r--r-- 1 mts mts 144712 Mar 24 17:10 libpng12.so.0
+
+vmware-tools-distrib/lib/lib32/libsigc-2.0.so.0:
+total 20
+-rw-r--r-- 1 mts mts 19612 Mar 24 17:10 libsigc-2.0.so.0
+
+vmware-tools-distrib/lib/lib32/libssl.so.1.0.2:
+total 428
+-rw-r--r-- 1 mts mts 430772 Mar 24 17:10 libssl.so.1.0.2
+
+vmware-tools-distrib/lib/lib32/libstdc++.so.6:
+total 896
+-rw-r--r-- 1 mts mts 909712 Mar 24 17:10 libstdc++.so.6
+
+vmware-tools-distrib/lib/lib32/liburiparser.so.1:
+total 104
+-rw-r--r-- 1 mts mts 100664 Mar 24 17:10 liburiparser.so.1
+
+vmware-tools-distrib/lib/lib32/libvgauth.so:
+total 72
+-rw-r--r-- 1 mts mts 66724 Mar 24 17:10 libvgauth.so
+
+vmware-tools-distrib/lib/lib32/libvmGuestLib.so:
+total 84
+-rw-r--r-- 1 mts mts 79132 Mar 24 17:10 libvmGuestLib.so
+
+vmware-tools-distrib/lib/lib32/libvmGuestLibJava.so:
+total 32
+-rw-r--r-- 1 mts mts 29872 Mar 24 17:10 libvmGuestLibJava.so
+
+vmware-tools-distrib/lib/lib32/libvmhgfs-fuse.so:
+total 60
+-rw-r--r-- 1 mts mts 54632 Mar 24 17:10 libvmhgfs-fuse.so
+
+vmware-tools-distrib/lib/lib32/libvmtools.so:
+total 1016
+-rw-r--r-- 1 mts mts 1032804 Mar 24 17:10 libvmtools.so
+
+vmware-tools-distrib/lib/lib32/libvmtoolsd.so:
+total 56
+-rw-r--r-- 1 mts mts 50428 Mar 24 17:10 libvmtoolsd.so
+
+vmware-tools-distrib/lib/lib32/libvmware-alias-import.so:
+total 664
+-rw-r--r-- 1 mts mts 673164 Mar 24 17:10 libvmware-alias-import.so
+
+vmware-tools-distrib/lib/lib32/libvmware-guestproxycerttool.so:
+total 32
+-rw-r--r-- 1 mts mts 30100 Mar 24 17:10 libvmware-guestproxycerttool.so
+
+vmware-tools-distrib/lib/lib32/libvmware-hgfsclient.so:
+total 24
+-rw-r--r-- 1 mts mts 21636 Mar 24 17:10 libvmware-hgfsclient.so
+
+vmware-tools-distrib/lib/lib32/libvmware-modconfig-console.so:
+total 1044
+-rw-r--r-- 1 mts mts 1064052 Mar 24 17:10 libvmware-modconfig-console.so
+
+vmware-tools-distrib/lib/lib32/libvmware-namespace-cmd.so:
+total 16
+-rw-r--r-- 1 mts mts 13388 Mar 24 17:10 libvmware-namespace-cmd.so
+
+vmware-tools-distrib/lib/lib32/libvmware-toolbox-cmd.so:
+total 100
+-rw-r--r-- 1 mts mts 95500 Mar 24 17:10 libvmware-toolbox-cmd.so
+
+vmware-tools-distrib/lib/lib32/libvmware-vgauth-cmd.so:
+total 44
+-rw-r--r-- 1 mts mts 42064 Mar 24 17:10 libvmware-vgauth-cmd.so
+
+vmware-tools-distrib/lib/lib32/libvmware-vmblock-fuse.so:
+total 20
+-rw-r--r-- 1 mts mts 17752 Mar 24 17:10 libvmware-vmblock-fuse.so
+
+vmware-tools-distrib/lib/lib32/libxml2.so.2:
+total 1804
+-rw-r--r-- 1 mts mts 1842264 Mar 24 17:10 libxml2.so.2
+
+vmware-tools-distrib/lib/lib32/libxmlsec1-openssl.so.1:
+total 296
+-rw-r--r-- 1 mts mts 295580 Mar 24 17:10 libxmlsec1-openssl.so.1
+
+vmware-tools-distrib/lib/lib32/libxmlsec1.so.1:
+total 408
+-rw-r--r-- 1 mts mts 413432 Mar 24 17:10 libxmlsec1.so.1
+
+vmware-tools-distrib/lib/lib32/libz.so.1:
+total 92
+-rw-r--r-- 1 mts mts 87304 Mar 24 17:10 libz.so.1
+
+vmware-tools-distrib/lib/lib64:
+total 312
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libDeployPkg.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libICE.so.6
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libORBit-2.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libORBitCosNaming-2.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libSM.so.6
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libVGAuthService.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libXau.so.6
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libXcomposite.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libXcursor.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libXdamage.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libXdmcp.so.6
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libXfixes.so.3
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libXinerama.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libXrandr.so.2
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libXrender.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libXss.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libatk-1.0.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libatkmm-1.6.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libatspi.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libbonobo-2.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libbonobo-activation.so.4
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libcairo.so.2
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libcairomm-1.0.so.1
+drwxr-xr-x 4 mts mts 4096 Mar 24 17:10 libconf
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libcrypto.so.1.0.2
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libdnet.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libffi.so.6
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libfontconfig.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libfreetype.so.6
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libgailutil.so.18
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libgcc_s.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libgdk-x11-2.0.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libgdk_pixbuf-2.0.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libgdk_pixbuf_xlib-2.0.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libgdkmm-2.4.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libgio-2.0.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libgiomm-2.4.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libglib-2.0.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libglibmm-2.4.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libglibmm_generate_extra_defs-2.4.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libgmodule-2.0.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libgobject-2.0.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libgthread-2.0.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libgtk-x11-2.0.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libgtkmm-2.4.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libharfbuzz.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libhgfs.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libiconv.so.2
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libmspack.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libpango-1.0.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libpangocairo-1.0.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libpangoft2-1.0.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libpangomm-1.4.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libpcre.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libpixman-1.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libpng12.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libsigc-2.0.so.0
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libssl.so.1.0.2
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libstdc++.so.6
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 liburiparser.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libvgauth.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libvmGuestLib.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libvmGuestLibJava.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libvmhgfs-fuse.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libvmtools.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libvmtoolsd.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libvmware-alias-import.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libvmware-guestproxycerttool.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libvmware-hgfsclient.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libvmware-modconfig-console.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libvmware-namespace-cmd.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libvmware-toolbox-cmd.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libvmware-vgauth-cmd.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libvmware-vmblock-fuse.so
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libxml2.so.2
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libxmlsec1-openssl.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libxmlsec1.so.1
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 libz.so.1
+
+vmware-tools-distrib/lib/lib64/libDeployPkg.so:
+total 808
+-rw-r--r-- 1 mts mts 822680 Mar 24 17:10 libDeployPkg.so
+
+vmware-tools-distrib/lib/lib64/libICE.so.6:
+total 100
+-rw-r--r-- 1 mts mts 94904 Mar 24 17:10 libICE.so.6
+
+vmware-tools-distrib/lib/lib64/libORBit-2.so.0:
+total 440
+-rw-r--r-- 1 mts mts 445112 Mar 24 17:10 libORBit-2.so.0
+
+vmware-tools-distrib/lib/lib64/libORBitCosNaming-2.so.0:
+total 32
+-rw-r--r-- 1 mts mts 29048 Mar 24 17:10 libORBitCosNaming-2.so.0
+
+vmware-tools-distrib/lib/lib64/libSM.so.6:
+total 32
+-rw-r--r-- 1 mts mts 30048 Mar 24 17:10 libSM.so.6
+
+vmware-tools-distrib/lib/lib64/libVGAuthService.so:
+total 140
+-rw-r--r-- 1 mts mts 137072 Mar 24 17:10 libVGAuthService.so
+
+vmware-tools-distrib/lib/lib64/libXau.so.6:
+total 12
+-rw-r--r-- 1 mts mts 10632 Mar 24 17:10 libXau.so.6
+
+vmware-tools-distrib/lib/lib64/libXcomposite.so.1:
+total 12
+-rw-r--r-- 1 mts mts 9072 Mar 24 17:10 libXcomposite.so.1
+
+vmware-tools-distrib/lib/lib64/libXcursor.so.1:
+total 40
+-rw-r--r-- 1 mts mts 39904 Mar 24 17:10 libXcursor.so.1
+
+vmware-tools-distrib/lib/lib64/libXdamage.so.1:
+total 12
+-rw-r--r-- 1 mts mts 8536 Mar 24 17:10 libXdamage.so.1
+
+vmware-tools-distrib/lib/lib64/libXdmcp.so.6:
+total 20
+-rw-r--r-- 1 mts mts 19536 Mar 24 17:10 libXdmcp.so.6
+
+vmware-tools-distrib/lib/lib64/libXfixes.so.3:
+total 20
+-rw-r--r-- 1 mts mts 19832 Mar 24 17:10 libXfixes.so.3
+
+vmware-tools-distrib/lib/lib64/libXinerama.so.1:
+total 12
+-rw-r--r-- 1 mts mts 8608 Mar 24 17:10 libXinerama.so.1
+
+vmware-tools-distrib/lib/lib64/libXrandr.so.2:
+total 32
+-rw-r--r-- 1 mts mts 29520 Mar 24 17:10 libXrandr.so.2
+
+vmware-tools-distrib/lib/lib64/libXrender.so.1:
+total 36
+-rw-r--r-- 1 mts mts 35624 Mar 24 17:10 libXrender.so.1
+
+vmware-tools-distrib/lib/lib64/libXss.so.1:
+total 12
+-rw-r--r-- 1 mts mts 10816 Mar 24 17:10 libXss.so.1
+
+vmware-tools-distrib/lib/lib64/libatk-1.0.so.0:
+total 156
+-rw-r--r-- 1 mts mts 153512 Mar 24 17:10 libatk-1.0.so.0
+
+vmware-tools-distrib/lib/lib64/libatkmm-1.6.so.1:
+total 312
+-rw-r--r-- 1 mts mts 312712 Mar 24 17:10 libatkmm-1.6.so.1
+
+vmware-tools-distrib/lib/lib64/libatspi.so.0:
+total 144
+-rw-r--r-- 1 mts mts 143056 Mar 24 17:10 libatspi.so.0
+
+vmware-tools-distrib/lib/lib64/libbonobo-2.so.0:
+total 464
+-rw-r--r-- 1 mts mts 470616 Mar 24 17:10 libbonobo-2.so.0
+
+vmware-tools-distrib/lib/lib64/libbonobo-activation.so.4:
+total 112
+-rw-r--r-- 1 mts mts 107448 Mar 24 17:10 libbonobo-activation.so.4
+
+vmware-tools-distrib/lib/lib64/libcairo.so.2:
+total 1244
+-rw-r--r-- 1 mts mts 1268328 Mar 24 17:10 libcairo.so.2
+
+vmware-tools-distrib/lib/lib64/libcairomm-1.0.so.1:
+total 320
+-rw-r--r-- 1 mts mts 320128 Mar 24 17:10 libcairomm-1.0.so.1
+
+vmware-tools-distrib/lib/lib64/libconf:
+total 8
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 etc
+drwxr-xr-x 4 mts mts 4096 Mar 24 17:10 gtk-2.0
+
+vmware-tools-distrib/lib/lib64/libconf/etc:
+total 4
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 fonts
+
+vmware-tools-distrib/lib/lib64/libconf/etc/fonts:
+total 12
+-rw-r--r-- 1 mts mts 2532 Mar 24 17:10 fonts.conf
+-rw-r--r-- 1 mts mts 7250 Mar 24 17:10 fonts.dtd
+
+vmware-tools-distrib/lib/lib64/libconf/gtk-2.0:
+total 12
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 2.10.0
+-rw-r--r-- 1 mts mts  890 Mar 24 17:10 im-multipress.conf
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 modules
+
+vmware-tools-distrib/lib/lib64/libconf/gtk-2.0/2.10.0:
+total 4
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 engines
+
+vmware-tools-distrib/lib/lib64/libconf/gtk-2.0/2.10.0/engines:
+total 232
+-rw-r--r-- 1 mts mts 169296 Mar 24 17:10 libclearlooks.so
+-rw-r--r-- 1 mts mts  55168 Mar 24 17:10 libpixmap.so
+
+vmware-tools-distrib/lib/lib64/libconf/gtk-2.0/modules:
+total 600
+-rw-r--r-- 1 mts mts 176016 Mar 24 17:10 libatk-bridge.so
+-rw-r--r-- 1 mts mts  59936 Mar 24 17:10 libferret.so
+-rw-r--r-- 1 mts mts 362888 Mar 24 17:10 libgail.so
+
+vmware-tools-distrib/lib/lib64/libcrypto.so.1.0.2:
+total 2800
+-rw-r--r-- 1 mts mts 2861048 Mar 24 17:10 libcrypto.so.1.0.2
+
+vmware-tools-distrib/lib/lib64/libdnet.so.1:
+total 68
+-rw-r--r-- 1 mts mts  1498 Mar 24 17:10 LICENSE
+-rw-r--r-- 1 mts mts 58504 Mar 24 17:10 libdnet.so.1
+
+vmware-tools-distrib/lib/lib64/libffi.so.6:
+total 36
+-rw-r--r-- 1 mts mts 33320 Mar 24 17:10 libffi.so.6
+
+vmware-tools-distrib/lib/lib64/libfontconfig.so.1:
+total 336
+-rw-r--r-- 1 mts mts 337824 Mar 24 17:10 libfontconfig.so.1
+
+vmware-tools-distrib/lib/lib64/libfreetype.so.6:
+total 768
+-rw-r--r-- 1 mts mts 780168 Mar 24 17:10 libfreetype.so.6
+
+vmware-tools-distrib/lib/lib64/libgailutil.so.18:
+total 32
+-rw-r--r-- 1 mts mts 28720 Mar 24 17:10 libgailutil.so.18
+
+vmware-tools-distrib/lib/lib64/libgcc_s.so.1:
+total 92
+-rw-r--r-- 1 mts mts 88848 Mar 24 17:10 libgcc_s.so.1
+
+vmware-tools-distrib/lib/lib64/libgdk-x11-2.0.so.0:
+total 840
+-rw-r--r-- 1 mts mts 854408 Mar 24 17:10 libgdk-x11-2.0.so.0
+
+vmware-tools-distrib/lib/lib64/libgdk_pixbuf-2.0.so.0:
+total 1556
+-rw-r--r-- 1 mts mts 1588808 Mar 24 17:10 libgdk_pixbuf-2.0.so.0
+
+vmware-tools-distrib/lib/lib64/libgdk_pixbuf_xlib-2.0.so.0:
+total 88
+-rw-r--r-- 1 mts mts 83960 Mar 24 17:10 libgdk_pixbuf_xlib-2.0.so.0
+
+vmware-tools-distrib/lib/lib64/libgdkmm-2.4.so.1:
+total 308
+-rw-r--r-- 1 mts mts 310784 Mar 24 17:10 libgdkmm-2.4.so.1
+
+vmware-tools-distrib/lib/lib64/libgio-2.0.so.0:
+total 1944
+-rw-r--r-- 1 mts mts 1984864 Mar 24 17:10 libgio-2.0.so.0
+
+vmware-tools-distrib/lib/lib64/libgiomm-2.4.so.1:
+total 1868
+-rw-r--r-- 1 mts mts 1908192 Mar 24 17:10 libgiomm-2.4.so.1
+
+vmware-tools-distrib/lib/lib64/libglib-2.0.so.0:
+total 1224
+-rw-r--r-- 1 mts mts 1247728 Mar 24 17:10 libglib-2.0.so.0
+
+vmware-tools-distrib/lib/lib64/libglibmm-2.4.so.1:
+total 760
+-rw-r--r-- 1 mts mts 770816 Mar 24 17:10 libglibmm-2.4.so.1
+
+vmware-tools-distrib/lib/lib64/libglibmm_generate_extra_defs-2.4.so.1:
+total 20
+-rw-r--r-- 1 mts mts 19936 Mar 24 17:10 libglibmm_generate_extra_defs-2.4.so.1
+
+vmware-tools-distrib/lib/lib64/libgmodule-2.0.so.0:
+total 16
+-rw-r--r-- 1 mts mts 13608 Mar 24 17:10 libgmodule-2.0.so.0
+
+vmware-tools-distrib/lib/lib64/libgobject-2.0.so.0:
+total 348
+-rw-r--r-- 1 mts mts 350040 Mar 24 17:10 libgobject-2.0.so.0
+
+vmware-tools-distrib/lib/lib64/libgthread-2.0.so.0:
+total 8
+-rw-r--r-- 1 mts mts 4856 Mar 24 17:10 libgthread-2.0.so.0
+
+vmware-tools-distrib/lib/lib64/libgtk-x11-2.0.so.0:
+total 5456
+-rw-r--r-- 1 mts mts 5571400 Mar 24 17:10 libgtk-x11-2.0.so.0
+
+vmware-tools-distrib/lib/lib64/libgtkmm-2.4.so.1:
+total 4584
+-rw-r--r-- 1 mts mts 4678272 Mar 24 17:10 libgtkmm-2.4.so.1
+
+vmware-tools-distrib/lib/lib64/libharfbuzz.so.0:
+total 392
+-rw-r--r-- 1 mts mts 395392 Mar 24 17:10 libharfbuzz.so.0
+
+vmware-tools-distrib/lib/lib64/libhgfs.so:
+total 144
+-rw-r--r-- 1 mts mts 141608 Mar 24 17:10 libhgfs.so
+
+vmware-tools-distrib/lib/lib64/libiconv.so.2:
+total 924
+-rw-r--r-- 1 mts mts 938064 Mar 24 17:10 libiconv.so.2
+
+vmware-tools-distrib/lib/lib64/libmspack.so.0:
+total 80
+-rw-r--r-- 1 mts mts 76432 Mar 24 17:10 libmspack.so.0
+
+vmware-tools-distrib/lib/lib64/libpango-1.0.so.0:
+total 348
+-rw-r--r-- 1 mts mts 350096 Mar 24 17:10 libpango-1.0.so.0
+
+vmware-tools-distrib/lib/lib64/libpangocairo-1.0.so.0:
+total 60
+-rw-r--r-- 1 mts mts 55168 Mar 24 17:10 libpangocairo-1.0.so.0
+
+vmware-tools-distrib/lib/lib64/libpangoft2-1.0.so.0:
+total 100
+-rw-r--r-- 1 mts mts 96072 Mar 24 17:10 libpangoft2-1.0.so.0
+
+vmware-tools-distrib/lib/lib64/libpangomm-1.4.so.1:
+total 188
+-rw-r--r-- 1 mts mts 185696 Mar 24 17:10 libpangomm-1.4.so.1
+
+vmware-tools-distrib/lib/lib64/libpcre.so.1:
+total 336
+-rw-r--r-- 1 mts mts 339728 Mar 24 17:10 libpcre.so.1
+
+vmware-tools-distrib/lib/lib64/libpixman-1.so.0:
+total 3656
+-rw-r--r-- 1 mts mts 3739552 Mar 24 17:10 libpixman-1.so.0
+
+vmware-tools-distrib/lib/lib64/libpng12.so.0:
+total 160
+-rw-r--r-- 1 mts mts 157688 Mar 24 17:10 libpng12.so.0
+
+vmware-tools-distrib/lib/lib64/libsigc-2.0.so.0:
+total 24
+-rw-r--r-- 1 mts mts 20864 Mar 24 17:10 libsigc-2.0.so.0
+
+vmware-tools-distrib/lib/lib64/libssl.so.1.0.2:
+total 464
+-rw-r--r-- 1 mts mts 470112 Mar 24 17:10 libssl.so.1.0.2
+
+vmware-tools-distrib/lib/lib64/libstdc++.so.6:
+total 956
+-rw-r--r-- 1 mts mts 974840 Mar 24 17:10 libstdc++.so.6
+
+vmware-tools-distrib/lib/lib64/liburiparser.so.1:
+total 108
+-rw-r--r-- 1 mts mts 103784 Mar 24 17:10 liburiparser.so.1
+
+vmware-tools-distrib/lib/lib64/libvgauth.so:
+total 72
+-rw-r--r-- 1 mts mts 67360 Mar 24 17:10 libvgauth.so
+
+vmware-tools-distrib/lib/lib64/libvmGuestLib.so:
+total 84
+-rw-r--r-- 1 mts mts 79808 Mar 24 17:10 libvmGuestLib.so
+
+vmware-tools-distrib/lib/lib64/libvmGuestLibJava.so:
+total 36
+-rw-r--r-- 1 mts mts 34576 Mar 24 17:10 libvmGuestLibJava.so
+
+vmware-tools-distrib/lib/lib64/libvmhgfs-fuse.so:
+total 64
+-rw-r--r-- 1 mts mts 59512 Mar 24 17:10 libvmhgfs-fuse.so
+
+vmware-tools-distrib/lib/lib64/libvmtools.so:
+total 1052
+-rw-r--r-- 1 mts mts 1070552 Mar 24 17:10 libvmtools.so
+
+vmware-tools-distrib/lib/lib64/libvmtoolsd.so:
+total 60
+-rw-r--r-- 1 mts mts 55176 Mar 24 17:10 libvmtoolsd.so
+
+vmware-tools-distrib/lib/lib64/libvmware-alias-import.so:
+total 744
+-rw-r--r-- 1 mts mts 755800 Mar 24 17:10 libvmware-alias-import.so
+
+vmware-tools-distrib/lib/lib64/libvmware-guestproxycerttool.so:
+total 32
+-rw-r--r-- 1 mts mts 30856 Mar 24 17:10 libvmware-guestproxycerttool.so
+
+vmware-tools-distrib/lib/lib64/libvmware-hgfsclient.so:
+total 24
+-rw-r--r-- 1 mts mts 22224 Mar 24 17:10 libvmware-hgfsclient.so
+
+vmware-tools-distrib/lib/lib64/libvmware-modconfig-console.so:
+total 1136
+-rw-r--r-- 1 mts mts 1155832 Mar 24 17:10 libvmware-modconfig-console.so
+
+vmware-tools-distrib/lib/lib64/libvmware-namespace-cmd.so:
+total 20
+-rw-r--r-- 1 mts mts 18040 Mar 24 17:10 libvmware-namespace-cmd.so
+
+vmware-tools-distrib/lib/lib64/libvmware-toolbox-cmd.so:
+total 100
+-rw-r--r-- 1 mts mts 96168 Mar 24 17:10 libvmware-toolbox-cmd.so
+
+vmware-tools-distrib/lib/lib64/libvmware-vgauth-cmd.so:
+total 48
+-rw-r--r-- 1 mts mts 46720 Mar 24 17:10 libvmware-vgauth-cmd.so
+
+vmware-tools-distrib/lib/lib64/libvmware-vmblock-fuse.so:
+total 20
+-rw-r--r-- 1 mts mts 18472 Mar 24 17:10 libvmware-vmblock-fuse.so
+
+vmware-tools-distrib/lib/lib64/libxml2.so.2:
+total 1876
+-rw-r--r-- 1 mts mts 1914160 Mar 24 17:10 libxml2.so.2
+
+vmware-tools-distrib/lib/lib64/libxmlsec1-openssl.so.1:
+total 344
+-rw-r--r-- 1 mts mts 346080 Mar 24 17:10 libxmlsec1-openssl.so.1
+
+vmware-tools-distrib/lib/lib64/libxmlsec1.so.1:
+total 456
+-rw-r--r-- 1 mts mts 460544 Mar 24 17:10 libxmlsec1.so.1
+
+vmware-tools-distrib/lib/lib64/libz.so.1:
+total 100
+-rw-r--r-- 1 mts mts 96128 Mar 24 17:10 libz.so.1
+
+vmware-tools-distrib/lib/modules:
+total 20
+drwxr-xr-x 124 mts mts 12288 Mar 24 17:10 binary
+-rw-r--r--   1 mts mts  1170 Mar 24 17:10 modules.xml
+drwxr-xr-x   2 mts mts  4096 Mar 24 17:10 source
+
+vmware-tools-distrib/lib/modules/binary:
+total 488
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.18-8.el5-i686PAE-RHEL5
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.18-8.el5-i686smp-RHEL5
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.18-8.el5-x86_64smp-RHEL5
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.27.13-1-i586default-SLE11
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.27.13-1-i586pae-SLE11
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.27.13-1-x86_64default-SLE11
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.27.19-5-i586vmi-SLE11
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.28-1vmw-i686-ttylinux
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-100-amd64-uek-Oracle6.1
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-100-i686-uek-Oracle6.1
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-100.26.2.el5-x86_64-uek-Oracle5.6
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-131.0.15.el6-i686-rhel6.1
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-131.0.15.el6-x86_64-rhel6.1
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-200-amd64-uek-Oracle5.7
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-200-i686-uek-Oracle5.7
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-21.32-386-Ubuntu10.04
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-21.32-generic-i386-Ubuntu10.04
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-21.32-generic-i386-pae-Ubuntu10.04
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-21.32-generic-x86_64-Ubuntu10.04
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-21.32-server-x86_64-Ubuntu10.04
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-24-amd64-generic-Ubuntu10.04.1
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-24-amd64-server-Ubuntu10.04.1
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-24-i386-Ubuntu10.04.1
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-24-i386-generic-Ubuntu10.04.1
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-24-i386-generic-pae-Ubuntu10.04.1
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-28.55-amd64-generic-Ubuntu10.04.2
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-28.55-amd64-server-Ubuntu10.04.2
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-28.55-i386-Ubuntu10.04.2
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-28.55-i386-generic-Ubuntu10.04.2
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-28.55-i386-generic-pae-Ubuntu10.04.2
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-300-amd64-uek-Oracle5.8
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-300-amd64-uek-Oracle6.2
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-300-i686-uek-Oracle5.8
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-300-i686-uek-Oracle6.2
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-33-amd64-generic-Ubuntu10.04.3
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-33-amd64-server-Ubuntu10.04.3
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-33-i386-386-Ubuntu10.04.3
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-33-i386-generic-Ubuntu10.04.3
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-33-i386-generic-pae-Ubuntu10.04.3
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-38-amd64-generic-Ubuntu10.04.4
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-38-amd64-server-Ubuntu10.04.4
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-38-i386-Ubuntu10.04.4
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-38-i386-generic-Ubuntu10.04.4
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-38-i386-generic-pae-Ubuntu10.04.4
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-431-amd64-RHEL6.5
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-431-i686-RHEL6.5
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-71.el6-i686-rhel6
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-71.el6-x86_64-rhel6
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-754.9.1-amd64-rhel6.9
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32-754.9.1-i686-rhel6.9
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32.12-0.7.1-i586default-SLE11
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32.12-0.7.1-i586pae-SLE11
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.32.12-0.7.1-x86_64default-SLE11
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.35-22-amd64-generic-Ubuntu10.10
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.35-22-amd64-server-Ubuntu10.10
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.35-22-amd64-virtual-Ubuntu10.10
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.35-22-i386-generic-Ubuntu10.10
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.35-22-i386-generic-pae-Ubuntu10.10
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.35-22-i386-virtual-Ubuntu10.10
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.38-8-amd64-generic-Ubuntu11.04
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.38-8-amd64-server-Ubuntu11.04
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.38-8-amd64-virtual-Ubuntu11.04
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.38-8-i386-generic-Ubuntu11.04
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.38-8-i386-generic-pae-Ubuntu11.04
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.38-8-i386-virtual-Ubuntu11.04
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.39-200-amd64-uek-Oracle6.3
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.39-200-i686-uek-Oracle6.3
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.39-200.24.1-amd64-uek-Oracle5.9
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.39-200.24.1-i686-uek-Oracle5.9
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.39-300-amd64-Oracle-UEK2
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.39-300-amd64-uek-Oracle-5.9-UEK2
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.39-300-i686-Oracle-UEK2
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.39-300-i686-uek-Oracle-5.9-UEK2
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.39-400-amd64-uek-Oracle6.4-UEK2
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.39-400-i686-uek-Oracle6.4-UEK2
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.39-400.17.1-amd64-uek-Oracle5.9
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-2.6.39-400.17.1-i686-uek-Oracle5.9
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.0.0-12.20-amd64-generic-Ubuntu11.10
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.0.0-12.20-amd64-server-Ubuntu11.10
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.0.0-12.20-amd64-virtual-Ubuntu11.10
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.0.0-12.20-i386-generic-Ubuntu11.10
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.0.0-12.20-i386-generic-pae-Ubuntu11.10
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.0.0-12.20-i386-virtual-Ubuntu11.10
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.0.101-108.84-amd64-default-SLE11sp4
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.0.101-108.84-amd64-trace-SLE11sp4
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.0.101-108.84-i586-default-SLE11sp4
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.0.101-108.84-i586-pae-SLE11sp4
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.0.101-108.84-i586-trace-SLE11sp4
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.0.101-63-amd64-default-SLE11SP4
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.0.101-63-amd64-trace-SLE11SP4
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.0.101-63-i586-default-SLE11SP4
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.0.101-63-i586-pae-SLE11SP4
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.0.101-63-i586-trace-SLE11SP4
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.0.13-0.27-amd64-default-SLE11SP2
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.0.13-0.27-i586-default-SLE11SP2
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.0.13-0.27-i586-pae-SLE11SP2
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.0.76-0.11-amd64-default-SLE11SP3
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.0.76-0.11-amd64-trace-SLE11SP3
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.0.76-0.11-i586-default-SLE11SP3
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.0.76-0.11-i586-pae-SLE11SP3
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.0.76-0.11-i586-trace-SLE11SP3
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.10.0-123-amd64-RHEL7.0
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.11.0-15-amd64-generic-Ubuntu12.04.4
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.11.0-15-i386-generic-Ubuntu12.04.4
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.2.0-23-amd64-generic-Ubuntu12.04
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.2.0-23-amd64-virtual-Ubuntu12.04
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.2.0-23-i386-generic-Ubuntu12.04
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.2.0-23-i386-generic-pae-Ubuntu12.04
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.2.0-23-i386-virtual-Ubuntu12.04
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.2.0-29-amd64-generic-Ubuntu12.04.1
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.2.0-29-amd64-virtual-Ubuntu12.04.1
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.2.0-29-i386-generic-Ubuntu12.04.1
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.2.0-29-i386-generic-pae-Ubuntu12.04.1
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.2.0-29-i386-virtual-Ubuntu12.04.1
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.5.0-17-amd64-generic-Ubuntu12.10
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.5.0-17-i386-generic-Ubuntu12.10
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.5.0-23-amd64-generic-Ubuntu12.04.2
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.5.0-23-i386-generic-Ubuntu12.04.2
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.8.0-19-amd64-generic-Ubuntu13.04
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.8.0-19-i386-generic-Ubuntu13.04
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.8.0-29-amd64-generic-Ubuntu12.04.3
+drwxr-xr-x 3 mts mts 4096 Mar 24 17:10 bld-3.8.0-29-i386-generic-Ubuntu12.04.3
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.18-8.el5-i686PAE-RHEL5:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  125 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.18-8.el5-i686PAE-RHEL5/objects:
+total 400
+-rw-r--r-- 1 mts mts 27116 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 21520 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 87676 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 58704 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 20480 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 10776 Mar 24 17:10 vmsync.o
+-rw-r--r-- 1 mts mts 27076 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 61116 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 60448 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.18-8.el5-i686smp-RHEL5:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  122 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.18-8.el5-i686smp-RHEL5/objects:
+total 400
+-rw-r--r-- 1 mts mts 26860 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 21520 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 87644 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 58704 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 20472 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 10776 Mar 24 17:10 vmsync.o
+-rw-r--r-- 1 mts mts 26948 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 60860 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 60448 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.18-8.el5-x86_64smp-RHEL5:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  133 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.18-8.el5-x86_64smp-RHEL5/objects:
+total 880
+-rw-r--r-- 1 mts mts  66424 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  60264 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 164632 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 120848 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  58600 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  43200 Mar 24 17:10 vmsync.o
+-rw-r--r-- 1 mts mts  64880 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 113736 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 152520 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.27.13-1-i586default-SLE11:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  187 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.27.13-1-i586default-SLE11/objects:
+total 372
+-rw-r--r-- 1 mts mts 22444 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 17904 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 83080 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 55532 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16336 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  6496 Mar 24 17:10 vmsync.o
+-rw-r--r-- 1 mts mts 24008 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 69372 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 52024 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.27.13-1-i586pae-SLE11:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  179 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.27.13-1-i586pae-SLE11/objects:
+total 380
+-rw-r--r-- 1 mts mts 22700 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 17904 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 83232 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 55532 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16428 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  6496 Mar 24 17:10 vmsync.o
+-rw-r--r-- 1 mts mts 24312 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 70244 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 52024 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.27.13-1-x86_64default-SLE11:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  199 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.27.13-1-x86_64default-SLE11/objects:
+total 568
+-rw-r--r-- 1 mts mts  34320 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  28568 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 131128 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  88560 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  25936 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  10312 Mar 24 17:10 vmsync.o
+-rw-r--r-- 1 mts mts  33792 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 101480 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  87008 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.27.19-5-i586vmi-SLE11:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  175 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.27.19-5-i586vmi-SLE11/objects:
+total 380
+-rw-r--r-- 1 mts mts 22700 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 17904 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 83452 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 56128 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16428 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  6496 Mar 24 17:10 vmsync.o
+-rw-r--r-- 1 mts mts 24532 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 70868 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 52356 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.28-1vmw-i686-ttylinux:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  165 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.28-1vmw-i686-ttylinux/objects:
+total 360
+-rw-r--r-- 1 mts mts 23400 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16952 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81124 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 53504 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 15904 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  6680 Mar 24 17:10 vmsync.o
+-rw-r--r-- 1 mts mts 23444 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 66200 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 48532 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-100-amd64-uek-Oracle6.1:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  159 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-100-amd64-uek-Oracle6.1/objects:
+total 552
+-rw-r--r-- 1 mts mts  35280 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  27176 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 131720 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  86656 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  26760 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  33496 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 103192 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  81280 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-100-i686-uek-Oracle6.1:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  145 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-100-i686-uek-Oracle6.1/objects:
+total 368
+-rw-r--r-- 1 mts mts 24532 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16904 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 82012 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 55508 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16448 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24752 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 73576 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 49116 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-100.26.2.el5-x86_64-uek-Oracle5.6:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  151 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-100.26.2.el5-x86_64-uek-Oracle5.6/objects:
+total 552
+-rw-r--r-- 1 mts mts  35280 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  27176 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 131720 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  86720 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  26760 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  33496 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 103224 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  81280 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-131.0.15.el6-i686-rhel6.1:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  137 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-131.0.15.el6-i686-rhel6.1/objects:
+total 384
+-rw-r--r-- 1 mts mts 24980 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16964 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 82232 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 55616 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16876 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 25480 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 75440 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 49252 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-131.0.15.el6-x86_64-rhel6.1:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  151 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-131.0.15.el6-x86_64-rhel6.1/objects:
+total 556
+-rw-r--r-- 1 mts mts  35576 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  27128 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 132120 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  88816 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  26728 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  33952 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 104520 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  81960 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-200-amd64-uek-Oracle5.7:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  145 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-200-amd64-uek-Oracle5.7/objects:
+total 552
+-rw-r--r-- 1 mts mts  35248 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  27144 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 131688 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  86656 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  26760 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  33496 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 103160 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  81248 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-200-i686-uek-Oracle5.7:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  135 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-200-i686-uek-Oracle5.7/objects:
+total 368
+-rw-r--r-- 1 mts mts 24532 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16872 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 82012 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 55476 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16416 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24752 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 73576 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 49116 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-21.32-386-Ubuntu10.04:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  184 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-21.32-386-Ubuntu10.04/objects:
+total 364
+-rw-r--r-- 1 mts mts 23524 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16868 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81156 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 55868 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16416 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24004 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 66348 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 49300 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-21.32-generic-i386-Ubuntu10.04:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  192 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-21.32-generic-i386-Ubuntu10.04/objects:
+total 364
+-rw-r--r-- 1 mts mts 23524 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16868 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81156 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 55900 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16416 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24036 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 66348 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 49300 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-21.32-generic-i386-pae-Ubuntu10.04:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  200 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-21.32-generic-i386-pae-Ubuntu10.04/objects:
+total 364
+-rw-r--r-- 1 mts mts 23812 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16900 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81436 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 55932 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16448 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24228 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 66780 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 49300 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-21.32-generic-x86_64-Ubuntu10.04:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  203 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-21.32-generic-x86_64-Ubuntu10.04/objects:
+total 532
+-rw-r--r-- 1 mts mts  33912 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  27160 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 130816 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  88136 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  26760 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  32640 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  92896 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  81688 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-21.32-server-x86_64-Ubuntu10.04:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  201 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-21.32-server-x86_64-Ubuntu10.04/objects:
+total 532
+-rw-r--r-- 1 mts mts  33912 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  27160 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 130608 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  87816 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  26760 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  32640 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  92712 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  81536 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-24-amd64-generic-Ubuntu10.04.1:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  166 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-24-amd64-generic-Ubuntu10.04.1/objects:
+total 532
+-rw-r--r-- 1 mts mts  33944 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  27160 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 130816 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  88104 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  26760 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  32640 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  92896 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  81688 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-24-amd64-server-Ubuntu10.04.1:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  163 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-24-amd64-server-Ubuntu10.04.1/objects:
+total 532
+-rw-r--r-- 1 mts mts  33944 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  27160 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 130608 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  87784 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  26760 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  32640 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  92712 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  81536 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-24-i386-Ubuntu10.04.1:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  139 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-24-i386-Ubuntu10.04.1/objects:
+total 364
+-rw-r--r-- 1 mts mts 23524 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16868 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81156 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 55868 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16416 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24004 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 66348 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 49300 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-24-i386-generic-Ubuntu10.04.1:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  155 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-24-i386-generic-Ubuntu10.04.1/objects:
+total 364
+-rw-r--r-- 1 mts mts 23524 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16868 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81156 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 55900 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16416 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24036 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 66348 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 49300 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-24-i386-generic-pae-Ubuntu10.04.1:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  167 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-24-i386-generic-pae-Ubuntu10.04.1/objects:
+total 364
+-rw-r--r-- 1 mts mts 23780 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16900 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81436 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 55932 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16448 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24228 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 66780 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 49300 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-28.55-amd64-generic-Ubuntu10.04.2:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  139 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-28.55-amd64-generic-Ubuntu10.04.2/objects:
+total 532
+-rw-r--r-- 1 mts mts  33944 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  27160 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 130816 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  88136 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  26760 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  32640 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  92896 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  81688 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-28.55-amd64-server-Ubuntu10.04.2:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  137 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-28.55-amd64-server-Ubuntu10.04.2/objects:
+total 532
+-rw-r--r-- 1 mts mts  33944 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  27160 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 130608 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  87816 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  26760 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  32640 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  92712 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  81536 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-28.55-i386-Ubuntu10.04.2:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  121 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-28.55-i386-Ubuntu10.04.2/objects:
+total 364
+-rw-r--r-- 1 mts mts 23524 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16868 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81156 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 55868 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16416 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24004 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 66348 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 49300 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-28.55-i386-generic-Ubuntu10.04.2:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  129 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-28.55-i386-generic-Ubuntu10.04.2/objects:
+total 364
+-rw-r--r-- 1 mts mts 23524 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16868 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81156 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 55900 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16416 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24036 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 66348 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 49300 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-28.55-i386-generic-pae-Ubuntu10.04.2:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  137 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-28.55-i386-generic-pae-Ubuntu10.04.2/objects:
+total 364
+-rw-r--r-- 1 mts mts 23812 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16900 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81436 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 55932 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16448 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24228 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 66780 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 49300 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-300-amd64-uek-Oracle5.8:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  145 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-300-amd64-uek-Oracle5.8/objects:
+total 552
+-rw-r--r-- 1 mts mts  35248 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  27144 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 131688 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  86656 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  26760 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  33496 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 103160 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  81248 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-300-amd64-uek-Oracle6.2:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  157 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-300-amd64-uek-Oracle6.2/objects:
+total 552
+-rw-r--r-- 1 mts mts  35280 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  27176 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 131720 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  86656 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  26760 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  33496 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 103224 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  81280 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-300-i686-uek-Oracle5.8:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  135 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-300-i686-uek-Oracle5.8/objects:
+total 368
+-rw-r--r-- 1 mts mts 24532 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16872 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 82012 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 55476 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16416 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24752 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 73576 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 49116 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-300-i686-uek-Oracle6.2:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  143 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-300-i686-uek-Oracle6.2/objects:
+total 368
+-rw-r--r-- 1 mts mts 24564 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16904 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 82012 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 55508 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16448 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24752 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 73576 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 49116 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-33-amd64-generic-Ubuntu10.04.3:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  139 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-33-amd64-generic-Ubuntu10.04.3/objects:
+total 532
+-rw-r--r-- 1 mts mts  33944 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  27160 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 130816 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  88104 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  26760 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  32640 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  93008 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  81808 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-33-amd64-server-Ubuntu10.04.3:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  137 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-33-amd64-server-Ubuntu10.04.3/objects:
+total 532
+-rw-r--r-- 1 mts mts  33944 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  27160 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 130608 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  87784 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  26760 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  32640 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  92832 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  81656 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-33-i386-386-Ubuntu10.04.3:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  121 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-33-i386-386-Ubuntu10.04.3/objects:
+total 364
+-rw-r--r-- 1 mts mts 23524 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16868 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81188 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 55868 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16416 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24004 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 66420 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 49396 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-33-i386-generic-Ubuntu10.04.3:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  129 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-33-i386-generic-Ubuntu10.04.3/objects:
+total 364
+-rw-r--r-- 1 mts mts 23524 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16868 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81188 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 55900 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16416 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24036 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 66420 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 49396 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-33-i386-generic-pae-Ubuntu10.04.3:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  137 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-33-i386-generic-pae-Ubuntu10.04.3/objects:
+total 364
+-rw-r--r-- 1 mts mts 23780 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16900 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81436 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 55964 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16448 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24228 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 66884 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 49396 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-38-amd64-generic-Ubuntu10.04.4:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  139 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-38-amd64-generic-Ubuntu10.04.4/objects:
+total 532
+-rw-r--r-- 1 mts mts  33944 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  27128 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 130784 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  88104 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  26760 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  32608 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  92896 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  81688 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-38-amd64-server-Ubuntu10.04.4:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  137 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-38-amd64-server-Ubuntu10.04.4/objects:
+total 532
+-rw-r--r-- 1 mts mts  33944 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  27128 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 130576 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  87784 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  26760 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  32608 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  92688 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  81536 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-38-i386-Ubuntu10.04.4:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  121 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-38-i386-Ubuntu10.04.4/objects:
+total 364
+-rw-r--r-- 1 mts mts 23524 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16868 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81188 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 55868 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16416 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24004 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 66348 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 49300 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-38-i386-generic-Ubuntu10.04.4:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  129 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-38-i386-generic-Ubuntu10.04.4/objects:
+total 364
+-rw-r--r-- 1 mts mts 23524 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16868 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81188 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 55900 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16416 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24036 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 66348 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 49300 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-38-i386-generic-pae-Ubuntu10.04.4:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  137 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-38-i386-generic-pae-Ubuntu10.04.4/objects:
+total 364
+-rw-r--r-- 1 mts mts 23780 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16900 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81436 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 55932 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16448 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24228 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 66780 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 49300 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-431-amd64-RHEL6.5:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  141 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-431-amd64-RHEL6.5/objects:
+total 552
+-rw-r--r-- 1 mts mts  35704 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  27256 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 131712 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  87624 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  26824 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  34016 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 104648 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  81392 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-431-i686-RHEL6.5:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  127 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-431-i686-RHEL6.5/objects:
+total 376
+-rw-r--r-- 1 mts mts 25088 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 17064 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 82004 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 54424 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16612 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 25184 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 74916 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 48604 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-71.el6-i686-rhel6:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  123 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-71.el6-i686-rhel6/objects:
+total 384
+-rw-r--r-- 1 mts mts 24916 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16932 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 82232 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 55552 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16844 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 25480 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 75488 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 49252 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-71.el6-x86_64-rhel6:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  137 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-71.el6-x86_64-rhel6/objects:
+total 556
+-rw-r--r-- 1 mts mts  35576 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  27128 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 132088 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  88784 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  26728 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  33920 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 104520 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  81960 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-754.9.1-amd64-rhel6.9:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  145 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-754.9.1-amd64-rhel6.9/objects:
+total 348
+-rw-r--r-- 1 mts mts 134320 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  88384 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  36944 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  71056 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-754.9.1-i686-rhel6.9:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  131 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32-754.9.1-i686-rhel6.9/objects:
+total 228
+-rw-r--r-- 1 mts mts 83388 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 54504 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 25712 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 45912 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32.12-0.7.1-i586default-SLE11:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  192 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32.12-0.7.1-i586default-SLE11/objects:
+total 360
+-rw-r--r-- 1 mts mts 24032 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16904 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81136 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 53724 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16416 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24280 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 72408 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 48384 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32.12-0.7.1-i586pae-SLE11:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  184 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32.12-0.7.1-i586pae-SLE11/objects:
+total 360
+-rw-r--r-- 1 mts mts 24436 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16872 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81416 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 53692 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16408 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24548 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 72992 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 48384 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32.12-0.7.1-x86_64default-SLE11:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  204 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.32.12-0.7.1-x86_64default-SLE11/objects:
+total 540
+-rw-r--r-- 1 mts mts  34544 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  26856 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 130184 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  83920 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  26248 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  32808 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 101144 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  79408 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.35-22-amd64-generic-Ubuntu10.10:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  137 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.35-22-amd64-generic-Ubuntu10.10/objects:
+total 540
+-rw-r--r-- 1 mts mts  34864 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  27160 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 132272 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  88512 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  26784 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  32864 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  93504 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  81888 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.35-22-amd64-server-Ubuntu10.10:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  135 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.35-22-amd64-server-Ubuntu10.10/objects:
+total 536
+-rw-r--r-- 1 mts mts  34864 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  27160 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 130768 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  88192 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  26784 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  32864 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  93320 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  81432 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.35-22-amd64-virtual-Ubuntu10.10:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  137 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.35-22-amd64-virtual-Ubuntu10.10/objects:
+total 536
+-rw-r--r-- 1 mts mts  34864 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  27160 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 130768 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  88192 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  26784 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  32864 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  93320 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  81432 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.35-22-i386-generic-Ubuntu10.10:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  127 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.35-22-i386-generic-Ubuntu10.10/objects:
+total 364
+-rw-r--r-- 1 mts mts 24336 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16972 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81452 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 56256 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16532 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24324 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 66676 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 49472 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.35-22-i386-generic-pae-Ubuntu10.10:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  135 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.35-22-i386-generic-pae-Ubuntu10.10/objects:
+total 364
+-rw-r--r-- 1 mts mts 24464 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16972 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81668 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 56288 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16532 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24548 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 67556 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 49472 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.35-22-i386-virtual-Ubuntu10.10:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  127 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.35-22-i386-virtual-Ubuntu10.10/objects:
+total 364
+-rw-r--r-- 1 mts mts 24464 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16972 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81668 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 56256 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16532 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24548 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 67556 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 49472 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.38-8-amd64-generic-Ubuntu11.04:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  135 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.38-8-amd64-generic-Ubuntu11.04/objects:
+total 528
+-rw-r--r-- 1 mts mts  34352 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  26904 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 130208 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  86864 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  27192 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  33352 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  94032 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  69808 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.38-8-amd64-server-Ubuntu11.04:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  133 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.38-8-amd64-server-Ubuntu11.04/objects:
+total 524
+-rw-r--r-- 1 mts mts  34352 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  26904 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 128736 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  86576 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  27192 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  33352 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  93792 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  69392 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.38-8-amd64-virtual-Ubuntu11.04:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  135 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.38-8-amd64-virtual-Ubuntu11.04/objects:
+total 528
+-rw-r--r-- 1 mts mts  34352 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  26904 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 128736 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  86576 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  27192 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  33352 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  94368 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  69392 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.38-8-i386-generic-Ubuntu11.04:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  125 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.38-8-i386-generic-Ubuntu11.04/objects:
+total 352
+-rw-r--r-- 1 mts mts 24056 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16888 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 80284 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 54908 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16772 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24372 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 68272 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 44548 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.38-8-i386-generic-pae-Ubuntu11.04:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  133 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.38-8-i386-generic-pae-Ubuntu11.04/objects:
+total 352
+-rw-r--r-- 1 mts mts 24376 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16888 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 80516 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 54908 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16772 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24564 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 68656 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 44580 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.38-8-i386-virtual-Ubuntu11.04:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  125 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.38-8-i386-virtual-Ubuntu11.04/objects:
+total 352
+-rw-r--r-- 1 mts mts 24376 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16888 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 80516 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 54908 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16772 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24564 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 68656 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 44548 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.39-200-amd64-uek-Oracle6.3:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  159 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.39-200-amd64-uek-Oracle6.3/objects:
+total 540
+-rw-r--r-- 1 mts mts  35904 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  26824 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 131152 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  86872 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  27168 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  33320 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 101560 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  70232 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.39-200-i686-uek-Oracle6.3:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  145 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.39-200-i686-uek-Oracle6.3/objects:
+total 360
+-rw-r--r-- 1 mts mts 25364 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16852 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81020 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 54904 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16752 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24488 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 72736 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 44264 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.39-200.24.1-amd64-uek-Oracle5.9:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  145 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.39-200.24.1-amd64-uek-Oracle5.9/objects:
+total 540
+-rw-r--r-- 1 mts mts  35904 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  26824 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 131152 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  86872 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  27136 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  33320 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 101560 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  70200 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.39-200.24.1-i686-uek-Oracle5.9:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  135 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.39-200.24.1-i686-uek-Oracle5.9/objects:
+total 360
+-rw-r--r-- 1 mts mts 25364 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16852 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81020 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 54904 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16752 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24488 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 72768 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 44264 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.39-300-amd64-Oracle-UEK2:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  159 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.39-300-amd64-Oracle-UEK2/objects:
+total 540
+-rw-r--r-- 1 mts mts  35904 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  26824 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 131152 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  86872 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  27168 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  33320 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 101728 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  70232 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.39-300-amd64-uek-Oracle-5.9-UEK2:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  151 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.39-300-amd64-uek-Oracle-5.9-UEK2/objects:
+total 540
+-rw-r--r-- 1 mts mts  35904 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  26824 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 131152 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  86872 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  27136 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  33320 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 101728 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  70200 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.39-300-i686-Oracle-UEK2:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  145 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.39-300-i686-Oracle-UEK2/objects:
+total 360
+-rw-r--r-- 1 mts mts 25332 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16852 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 80988 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 54904 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16752 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24488 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 72760 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 44264 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.39-300-i686-uek-Oracle-5.9-UEK2:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  141 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.39-300-i686-uek-Oracle-5.9-UEK2/objects:
+total 360
+-rw-r--r-- 1 mts mts 25364 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16852 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81020 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 54904 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16752 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24488 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 72760 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 44264 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.39-400-amd64-uek-Oracle6.4-UEK2:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  164 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.39-400-amd64-uek-Oracle6.4-UEK2/objects:
+total 540
+-rw-r--r-- 1 mts mts  35904 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  26824 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 131152 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  86872 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  27168 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  33320 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 101728 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  70232 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.39-400-i686-uek-Oracle6.4-UEK2:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  150 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.39-400-i686-uek-Oracle6.4-UEK2/objects:
+total 360
+-rw-r--r-- 1 mts mts 25364 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16852 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81020 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 54904 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16752 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24488 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 72760 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 44264 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.39-400.17.1-amd64-uek-Oracle5.9:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  145 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.39-400.17.1-amd64-uek-Oracle5.9/objects:
+total 540
+-rw-r--r-- 1 mts mts  35904 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts  26824 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 131152 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  86872 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  27136 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts  33320 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 101696 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts  70200 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.39-400.17.1-i686-uek-Oracle5.9:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  135 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-2.6.39-400.17.1-i686-uek-Oracle5.9/objects:
+total 360
+-rw-r--r-- 1 mts mts 25364 Mar 24 17:10 pvscsi.o
+-rw-r--r-- 1 mts mts 16852 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81020 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 54904 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 16752 Mar 24 17:10 vmmemctl.o
+-rw-r--r-- 1 mts mts 24488 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 72760 Mar 24 17:10 vmxnet3.o
+-rw-r--r-- 1 mts mts 44264 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.0-12.20-amd64-generic-Ubuntu11.10:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  135 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.0-12.20-amd64-generic-Ubuntu11.10/objects:
+total 364
+-rw-r--r-- 1 mts mts  26872 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 130208 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  86752 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  32440 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  69712 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.0-12.20-amd64-server-Ubuntu11.10:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  133 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.0-12.20-amd64-server-Ubuntu11.10/objects:
+total 360
+-rw-r--r-- 1 mts mts  26872 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 128736 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  86464 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  32440 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  69328 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.0-12.20-amd64-virtual-Ubuntu11.10:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  135 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.0-12.20-amd64-virtual-Ubuntu11.10/objects:
+total 360
+-rw-r--r-- 1 mts mts  26872 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 128736 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  86464 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  32440 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  69328 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.0-12.20-i386-generic-Ubuntu11.10:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  125 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.0-12.20-i386-generic-Ubuntu11.10/objects:
+total 236
+-rw-r--r-- 1 mts mts 16880 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 80152 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 54704 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 23736 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 44104 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.0-12.20-i386-generic-pae-Ubuntu11.10:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  133 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.0-12.20-i386-generic-pae-Ubuntu11.10/objects:
+total 236
+-rw-r--r-- 1 mts mts 16880 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 80384 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 54704 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 23928 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 44104 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.0-12.20-i386-virtual-Ubuntu11.10:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  125 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.0-12.20-i386-virtual-Ubuntu11.10/objects:
+total 236
+-rw-r--r-- 1 mts mts 16880 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 80384 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 54704 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 23928 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 44104 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.101-108.84-amd64-default-SLE11sp4:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  144 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.101-108.84-amd64-default-SLE11sp4/objects:
+total 372
+-rw-r--r-- 1 mts mts  27640 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 133592 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  86152 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  36400 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  69912 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.101-108.84-amd64-trace-SLE11sp4:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  140 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.101-108.84-amd64-trace-SLE11sp4/objects:
+total 372
+-rw-r--r-- 1 mts mts  27640 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 133560 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  86152 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  36376 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  69912 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.101-108.84-i586-default-SLE11sp4:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  134 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.101-108.84-i586-default-SLE11sp4/objects:
+total 248
+-rw-r--r-- 1 mts mts 17396 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 83088 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 54156 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 25156 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 45280 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.101-108.84-i586-pae-SLE11sp4:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  126 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.101-108.84-i586-pae-SLE11sp4/objects:
+total 248
+-rw-r--r-- 1 mts mts 17396 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 83240 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 54156 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 25248 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 45280 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.101-108.84-i586-trace-SLE11sp4:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  130 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.101-108.84-i586-trace-SLE11sp4/objects:
+total 248
+-rw-r--r-- 1 mts mts 17404 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 83240 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1571 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 54156 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 25256 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 45280 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.101-63-amd64-default-SLE11SP4:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  136 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.101-63-amd64-default-SLE11SP4/objects:
+total 360
+-rw-r--r-- 1 mts mts  27000 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 129440 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  84968 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  33248 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  68720 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.101-63-amd64-trace-SLE11SP4:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  132 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.101-63-amd64-trace-SLE11SP4/objects:
+total 360
+-rw-r--r-- 1 mts mts  27000 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 129440 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  84968 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  33256 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  68720 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.101-63-i586-default-SLE11SP4:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  126 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.101-63-i586-default-SLE11SP4/objects:
+total 236
+-rw-r--r-- 1 mts mts 16996 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 80640 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 53428 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 24200 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 43628 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.101-63-i586-pae-SLE11SP4:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  118 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.101-63-i586-pae-SLE11SP4/objects:
+total 236
+-rw-r--r-- 1 mts mts 16996 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 80872 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 53428 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 24436 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 43628 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.101-63-i586-trace-SLE11SP4:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  122 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.101-63-i586-trace-SLE11SP4/objects:
+total 236
+-rw-r--r-- 1 mts mts 17004 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 80872 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 53428 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 24444 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 43628 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.13-0.27-amd64-default-SLE11SP2:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  138 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.13-0.27-amd64-default-SLE11SP2/objects:
+total 372
+-rw-r--r-- 1 mts mts  27160 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 130776 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  85288 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  33080 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  80088 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.13-0.27-i586-default-SLE11SP2:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  128 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.13-0.27-i586-default-SLE11SP2/objects:
+total 240
+-rw-r--r-- 1 mts mts 17116 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81528 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 53976 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 24496 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 48068 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.13-0.27-i586-pae-SLE11SP2:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  120 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.13-0.27-i586-pae-SLE11SP2/objects:
+total 244
+-rw-r--r-- 1 mts mts 17116 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81776 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 53976 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 24764 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 48068 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.76-0.11-amd64-default-SLE11SP3:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  138 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.76-0.11-amd64-default-SLE11SP3/objects:
+total 372
+-rw-r--r-- 1 mts mts  27176 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 130776 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  85256 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  33152 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  80088 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.76-0.11-amd64-trace-SLE11SP3:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  134 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.76-0.11-amd64-trace-SLE11SP3/objects:
+total 372
+-rw-r--r-- 1 mts mts  27176 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 130776 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  85256 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  33160 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  80088 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.76-0.11-i586-default-SLE11SP3:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  128 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.76-0.11-i586-default-SLE11SP3/objects:
+total 240
+-rw-r--r-- 1 mts mts 17116 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81528 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 54104 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 24528 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 48068 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.76-0.11-i586-pae-SLE11SP3:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  120 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.76-0.11-i586-pae-SLE11SP3/objects:
+total 244
+-rw-r--r-- 1 mts mts 17116 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81744 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 54104 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 24796 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 48068 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.76-0.11-i586-trace-SLE11SP3:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  124 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.0.76-0.11-i586-trace-SLE11SP3/objects:
+total 244
+-rw-r--r-- 1 mts mts 17124 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 81776 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 54104 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 24804 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 48068 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.10.0-123-amd64-RHEL7.0:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  141 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.10.0-123-amd64-RHEL7.0/objects:
+total 128
+-rw-r--r-- 1 mts mts 87752 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 33432 Mar 24 17:10 vmxnet.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.11.0-15-amd64-generic-Ubuntu12.04.4:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  139 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.11.0-15-amd64-generic-Ubuntu12.04.4/objects:
+total 124
+-rw-r--r-- 1 mts mts 88160 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 32280 Mar 24 17:10 vmxnet.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.11.0-15-i386-generic-Ubuntu12.04.4:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  129 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.11.0-15-i386-generic-Ubuntu12.04.4/objects:
+total 84
+-rw-r--r-- 1 mts mts 55640 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 23924 Mar 24 17:10 vmxnet.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.2.0-23-amd64-generic-Ubuntu12.04:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  135 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.2.0-23-amd64-generic-Ubuntu12.04/objects:
+total 364
+-rw-r--r-- 1 mts mts  26872 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 130176 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  86872 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  32376 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  69712 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.2.0-23-amd64-virtual-Ubuntu12.04:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  135 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.2.0-23-amd64-virtual-Ubuntu12.04/objects:
+total 360
+-rw-r--r-- 1 mts mts  26872 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 128672 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  86584 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  32376 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  69328 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.2.0-23-i386-generic-Ubuntu12.04:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  125 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.2.0-23-i386-generic-Ubuntu12.04/objects:
+total 236
+-rw-r--r-- 1 mts mts 16880 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 80152 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 54748 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 23736 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 44104 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.2.0-23-i386-generic-pae-Ubuntu12.04:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  133 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.2.0-23-i386-generic-pae-Ubuntu12.04/objects:
+total 236
+-rw-r--r-- 1 mts mts 16880 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 80384 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 54748 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 23928 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 44104 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.2.0-23-i386-virtual-Ubuntu12.04:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  125 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.2.0-23-i386-virtual-Ubuntu12.04/objects:
+total 236
+-rw-r--r-- 1 mts mts 16880 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 80384 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 54748 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 23928 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 44104 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.2.0-29-amd64-generic-Ubuntu12.04.1:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  137 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.2.0-29-amd64-generic-Ubuntu12.04.1/objects:
+total 364
+-rw-r--r-- 1 mts mts  26872 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 130176 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  86872 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  32408 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  69712 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.2.0-29-amd64-virtual-Ubuntu12.04.1:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  137 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.2.0-29-amd64-virtual-Ubuntu12.04.1/objects:
+total 360
+-rw-r--r-- 1 mts mts  26872 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 128672 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  86584 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  32408 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts  69328 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.2.0-29-i386-generic-Ubuntu12.04.1:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  127 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.2.0-29-i386-generic-Ubuntu12.04.1/objects:
+total 236
+-rw-r--r-- 1 mts mts 16880 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 80152 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 54748 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 23736 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 44104 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.2.0-29-i386-generic-pae-Ubuntu12.04.1:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  135 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.2.0-29-i386-generic-pae-Ubuntu12.04.1/objects:
+total 236
+-rw-r--r-- 1 mts mts 16880 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 80384 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 54748 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 23928 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 44104 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.2.0-29-i386-virtual-Ubuntu12.04.1:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  127 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.2.0-29-i386-virtual-Ubuntu12.04.1/objects:
+total 236
+-rw-r--r-- 1 mts mts 16880 Mar 24 17:10 vmblock.o
+-rw-r--r-- 1 mts mts 80384 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 54748 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 23928 Mar 24 17:10 vmxnet.o
+-rw-r--r-- 1 mts mts 44104 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.5.0-17-amd64-generic-Ubuntu12.10:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  135 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.5.0-17-amd64-generic-Ubuntu12.10/objects:
+total 304
+-rw-r--r-- 1 mts mts 130288 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  86968 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  69712 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.5.0-17-i386-generic-Ubuntu12.10:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  125 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.5.0-17-i386-generic-Ubuntu12.10/objects:
+total 192
+-rw-r--r-- 1 mts mts 80464 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 54980 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 44104 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.5.0-23-amd64-generic-Ubuntu12.04.2:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  137 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.5.0-23-amd64-generic-Ubuntu12.04.2/objects:
+total 304
+-rw-r--r-- 1 mts mts 130288 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  86968 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  69712 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.5.0-23-i386-generic-Ubuntu12.04.2:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  127 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.5.0-23-i386-generic-Ubuntu12.04.2/objects:
+total 192
+-rw-r--r-- 1 mts mts 80464 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 54980 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 44104 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.8.0-19-amd64-generic-Ubuntu13.04:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  135 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.8.0-19-amd64-generic-Ubuntu13.04/objects:
+total 300
+-rw-r--r-- 1 mts mts 129920 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  87080 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  69632 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.8.0-19-i386-generic-Ubuntu13.04:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  125 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.8.0-19-i386-generic-Ubuntu13.04/objects:
+total 192
+-rw-r--r-- 1 mts mts 80272 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 55056 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 44124 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.8.0-29-amd64-generic-Ubuntu12.04.3:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  137 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.8.0-29-amd64-generic-Ubuntu12.04.3/objects:
+total 300
+-rw-r--r-- 1 mts mts 129920 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts   1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts  87080 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts  69632 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/binary/bld-3.8.0-29-i386-generic-Ubuntu12.04.3:
+total 8
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 objects
+-rw-r--r-- 1 mts mts  127 Mar 24 17:10 properties
+
+vmware-tools-distrib/lib/modules/binary/bld-3.8.0-29-i386-generic-Ubuntu12.04.3/objects:
+total 192
+-rw-r--r-- 1 mts mts 80272 Mar 24 17:10 vmci.o
+-rw-r--r-- 1 mts mts  1455 Mar 24 17:10 vmci.symvers
+-rw-r--r-- 1 mts mts 55056 Mar 24 17:10 vmhgfs.o
+-rw-r--r-- 1 mts mts 44124 Mar 24 17:10 vsock.o
+
+vmware-tools-distrib/lib/modules/source:
+total 9676
+-rw-r--r-- 1 mts mts 1034240 Mar 24 17:10 pvscsi.tar
+-rw-r--r-- 1 mts mts  880640 Mar 24 17:10 vmblock.tar
+-rw-r--r-- 1 mts mts 1341440 Mar 24 17:10 vmci.tar
+-rw-r--r-- 1 mts mts 1515520 Mar 24 17:10 vmhgfs.tar
+-rw-r--r-- 1 mts mts  952320 Mar 24 17:10 vmmemctl.tar
+-rw-r--r-- 1 mts mts  829440 Mar 24 17:10 vmsync.tar
+-rw-r--r-- 1 mts mts 1013760 Mar 24 17:10 vmxnet.tar
+-rw-r--r-- 1 mts mts 1146880 Mar 24 17:10 vmxnet3.tar
+-rw-r--r-- 1 mts mts 1146880 Mar 24 17:10 vsock.tar
+
+vmware-tools-distrib/lib/plugins32:
+total 12
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 common
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 vmsvc
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 vmusr
+
+vmware-tools-distrib/lib/plugins32/common:
+total 272
+-rwxr-xr-x 1 mts mts   9356 Mar 24 17:10 libhgfsServer.so
+-rwxr-xr-x 1 mts mts 261468 Mar 24 17:10 libvix.so
+
+vmware-tools-distrib/lib/plugins32/vmsvc:
+total 1244
+-rwxr-xr-x 1 mts mts    9356 Mar 24 17:10 libautoUpgrade.so
+-rwxr-xr-x 1 mts mts   13452 Mar 24 17:10 libdeployPkgPlugin.so
+-rwxr-xr-x 1 mts mts 1078668 Mar 24 17:10 libgrabbitmqProxy.so
+-rwxr-xr-x 1 mts mts   59232 Mar 24 17:10 libguestInfo.so
+-rwxr-xr-x 1 mts mts    9408 Mar 24 17:10 libpowerOps.so
+-rwxr-xr-x 1 mts mts   17752 Mar 24 17:10 libresolutionKMS.so
+-rwxr-xr-x 1 mts mts   21644 Mar 24 17:10 libtimeSync.so
+-rwxr-xr-x 1 mts mts   34132 Mar 24 17:10 libvmbackup.so
+
+vmware-tools-distrib/lib/plugins32/vmusr:
+total 468
+-rwxr-xr-x 1 mts mts  17752 Mar 24 17:10 libdesktopEvents.so
+-rwxr-xr-x 1 mts mts 414944 Mar 24 17:10 libdndcp.so
+-rwxr-xr-x 1 mts mts  34184 Mar 24 17:10 libresolutionSet.so
+
+vmware-tools-distrib/lib/plugins64:
+total 12
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 common
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 vmsvc
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 vmusr
+
+vmware-tools-distrib/lib/plugins64/common:
+total 292
+-rwxr-xr-x 1 mts mts   9976 Mar 24 17:10 libhgfsServer.so
+-rwxr-xr-x 1 mts mts 282248 Mar 24 17:10 libvix.so
+
+vmware-tools-distrib/lib/plugins64/vmsvc:
+total 1316
+-rwxr-xr-x 1 mts mts    9976 Mar 24 17:10 libautoUpgrade.so
+-rwxr-xr-x 1 mts mts   14072 Mar 24 17:10 libdeployPkgPlugin.so
+-rwxr-xr-x 1 mts mts 1149064 Mar 24 17:10 libgrabbitmqProxy.so
+-rwxr-xr-x 1 mts mts   60376 Mar 24 17:10 libguestInfo.so
+-rwxr-xr-x 1 mts mts   14152 Mar 24 17:10 libpowerOps.so
+-rwxr-xr-x 1 mts mts   18520 Mar 24 17:10 libresolutionKMS.so
+-rwxr-xr-x 1 mts mts   18168 Mar 24 17:10 libtimeSync.so
+-rwxr-xr-x 1 mts mts   38984 Mar 24 17:10 libvmbackup.so
+
+vmware-tools-distrib/lib/plugins64/vmusr:
+total 492
+-rwxr-xr-x 1 mts mts  22608 Mar 24 17:10 libdesktopEvents.so
+-rwxr-xr-x 1 mts mts 436072 Mar 24 17:10 libdndcp.so
+-rwxr-xr-x 1 mts mts  35032 Mar 24 17:10 libresolutionSet.so
+
+vmware-tools-distrib/lib/sbin32:
+total 80
+-rwxr-xr-x 1 mts mts 21788 Mar 24 17:10 vmware-checkvm
+-rwxr-xr-x 1 mts mts 34076 Mar 24 17:10 vmware-hgfsmounter
+-rwxr-xr-x 1 mts mts 17588 Mar 24 17:10 vmware-rpctool
+
+vmware-tools-distrib/lib/sbin64:
+total 84
+-rwxr-xr-x 1 mts mts 22448 Mar 24 17:10 vmware-checkvm
+-rwxr-xr-x 1 mts mts 38832 Mar 24 17:10 vmware-hgfsmounter
+-rwxr-xr-x 1 mts mts 18200 Mar 24 17:10 vmware-rpctool
+
+vmware-tools-distrib/vgauth:
+total 4
+drwxr-xr-x 2 mts mts 4096 Mar 24 17:10 schemas
+
+vmware-tools-distrib/vgauth/schemas:
+total 180
+-rw-r--r-- 1 mts mts  5783 Mar 24 17:10 XMLSchema-hasFacetAndProperty.xsd
+-rw-r--r-- 1 mts mts  1215 Mar 24 17:10 XMLSchema-instance.xsd
+-rw-r--r-- 1 mts mts 16072 Mar 24 17:10 XMLSchema.dtd
+-rw-r--r-- 1 mts mts 86435 Mar 24 17:10 XMLSchema.xsd
+-rw-r--r-- 1 mts mts   473 Mar 24 17:10 catalog.xml
+-rw-r--r-- 1 mts mts  6356 Mar 24 17:10 datatypes.dtd
+-rw-r--r-- 1 mts mts 13160 Mar 24 17:10 saml-schema-assertion-2.0.xsd
+-rw-r--r-- 1 mts mts  5146 Mar 24 17:10 xenc-schema.xsd
+-rw-r--r-- 1 mts mts  8768 Mar 24 17:10 xml.xsd
+-rw-r--r-- 1 mts mts 10144 Mar 24 17:10 xmldsig-core-schema.xsd

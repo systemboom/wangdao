@@ -1,0 +1,120 @@
+<doc>
+<title></title>
+<link></link>
+<description></description>
+</doc>
+<doc>
+<title></title>
+<link></link>
+<description></description>
+</doc>
+<doc>
+<title></title>
+<link></link>
+<description></description>
+</doc>
+<doc>
+<title>Go 编程模式：k8s Visitor 模式</title>
+<link>https://coolshell.cn/articles/21263.html</link>
+<description><p>本篇文章主要想讨论一下，Kubernetes 的 kubectl 命令中的使用到到的一个编程模式 &#8211; Visitor（注：其实，kubectl 主要...</p>
+<p class="read-more"><a class="btn btn-default" href="https://coolshell.cn/articles/21263.html"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+The post <a href="https://coolshell.cn/articles/21263.html">Go 编程模式：k8s Visitor 模式</a> first appeared on <a href="https://coolshell.cn">酷 壳 - CoolShell</a>.</description>
+</doc>
+<doc>
+<title>Go编程模式：Pipeline</title>
+<link>https://coolshell.cn/articles/21228.html</link>
+<description><p>本篇文章，我们着重介绍Go编程中的Pipeline模式。对于Pipeline用过Unix/Linux命令行的人都不会陌生，他是一种把各种命令拼接起来完成一个更强...</p>
+<p class="read-more"><a class="btn btn-default" href="https://coolshell.cn/articles/21228.html"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+The post <a href="https://coolshell.cn/articles/21228.html">Go编程模式：Pipeline</a> first appeared on <a href="https://coolshell.cn">酷 壳 - CoolShell</a>.</description>
+</doc>
+<doc>
+<title>Go编程模式：委托和反转控制</title>
+<link>https://coolshell.cn/articles/21214.html</link>
+<description><p>反转控制IoC &#8211; Inversion of Control 是一种软件设计的方法，其主要的思想是把控制逻辑与业务逻辑分享，不要在业务逻辑里写控制逻...</p>
+<p class="read-more"><a class="btn btn-default" href="https://coolshell.cn/articles/21214.html"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+The post <a href="https://coolshell.cn/articles/21214.html">Go编程模式：委托和反转控制</a> first appeared on <a href="https://coolshell.cn">酷 壳 - CoolShell</a>.</description>
+</doc>
+<doc>
+<title>Go 编程模式：Go Generation</title>
+<link>https://coolshell.cn/articles/21179.html</link>
+<description><p>在本篇文章中，我们将要学习一下Go语言的代码生成的玩法。Go语言代码生成主要还是用来解决编程泛型的问题，泛型编程主要解决的问题是因为静态类型语言有类型，所以，相...</p>
+<p class="read-more"><a class="btn btn-default" href="https://coolshell.cn/articles/21179.html"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+The post <a href="https://coolshell.cn/articles/21179.html">Go 编程模式：Go Generation</a> first appeared on <a href="https://coolshell.cn">酷 壳 - CoolShell</a>.</description>
+</doc>
+<doc>
+<title>Go编程模式：Map-Reduce</title>
+<link>https://coolshell.cn/articles/21164.html</link>
+<description><p>在本篇文章中，我们学习一下函数式编程的中非常重要的Map、Reduce、Filter的三种操作，这三种操作可以让我们非常方便灵活地进行一些数据处理——我们的程序...</p>
+<p class="read-more"><a class="btn btn-default" href="https://coolshell.cn/articles/21164.html"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+The post <a href="https://coolshell.cn/articles/21164.html">Go编程模式：Map-Reduce</a> first appeared on <a href="https://coolshell.cn">酷 壳 - CoolShell</a>.</description>
+</doc>
+<doc>
+<title>Go 编程模式：Functional Options</title>
+<link>https://coolshell.cn/articles/21146.html</link>
+<description><p>在本篇文章中，我们来讨论一下Functional Options这个编程模式。这是一个函数式编程的应用案例，编程技巧也很好，是目前在Go语言中最流行的一种编程模...</p>
+<p class="read-more"><a class="btn btn-default" href="https://coolshell.cn/articles/21146.html"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+The post <a href="https://coolshell.cn/articles/21146.html">Go 编程模式：Functional Options</a> first appeared on <a href="https://coolshell.cn">酷 壳 - CoolShell</a>.</description>
+</doc>
+<doc>
+<title>Go 编程模式：错误处理</title>
+<link>https://coolshell.cn/articles/21140.html</link>
+<description><p>错误处理一直以一是编程必需要面对的问题，错误处理如果做的好的话，代码的稳定性会很好。不同的语言有不同的出现处理的方式。Go语言也一样，在本篇文章中，我们来讨论一...</p>
+<p class="read-more"><a class="btn btn-default" href="https://coolshell.cn/articles/21140.html"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+The post <a href="https://coolshell.cn/articles/21140.html">Go 编程模式：错误处理</a> first appeared on <a href="https://coolshell.cn">酷 壳 - CoolShell</a>.</description>
+</doc>
+<doc>
+<title>Go编程模式：切片，接口，时间和性能</title>
+<link>https://coolshell.cn/articles/21128.html</link>
+<description><p>在本篇文章中，我会对Go语言编程模式的一些基本技术和要点，这样可以让你更容易掌握Go语言编程。其中，主要包括，数组切片的一些小坑，还有接口编程，以及时间和程序运...</p>
+<p class="read-more"><a class="btn btn-default" href="https://coolshell.cn/articles/21128.html"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+The post <a href="https://coolshell.cn/articles/21128.html">Go编程模式：切片，接口，时间和性能</a> first appeared on <a href="https://coolshell.cn">酷 壳 - CoolShell</a>.</description>
+</doc>
+<doc>
+<title>百度为什么掉队了</title>
+<link>https://coolshell.cn/articles/21113.html</link>
+<description><p>今天早上看到一篇文章《百度不要用户》这篇文章里的大意是：百度错过了移动互联网，等反应过来的时候，在2013年猛收购了一些公司来追赶对手或是时代，但都不成功，然后...</p>
+<p class="read-more"><a class="btn btn-default" href="https://coolshell.cn/articles/21113.html"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+The post <a href="https://coolshell.cn/articles/21113.html">百度为什么掉队了</a> first appeared on <a href="https://coolshell.cn">酷 壳 - CoolShell</a>.</description>
+</doc>
+<doc>
+<title>程序员如何把控自己的职业</title>
+<link>https://coolshell.cn/articles/20977.html</link>
+<description><p>这篇文章的主要内容主要是我今年3月份在腾讯做的直播，主要是想让一些技术人员对世界有一个大体的认识，并且在这个认识下能够有一个好的方法成就自己。而不是在一脸蒙圈的...</p>
+<p class="read-more"><a class="btn btn-default" href="https://coolshell.cn/articles/20977.html"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+The post <a href="https://coolshell.cn/articles/20977.html">程序员如何把控自己的职业</a> first appeared on <a href="https://coolshell.cn">酷 壳 - CoolShell</a>.</description>
+</doc>
+<doc>
+<title>计时攻击 Timing Attacks</title>
+<link>https://coolshell.cn/articles/21003.html</link>
+<description><p>本文来自读者“程序猿石头”的投稿文章《这 10 行比较字符串相等的代码给我整懵了，不信你也来看看》，原文写的很好，但不够直接了当，信息密度不够高，所以我对原文进...</p>
+<p class="read-more"><a class="btn btn-default" href="https://coolshell.cn/articles/21003.html"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+The post <a href="https://coolshell.cn/articles/21003.html">计时攻击 Timing Attacks</a> first appeared on <a href="https://coolshell.cn">酷 壳 - CoolShell</a>.</description>
+</doc>
+<doc>
+<title>Rust语言的编程范式</title>
+<link>https://coolshell.cn/articles/20845.html</link>
+<description><p>总是有很多很多人来问我对Rust语言怎么看的问题，在各种地方被at，其实，我不是很想表达我的想法。因为在不同的角度，你会看到不同的东西。编程语言这个东西，老实说...</p>
+<p class="read-more"><a class="btn btn-default" href="https://coolshell.cn/articles/20845.html"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+The post <a href="https://coolshell.cn/articles/20845.html">Rust语言的编程范式</a> first appeared on <a href="https://coolshell.cn">酷 壳 - CoolShell</a>.</description>
+</doc>
+<doc>
+<title>与程序员相关的CPU缓存知识</title>
+<link>https://coolshell.cn/articles/20793.html</link>
+<description><p>好久没有写一些微观方面的文章了，今天写一篇关于CPU Cache相关的文章，这篇文章比较长，主要分成这么几个部分：基础知识、缓存的命中、缓存的一致性、相关的代码...</p>
+<p class="read-more"><a class="btn btn-default" href="https://coolshell.cn/articles/20793.html"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+The post <a href="https://coolshell.cn/articles/20793.html">与程序员相关的CPU缓存知识</a> first appeared on <a href="https://coolshell.cn">酷 壳 - CoolShell</a>.</description>
+</doc>
+<doc>
+<title>MegaEase的远程工作文化</title>
+<link>https://coolshell.cn/articles/20765.html</link>
+<description><p>MegaEase 是我创业的公司，主要是想把云计算（PaaS/SaaS层）的那些高可用高并发的分布式技术普及到那需要对技术自主可控的公司，这样就不需要去使用不能...</p>
+<p class="read-more"><a class="btn btn-default" href="https://coolshell.cn/articles/20765.html"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+The post <a href="https://coolshell.cn/articles/20765.html">MegaEase的远程工作文化</a> first appeared on <a href="https://coolshell.cn">酷 壳 - CoolShell</a>.</description>
+</doc>
+<doc>
+<title>使用简单的逻辑方法进行独立思考</title>
+<link>https://coolshell.cn/articles/20533.html</link>
+<description><p>这是一个非常复杂的世界，这个世界上有很多各式各样的观点和思维方式，作为一个程序员的我，也会有程序员的思维方式，程序员的思维方式更接近数学的思维方式，数学的思维方...</p>
+<p class="read-more"><a class="btn btn-default" href="https://coolshell.cn/articles/20533.html"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+The post <a href="https://coolshell.cn/articles/20533.html">使用简单的逻辑方法进行独立思考</a> first appeared on <a href="https://coolshell.cn">酷 壳 - CoolShell</a>.</description>
+</doc>

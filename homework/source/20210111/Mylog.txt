@@ -1,0 +1,3 @@
+MessagefileName:test.cc functionName:main lineNumber:138 2021-01-12 00:24:52,872 Mycat [ERROR]:This is an error message!
+MessagefileName:test.cc functionName:main lineNumber:139 2021-01-12 00:24:52,872 Mycat [WARN]:This is a warn message!
+MessagefileName:test.cc functionName:main lineNumber:140 2021-01-12 00:24:52,872 Mycat [DEBUG]:This is a debug message!

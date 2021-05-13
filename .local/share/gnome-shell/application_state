@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<application-state>
+  <context id="">
+    <application id="org.gnome.Nautilus.desktop" score="20" last-seen="1607689423"/>
+    <application id="org.gnome.Terminal.desktop" score="1117" last-seen="1608228660"/>
+    <application id="org.gnome.baobab.desktop" score="3" last-seen="1608228655"/>
+    <application id="gnome-control-center.desktop" score="79" last-seen="1607690863"/>
+  </context>
+</application-state>

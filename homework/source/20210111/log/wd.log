@@ -1,0 +1,4 @@
+[Message]test.cc main 5 2021-01-12 13:03:07,833 mycat [ERROR]:This is an ERROR message！
+[Message]test.cc main 6 2021-01-12 13:03:07,833 mycat [WARN]:This is an WARN message！
+[Message]test.cc main 7 2021-01-12 13:03:07,833 mycat [DEBUG]:This is an DEBUG message！
+[Message]test.cc main 8 2021-01-12 13:03:07,833 mycat [INFO]:This is an INFO message！

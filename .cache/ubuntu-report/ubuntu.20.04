@@ -1,0 +1,89 @@
+{
+  "Version": "20.04",
+  "OEM": {
+    "Vendor": "VMware, Inc.",
+    "Product": "VMware Virtual Platform",
+    "Family": ""
+  },
+  "BIOS": {
+    "Vendor": "Phoenix Technologies LTD",
+    "Version": "6.00"
+  },
+  "CPU": {
+    "OpMode": "32-bit, 64-bit",
+    "CPUs": "4",
+    "Threads": "1",
+    "Cores": "4",
+    "Sockets": "1",
+    "Vendor": "GenuineIntel",
+    "Family": "6",
+    "Model": "158",
+    "Stepping": "9",
+    "Name": "Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz",
+    "Virtualization": "VT-x",
+    "Hypervisor": "VMware",
+    "VirtualizationType": "full"
+  },
+  "Arch": "amd64",
+  "GPU": [
+    {
+      "Vendor": "15ad",
+      "Model": "0405"
+    }
+  ],
+  "RAM": 2,
+  "Disks": [
+    21.5
+  ],
+  "Partitions": [
+    18.3,
+    0.2
+  ],
+  "Screens": [
+    {
+      "Size": "0mmx0mm",
+      "Resolution": "800x600",
+      "Frequency": "60.00"
+    }
+  ],
+  "Autologin": false,
+  "LivePatch": false,
+  "Session": {
+    "DE": "ubuntu:GNOME",
+    "Name": "ubuntu",
+    "Type": "x11"
+  },
+  "Language": "zh_CN",
+  "Timezone": "Asia/Shanghai",
+  "Install": {
+    "Media": "Ubuntu 20.04.1 LTS \"Focal Fossa\" - Release amd64 (20200731)",
+    "Type": "GTK",
+    "OEM": false,
+    "PartitionMethod": "manual",
+    "DownloadUpdates": true,
+    "Language": "zh_CN",
+    "Minimal": false,
+    "RestrictedAddons": false,
+    "Stages": {
+      "0": "language",
+      "2": "language",
+      "64": "console_setup",
+      "138": "console_setup",
+      "167": "prepare",
+      "609": "partman",
+      "685": "partman",
+      "709": "partman",
+      "713": "partman",
+      "775": "partman",
+      "909": "partman",
+      "1006": "partman",
+      "1007": "partman",
+      "1776": "partman",
+      "1782": "start_install",
+      "1795": "timezone",
+      "1838": "usersetup",
+      "1917": "user_done",
+      "9595": "done"
+    }
+  }
+}
