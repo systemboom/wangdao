@@ -1,444 +1,3 @@
-ll
-man ftok
-make
-mkae
-make
-./ftok 
-./ftok .
-man shgety
-man shget
-man shmget
-make
-ipcs
-./shmget 
-ipcs
-ipcrm 2
-ipcrm 
-ipcs
-./shmget 
-ipcs
-ipcrm -m 2
-ipcs
-man 3 shmat
-make
-ipcs
-./shmat_r
-./shmat_w
-man 3 sh
-man 3 shmdt
-ipcs
-make
-./shmdt
-ipcs
-man shmctl
-make
-./shmctl_rm 
-make
-./shmctl_rm 
-make
-./shmget_private 
-ipcs
-make
-./shmctl_stat 
-man shmset
-man shmctl
-make
-./shmct_set
-./shctl_set
-./shmctl_set 
-sudo vim /usr/include/func.h 
-ll
-cd wangdao/c/linuxDay11
-ll
-cd ..
-ll
-mkdir linuxDay12
-cd linuxDay12
-cp ../linuxDay11/fork/makefile makefile
-ll
-vim pgid.c
-top
-ll
-vim setpgid.c
-top
-vim getsid.c
-vim daemon.c
-vim setsid.c
-ps -elf
-ps -elf|grep 44395
-vim daemon.c
-top
-ps -elf
-kill -9 44714
-cd ..
-ll
-mdkir linuxDay13
-mkdir linuxDay13
-cd linuxDay13
-ll
-man 2 popen
-man popen
-cp ../linuxDay12/makefile makefile
-ll
-vim popen_r.c
-vim print.c
-make
-./popen_r 
-vim popen_w.c
-vim read.c
-make
-./popen_w
-vim pipe.c
-vim pip_fork,c
-vim pip_fork.c
-mv pip_fork.c pipe_fork.c
-vim pipe_fork.c
-vim mkfifo.c
-vim unlink.c
-vim ftok.c
-vim shmget.c
-vim shmat.c
-byobu
-vim shmat_r.c
-ll
-cat shmat*
-vim shmat*
-./shmat_r 
-ipcs
-ll
-vim shmdt.c
-make
-./shmdt 
-./shmget 
-ipcs
-vim shmctl_rm.c
-ipcs
-ipcrm 
-ipcs
-vim shmctl_rm.c
-ipcs
-vim shmctl_rm.c
-make
-ipcs
-vim shmget_private.c
-ipcrm
-ipcs
-ipcrm -m 8
-ipcs
-vim shmctl_stat.c
-man shmctl
-vim shmctl_set.c
-ll
-
-cd wangdao/
-cd c/linuxDay13
-ll
-make
-./shmat_w
-make
-./shmadd 
-man shmget
-cd /proc/
-ls
-cat meminfo
-cd ~
-cd /proc/sys/vm
-ls
-cat nr_hugepages
-sudo echo 20 >nr_hugepages
-su root
-cat nr_hugepages
-ipcs
-kill -9 9
-ipcrm
-ipcs
-ipcrm - m 9
-ipcrm -m 9
-ipcs
-cat meminfo
-cat /proc/meminfo 
-exit
-byobu -S s2
-sudo vim /usr/include/func.h 
-cd wangdao/c/linuxDay13
-ll
-make
-./shmget_hugepage 
-./shmadd 
-cd ..
-mkdir linuxDay14
-cd linuxDay14
-touch file
-ll
-vim *.c
-man mmap
-cat /proc/filesystems 
-cat /proc/meminfo
-man semget
-man semop
-man semget
-make
-ll
-cd sem/
-make
-./semget 
-ipcs
-make
-./semctl 
-ipcs
-man IPC_STAT
-man semctl
-make
-./semstat 
-make
-./semset
-man semset
-man semctl
-make
-maek
-make
-./semset
-ipcs
-ipcrm -s 0
-ipcs
-./semset
-ipcs
-ll
-cd wangdao/c/linuxDay14/sem/
-ll
-man semctrl
-ma semcrl
-man semcrl
-man semctrl
-man semctl
-man mmap
-make
-ll
-make
-./setadd
-ps -elf|grep setadd
-man semop
-make
-./producer_consumer 
-ipcs
-ipcrm -s 1 2
-ipcrm -s *
-ipcrm -s 1
-ipcrm
-ipcs
-ipcrm -s 2
-ipcs
-./producer_consumer 
-cd ../...
-cd ../..
-cd linuxDay15
-ll
-make
-./producer_consumer 
-man msgget
-make
-./msgget 
-ipcs
-ipcrm -s 3
-ipcs
-ipcr -m 10
-ipcrm -m 10
-ipcs
-man msgsnd
-man msgrcv
-ipcs
-make
-./msgsnd 
-./msgsnd 1 hello
-ipcs
-./msgsnd 1 hello
-ipcs
-make
-./msgrcv 
-./msgrcv 1
-ipcs
-./msgrcv 1
-ipcs
-./msgrcv 1
-ipcs
-./msgrcv 1
-./msgrcv 2
-make
-./msgsnd 1 hello
-./msgsnd 2 hello2
-./msgsnd 1 world
-./msgrcv 
-./msgsnd 1 hello
-./msgsnd 2 hello2
-./msgsnd 3 hello3
-make
-./msgrcv 
-ipcs
-ipcrm -q 0
-ipcs
-sleep 2
-make
-./msgrcv_nowait 
-man signal
-man SIGINT
-man 2 SIGINT
-man
-man 2
-man signal
-man 7 signal
-make
-ll
-make
-./signal 
-ps -elf|grep signal
-kill -9 341148
-ps -elf|grep signal
-./signal 1
-man 7 signal
-make
-./signal_two 
-make
-./signal_dfl 
-kill
-kill -s
-kill -n
-kill -l
-make
-./signal_ign 
-make
-cd ..
-cd linuxDay16
-ll
-cp ../linuxDay15/makefile 
-cp ../linuxDay15/makefile makefile
-ll
-make
-./sigaction 
-make
-./sigaction 
-make
-./sigaction 
-make
-./sigaction 
-make
-./sigaction_resethand 
-make
-./sigaction_nodefer 
-make
-./sigaction_restart 
-man 7 sigaction
-man  sigaction
-make
-./sigaction_info 
-make
-./sigaction_musk
-make
-./sigaction_musk
-make
-./sigaction_musk
-make
-maek
-make
-./sigaction_pending 
-sudo vim /usr/include/func.h 
-cd wangdao/c/linuxDay16
-ll
-make
-./sigprocmask 
-echo $
-./sigprocmask 
-make
-./sigprocmask 
-echo $
-echo $$
-echo "$"
-echo "$?"
-echo "$?"
-./sigprocmask 
-echo $?
-kill -l
-make
-./sigprocmask 
-make
-./kill 
-echo $?
-ps elf|grep a.out
-ps elf|grep kill
-ps -elf|grep kill
-ll
-./while1 &
-rm while1 
-./while1 &
-ll
-make
-./kill_pid 4870
-./kill_pid 4871
-./while1 &
-./kill_pid -4960
-kill -l
-./alarm
-make
-./alarm 
-echo $?
-make
-./sleep_alarm 
-make
-./setitimer_real 
-maek
-make
-./setitimer_real 
-make
-./setitimer_prof 
-man 7 ptread_create
-man 7 pthread_create
-man 7 pthread
-man 7 pthreads
-make
-cd ..
-ll
-cd linuxDay17
-ll
-make
-vim makefile
-make
-vim makefile
-maek
-make
-./pthread_create 
-make
-./pthread_create 
-make
-./pthread_join 
-make
-./pthread_create_stack 
-make
-./pthread_create_malloc 
-make
-./pthread_create_two 
-make
-./pthread_create_two 
-make
-./pthread_create_two 
-make
-./pthread_exit 
-make
-./pthread_exit 
-ll
-vim sigprocmask.c
-vim kill/c
-vim kill.c
-echo $?
-./kill 
-echo $?
-ps -elf|grep kill
-vim kill_pid.c
-vim kill.c
-gcc kill.c -o while1
-vim kill_pid.c
-ps -elf|grep while1
-vim alarm.c
-vim sleep_alarm.c
-vim setitimer_real.c
 vim setitimer_prof.c
 ./while1 
 ps -elf|grep while1
@@ -1998,3 +1557,444 @@ ll
 mysqldump -u root -p 32th>32th.sql
 ll
 mysql -uroot -pasdzxc
+ll
+vim .mysql_history 
+cd wangdao/
+ll
+cp -r c/linuxDay31 github/wangdao/
+cp -r c/linuxDay32 github/wangdao/
+git pull origin master 
+git add --all
+git commit -m "20200513"
+git push origin master 
+ll
+cd wangdao/github/
+cd wangdao/
+df
+mysql -u root -p123456
+mysql -uroot -pasdzxc
+ll
+cd wangdao/
+ll
+cd c
+ll
+cd ..
+cd githu 
+cd github
+cd wangdao/
+ll
+rm *
+rm -r *
+ll
+cd .git/
+ll
+cd ..
+mv -r c/* github/wangdao/
+mv  c/* github/wangdao/
+cd ..
+cd wangdao/
+ll
+tree
+cd c
+cd ..
+cd github/
+cd wangdao/
+git pull origin main 
+ping www.baidu.com
+git pull origin main 
+git remote rm origin
+git remote add origin git@github.com:systemboom/wangdao.git
+git push -u origin master
+git clone https://github.com/systemboom/wangdao.git
+cd ..
+git clone https://github.com/systemboom/wangdao.git
+git push -u origin master
+cd wangdao/
+ll
+git add --all
+git commit -m'20200514'
+git push origin main 
+cd ~/.ssh
+ll
+cd ..
+cd wangdao/github/
+cd ~/.ssh
+vim id_rsa.pub 
+cat id_rsa.pub 
+cd ~/wangdao/github/
+cd wangdao/
+git push -u origin master
+git push -u origin main 
+fd 
+df -h
+cd ..
+rm c
+rm c-r
+rm -r c
+ll
+cd  wangdao/github/wangdao/
+ll
+cd linuxDay31
+ll
+cd ..
+cd linuxDay32
+ps -elf
+ps -elf|grep mysql
+mysql -uroot -pasdzxc
+mysql -uroot -pasdzxc
+service mysql start
+mysql -uroot -pasdzxc
+suo cat /etc/shadow
+sudo cat /etc/shadow
+cd wangdao/github/wangdao/
+ll
+cd linuxDay34
+ll
+mkdir crypt
+cd crypt/
+ll
+vim main.c
+vim makefile
+make
+ll
+cat makefile 
+./main dx
+sudo ./main dx
+vim main.c
+sudo apt install linux-tools-common
+sudo apt install linuex-tools-4.15***-generic
+sudo apt install linux-tools-generic
+cd ~
+sudo perf stat ls
+sudo apt install linux-tools-5.8.0-50-generic
+perf
+sudo perf stat ls
+sudo perf stat -e raw_syscalls:sys_enter ls
+sudo perf stat -e raw_syscalls:sys_enter ll
+mysql -uroot -qasdzxc
+mysql -uroot -pasdzxc
+ll
+cd wangdao/github/wangdao/
+ll
+mkdir linuxDay34
+cd linuxDay34
+ll
+vim query.c 
+make
+vim makefile
+ll
+vim Makefile 
+make
+cd ..
+cd linuxDay34
+ll
+chmod 777 query_mysql 
+ll
+./query_mysql 
+./query_mysql hulk
+ifconfig
+vim query.c
+make
+vim query.c
+make
+vim query.c
+make
+vim query.c
+make
+vim query.c
+make
+ll
+./query_mysql name
+vim query.c
+ifconfig
+vim query.c
+./query_mysql name
+vim query.c
+make
+./query_mysql name
+./query_mysql hulk
+make
+ll
+
+vim query.c
+make
+./query_mysql hulk
+vim query.c
+make
+ll;
+./query_mysql hulk
+vim query.c
+make
+./query_mysql hulk
+vim update.c
+make
+vim update.c
+make
+vim update.c
+make
+vim update.c
+ll
+vim insert.c
+make
+vim query.c
+make
+ll
+vim insert
+vim insert.c
+./insert_mysql 
+vim insert.c
+./insert_mysql 
+vim insert.c
+make
+./insert_mysql 
+find my.cnf
+where is my.cnf
+mysql --help|grep my.cnf
+vim /etc/my.cnf
+vim /etc/mysql/my.cnf
+sudo vim /etc/mysql/my.cnf
+service mysql restart
+./insert_mysql 
+sudo vim /etc/mysql/my.cnf
+service mysql restart
+service mysqld status
+vim insert.c
+make
+./insert_mysql 
+vim delete.c
+make
+./delete_mysql 
+vim delete.c
+make
+./delete_mysql 
+vim delete.c
+make
+./delete_mysql 
+vim update.c
+make
+vim update.c
+make
+ll
+rm update_mysql 
+ll
+make
+ll
+./update_mysql liu
+vim update.c
+make
+./update_mysql liu
+vim update.c
+make
+./update_mysql liu
+perf
+cd wangdao/github/wangdao/
+ll
+mkdir linuxDay35
+cd linuxDay35
+ll
+vim test.c
+gcc test.c
+ll
+sudo perf record -g ./a.out 
+ll
+sudo perf report -i perf.data \
+sudo perf report -i perf.data 
+vim test.c 
+sudo perf record -g ./a.out 
+sudo perf report -i perf.data 
+sudo apt-get install valgrind
+df
+sudo apt-get update
+sudo apt-get install valgrind
+cd /var/lib/dpkg
+sudo mv info info.baksudo
+mkdir info
+sudo mkdir info
+sudo apt-get install valgrind
+cd ~/wangdao/github/wangdao/
+ll
+rm valgrind.log.*
+valgrind
+vim malloc.c
+gcc -g malloc.c 
+valgrind --tool=memcheck --leak-check=full ./a.out 
+cd wangdao/
+ll
+cd cpp
+ll
+cd ..
+cd github/
+cd wangdao/
+mkdir c++day29
+ll
+cd c++day29/
+ll
+ls
+clear
+exit
+netstat -n
+netstat -na|grep tcp
+netstat -ano -p tcp|grep 8888
+cd wangdao/c/
+cd wangdao/github/wangdao/
+cd c++day30
+ll
+cd c
+ll
+./client 
+ulimit -a
+ulimit -n
+cd wangdao/
+cd ..
+ifconfig
+cd wangdao/
+cd github/
+ll
+mkdir c++day30
+cd c++day30
+ll
+sudo tcpdump -i ens33 -w test1.pcapng
+ll
+sudo tcpdump -i ens33 -S -w test1.pcapng
+tcpdump: Couldn't change ownership of savefile
+sudo tcpdump -i ens33 -S -w test1.pcapng
+su root
+ll
+sudo tcpdump -i ens33 -S -w test2.pcapng
+ll
+ll -h
+sudo tcpdump -i ens33 -S -w test3.pcapng
+ll
+vim test.c
+gcc -o client client.c
+ll
+cd c
+ll
+gcc -o client client.c 
+gcc -o server server.c 
+ll
+./server 
+ping www.baidu.com
+ifconfig
+cd wangdao/
+ll
+cd github/
+ll
+cd wangdao/
+ll
+cd linuxDay30
+ll
+cd ..
+ll
+cd linuxDay35
+ll
+cd ..
+cd c++day30
+ll
+mdkir c
+mkjdir c
+ll
+mkdir 30
+ll
+mv 30 c
+ll
+cd c
+ll
+vim server,c
+vim server.c
+vim client.c
+vim server.c
+./client 
+hello
+ll
+cd /
+vim /etc/security/limits.conf 
+man 2 shutdown
+cd wangdao/github/wangdao/
+ll
+cd linuxDay31
+ll
+cd ..
+cd c++day31
+ll
+cd ..
+ll
+cd c++day31
+ll
+mkdir test
+cd test/
+ll
+cd networklib/
+ll
+cd v1
+ll
+cd networklib/
+ll
+cd ..
+tree
+cd ..
+rm -r test/
+ll
+cd networklib/
+ll
+cd v1
+ll
+vim TestAcceptor.cc 
+make
+ll
+./server.exe 
+cd wangdao/github/wangdao/
+ll
+mkdir c++day31
+cd c++day31
+ll
+vim TestAcceptor.cc
+ll
+cd c
+ll
+chmod 777 client
+ll
+./client 
+ifconfig
+./client 
+cd "/home/dx/wangdao/github/wangdao/c++day31/networklib/v2/"
+ll
+vim TestEventLoop.cc 
+ifconfig 
+cd wangdao/github/
+cd wangdao/
+ll
+cd linuxDay31
+l
+cd ..
+cd c++day31
+ll
+cd ..
+mkdir c++day32
+cd c++day32
+ll
+cp r../c++day31/c
+cp -r ../c++day31/c c
+ll
+cd v2
+ll
+make
+ll
+cd ..
+cd v
+cd v2/
+ll
+make
+./server.exe 
+vim TestEventLoop.cc 
+make
+vim TestEventLoop.cc 
+./server.exe 
+cd wangdao/github/wangdao/
+ll
+cd c++day32
+ll
+cd c/
+ll
+ifconfig
+./client 
